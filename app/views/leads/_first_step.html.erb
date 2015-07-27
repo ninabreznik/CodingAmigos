@@ -1,0 +1,33 @@
+<div class="lead_new_form_zip">
+  <%= l.label :"#{I18n.t'lead-new.form.title'}" %>
+  <%= l.text_field :title %>
+</div>
+<div class="lead_new_form_business_type">
+  <%= l.select :business_type, [
+      ["#{I18n.t'lead-new.form.business-types.field-11'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-1'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-2'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-3'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-4'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-5'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-6'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-7'}"], 
+      ["#{I18n.t'lead-new.form.business-types.field-8'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-9'}"],
+      ["#{I18n.t'lead-new.form.business-types.field-10'}"]
+    ], :prompt=>"#{I18n.t'lead-new.form.business-types.field'}"%>  <br>
+</div>
+
+<div class="lead_new_form_time">
+  <%= l.select :time, @time, {:prompt=>"#{I18n.t'lead-new.form.prompt-time'}"}%> <br>
+</div>
+<div class="lead_new_form_description">
+  <%= l.label :"#{I18n.t'lead-new.form.description'}" %>
+  <%= l.text_area :description %>
+</div>
+<!-- <div class="lead_new_form_description"> 
+  <%= l.file_field :picture %>
+</div><br> -->
+
+
+

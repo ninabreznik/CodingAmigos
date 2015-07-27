@@ -1,0 +1,22 @@
+
+    <h3><%=I18n.t'welcome-message.h1'%> </h3><br>
+    <p>
+      <%=I18n.t'welcome-message.paragraph-1'%> <%= @user.email %><br>
+    </p>
+    <%- if @pass %>
+      <p>
+        <%=I18n.t'welcome-message.temporary-pass-1'%> <%= @pass %>
+      </p>
+      <p>
+        <%=I18n.t'welcome-message.temporary-pass-2'%>
+      </p>
+    <%- end %>
+    <p>
+      <%=I18n.t'welcome-message.paragraph-2'%> <%= link_to "#{I18n.t'welcome-message.this-link'}", root_url %>.
+    </p>
+    <br>
+    <p>
+      <%=I18n.t'welcome-message.thanks-for-joining'%>
+      <br><br><br><%=I18n.t'welcome-message.have-a-nice-day'%>
+    </p>
+    <p><%=I18n.t'welcome-message.nina'%> <%= root_url %></p>

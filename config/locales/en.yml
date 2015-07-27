@@ -1,0 +1,1309 @@
+en:
+
+# ############################################################################################
+# Page 0 - APPLICATION
+# ############################################################################################
+
+#Login and Logout
+  application:
+    top-menu:
+      login: "Login"
+      signup: "Sign up"
+    bottom-menu:
+      home: " Home"
+      messages: " Sporočila"
+      address-book: " Address book"
+      profile: " Profile"
+
+
+# ############################################################################################
+# Page 0 - USERS (devise)
+# ############################################################################################
+
+#Signup
+  users-signup:
+    signup: "Join a Coding Amigos Community!"
+    signup_button: "Sign Up"
+    email: "Email"
+    first-name: "First name"
+    last-name: "Last name"
+    company: "Company name"
+    field: "Main work field"
+    country: "Country"
+    password: "Password"
+    minimal-char: "characters minimum"
+    password-confirmation: "Password confirmation"
+
+#Login
+  users-login:
+    login: "Login"
+    remember-me: "Remember me"
+    email: "Email"
+    password: "Password"
+
+#Edit
+  users-edit: #   "#{I18n.t'users-login.remember-me'}"
+    edit-fields:
+      name: "Name"
+      surname: "Last name"
+      add-pic-label: "Add your avatar"
+      company: "Company"
+      field: "Payment Terms"
+      field-1: "Negotiable"
+      field-2: "100% upfront"
+      field-3: "50% upfront"
+      field-4: "Invoice Monthly"
+      field-5: "nvoice Weekly"
+      field-6: "Invoice Upon Completion"
+      field-7: "Other"
+      field-8: "Landscape Contractors"
+      field-9: "Stone, Paving & Concrete"
+      field-10: "Cheramics, Stone & Marble"
+      field-prompt: "Select payment terms"
+      services: "Technologies you like to use"
+      bio: "Bio - short description"
+      phone: "Phone"
+      id: "Tax Id"
+      webpage: "Webpage"
+      city: "City"
+      hourly-rate: "Hourly rate (in €)"
+      country: "Country"
+      country-1: "Austria"
+      country-2: "Belgium"
+      country-3: "Bolgaria"
+      country-4: "Croatia"
+      country-5: "Cyprus"
+      country-6: "Czech Republic"
+      country-7: "Denmark"
+      country-8: "Estonia"
+      country-9: "Finland"
+      country-10: "France"
+      country-11: "Germany"
+      country-12: "Greece"
+      country-13: "Hungary"
+      country-14: "Ireland"
+      country-15: "Italy"
+      country-16: "Latvia"
+      country-17: "Lithuania"
+      country-18: "Luxemburg"
+      country-19: "Malta"
+      country-20: "Netherlands"
+      country-21: "Poland"
+      country-22: "Portugal"
+      country-23: "Romania"
+      country-24: "Slovakia"
+      country-25: "Slovenia"
+      country-26: "Spain"
+      country-27: "Sweden"
+      country-28: "United Kingdom"
+      country-29: "Non EU country"
+      country-prompt: "Choose your country"
+      email: "Email"
+      current-password: "Confirm changes with your password"
+      new-password: "New password (leave empty if you don't want to change)"
+      password-confirmation: "New password confirmation"
+      confirm: "Confirm"
+    edit-title: "Edit profile"
+    update-button: "Update"
+    password-tip: "leave blank if you don't want to change it"
+    current-password-tip: "we need your current password to confirm your changes"
+    waiting-confirmation: "Currently waiting confirmation"
+    cancel-account: "Cancel my account"
+    cancel-account-button: "Cancel my account"
+    unhappy: "Unhappy?"
+    sure: "Are you sure?"
+    back: "Back"
+
+# ############################################################################################
+# DEVISE
+# ############################################################################################
+
+  devise:
+    sessions:
+      user:
+        signed_in: "Succesfully signed in."
+        signed_out: "Successfuly signed out."
+    registrations:
+      user:
+        signed_up: "Succesfully signed up."
+    failure:
+      unauthenticated: 'You need to log in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'OH NOES! ERROR IN TEH EMAIL!'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
+    mailer:
+      reset-password-instructions:
+        title: "Hello"
+        paragraph-1: "Someone has requested a link to change your password. You can do this through the link below."
+        change-password: "Change my password"
+        paragraph-2: "If you didn't request this, please ignore this email."
+        paragraph-3: "Your password won't change until you access the link above and create a new one."
+    passwords:
+      title: "Change your password"
+      new-password: "New password"
+      submit: "Change my password"
+#Links
+  users-links:
+    login: "Log in"
+    signin-shared: "Already have an account? Log in"
+    signup: "Sign up"
+    signup-shared: "Not registered yet? Sign up"
+    forgot-password: "Forgot your password?"
+    send-password-instructions: "Send me instructions"
+    confirmation-instructions: "Didn't receive confirmation instructions?"
+    unlock-instructions: "Didn't receive unlock instructions?"
+    sign-in-with: "Sign in with"
+
+
+# ############################################################################################
+# USER MAILER
+# ############################################################################################
+
+  welcome-message:
+    h1: "Welcome to CodingAmigos"
+    paragraph-1: "You successfully registered with username:"
+    temporary-pass-1: "Your temporary password is:"
+    temporary-pass-2: "We suggest you to change it with your next login!"
+    paragraph-2: "To login into the app"
+    this-link: "click here"
+    thanks-for-joining: "Thanks for joining our community. If you need help getting started or have any questions, just drop a message."
+    have-a-nice-day: "Inspire & be inspired."
+    nina: "Nina Breznik,"
+  new-lead:
+    title: "Hello!"
+    paragraph-1: "There's a new job offer for you on"
+    description: "Description:"
+    paragraph-2: "You can read more about this job offer"
+    this-link: "on this link"
+    greeting: "Have an awesome day and lots of succces."
+    nina: "Nina Breznik,"
+
+
+
+# ############################################################################################
+# Page 1 - LEADS/INDEX (root page)
+# ############################################################################################
+
+# Lead body
+  leadsindex-lead:
+    business_type: "Expert needed"
+    location: "Country"
+    zip: "Zip"
+    link: "Website"
+    time: "When?"
+    description: "Description"
+    name: "Name"
+
+# Links
+  leadsindex-links:
+    address-book: "Reserved"
+
+# Notification
+  leadsindex-notification:
+    no-leads-available: "Currently there is no available leads."
+
+
+# ############################################################################################
+# Page 2 - LEADS/SHOW
+# ############################################################################################
+
+# Lead body
+  leadsshow-lead:
+    business_type: "Expert needed"
+    location: "Country"
+    zip: "Zip"
+    link: "Website"
+    time: "When?"
+    description: "Description"
+    name: "Name"
+    send-message:
+      placeholder: "Contact me"
+      submit: "Send"
+
+#Price
+    price: "Price: 10 €"
+
+# Links
+  leadsshow-links:
+    buy: "Buy"
+
+
+
+
+
+# ############################################################################################
+# Page 3 - ORDERS/SHOW
+# ############################################################################################
+
+# Lead body
+  ordersshow-lead:
+    location: "Country"
+    zip: "Zip"
+    time: "When?"
+    description: "Description"
+    name: "Name"
+    phone: "Phone"
+    email: "E-mail"
+    notes: "Notes"
+
+# Price
+    price: "Price: 10 €"
+
+# Links
+  ordersshow-links:
+    address-book: "Address book"
+    notes-save: "Save"
+    buy: "Buy"
+
+# Payment buttons
+  ordersshow-payment-buttons:
+    choose-payment-text: "Choose type of payment"
+    paypal-checkout: "Paypal"
+    wallet: "Wallet"
+    bank-transfer: "Bank transfer"
+
+
+# Notification
+  ordersshow-notification:
+    lead-not-available: "Currently there is no available leads."
+    successfully-paid-order: "Your payment was successfully processed."
+
+
+# ############################################################################################
+# Page 4 - STATIC_PAGES/PROFILE
+# ############################################################################################
+
+# Links
+  staticpagesprofile-links:
+    edit-profile: "Edit my profile"
+    logout: "Logout"
+    logged-as: "Logged in as"
+    sign-in: "Sign in"
+    sign-up: "Sign up"
+
+# Notification
+  staticpagesprofile-notification:
+    wallet: "My wallet status"
+    wallet-text: "You can top up your wallet when you buy a new lead. At your nex buy simply transfer desired amount. 10€ from that amount will be subtrackted for chosen lead and the rest will be added to your wallet."
+    wallet-buttons:
+      bank: "Top the wallet"
+    logged-in-as: "Logged in as"
+    not-logged-in: "Not logged in"
+    bought-leads: "# of project applications"
+    last-bought-lead: "Last project application"
+    no-bought-leads: "Currently you have 0 active projects."
+    you-need-to-sign-in: "You have to be signed in to see this information."
+
+
+# ############################################################################################
+# Page 5 - ORDERS/INDEX (ORDERS/ADDRESS_BOOK) (ORDERS/RESERVED)
+# ############################################################################################
+
+# Titles
+  ordersindex-titles:
+    reserved: "No reserved leads yet."
+    address-book: "No bought leads yet."
+
+# Lead body
+  ordersindex-lead:
+    location: "Country"
+    zip: "Zip"
+    time: "When"
+    description: "Project description"
+    name: "Name"
+    phone: "Phone"
+    email: "E-mail"
+    notes: "Notes"
+
+# Notifications
+  ordersindex-notifications:
+    customer-info: "Customer contact information"
+    customer-info-explanation: "available only if you buy this lead"
+    to-see-address-book: "To see customers in your Address book you need to"
+    signed_in_but_no_orders: "Here you will find all the leads, for which you didn't finish payment yet."
+    signed_in_but_no_orders: "Here you will find all the your bought leads - address book of your customers."
+# Buttons
+  ordersindex-buttons:
+    buy: "Buy"
+    remove-from-reserved: "Remove from reserved"
+    save: "Save"
+    signup: "Sign up"
+    login: "Login"
+
+# Users not signed_in text box
+  ordersindex_not_signed_in:
+    text_box: "On this page you can find all reserved leads - those that you maybe decide to buy in the next days. But to be able to see and add new reserved leads, you have to "
+
+
+
+# ############################################################################################
+# Page 6 - STATIC_PAGES/ABOUT (info)
+# ############################################################################################
+
+
+  staticpages-info:
+    title: "Welcome to CodingAmigos.co"
+    subtitle: "EARN MORE & WORK LESS"
+    welcome-text-1: "Create a portfolio and get more clients."
+    welcome-text-2: " is a professional marketplace for people who like what they do and are good at it. Sign Up for free and publish your successfully finished projects."
+    welcome-text-3: "Looking for Architect, Interior Designer or Construction Expert? Click FIND & HIRE and let us know what you need."
+    heart-section-1: "No provisions"
+    heart-section-2: "Selected professionals"
+    heart-section-3: "Open communication"
+    mailchimp:
+      title: "Subscribe to  e-magazine!"
+      placeholder: "Type your e-mail address"
+      submit: "Subscribe"
+    company:
+      name: " / Moj sosed d.o.o."
+      tax-id: "Tax ID: SI49595105"
+      bank-account: "Bank account: SI56 0410 2000 2065 311"
+      email: "contact@.com"
+      facebook: "Find us on Facebook"
+
+
+# ############################################################################################
+# Page 7 - ORDERS/BANK_TRANSACTION (info)
+# ############################################################################################
+
+  orders-banktransaction:
+    offer_title: "Offer for lead: "
+    offer_item_username: "User name"
+    offer_date: "Date"
+    offer_price: "Price"
+    offer_price_amount: "10 €"
+    offer_purpose: "Payment purpose"
+    offer_purpose_text: "Lead payment"
+    offer_account: "Account number"
+    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_company: "Company"
+    offer_company_mojsosed: "Moj sosed d.o.o."
+    offer_tax_id: "TAX ID"
+    offer_tax_id_mojsosed: "49595105"
+    offer_address: "Address"
+    offer_mojsosed_address: "Radehova 39"
+    offer_city: "City"
+    offer_mojsosed_city: "2230 Lenart"
+    offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
+    lead:
+      location: "Country"
+      zip: "Zip"
+      time: "When?"
+      description: "Description"
+      name: "Name"
+
+# ############################################################################################
+# Page 8 - STATICPAGES/NEW_LEAD_CONFIRMATION (for new leads)
+# ############################################################################################
+  new_lead_confirmation:
+    thank_you: "Thank you! Your inquiry was successfully sent."
+    text: "Providers will soon contact you with their offers."
+
+# ############################################################################################
+# Page 9 - WALLET/PAYMENT (top up the wallet)
+# ############################################################################################
+
+  wallet-payment:
+    offer_title: "Topping up the wallet"
+    offer_item_username: "User name"
+    offer_date: "Date"
+    offer_price: "Price"
+    offer_price_amount: "10 €"
+    offer_purpose: "Payment purpose"
+    offer_purpose_text: "Lead payment"
+    offer_account: "Account number"
+    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_company: "Company"
+    offer_company_mojsosed: "Moj sosed d.o.o."
+    offer_tax_id: "TAX ID"
+    offer_tax_id_mojsosed: "49595105"
+    offer_address: "Address"
+    offer_mojsosed_address: "Radehova 39"
+    offer_city: "City"
+    offer_mojsosed_city: "2230 Lenart"
+    offer_instructions: "After your payment is processed, we will add money to your wallet. You can check your status under Profile. For more information don't hesitate to contact us on info@sosed.si"
+
+
+# ############################################################################################
+# Page 10 - LEADS/NEW (for getting customer leads)
+# ############################################################################################
+
+  lead-new:
+    explanation-1: "BROWSE the list of providers"
+    explanation-2: "Receive offers"
+    explanation-3: "Start browsing"
+    title:  "FIND & HIRE THE BEST"
+    instructions: "Hand picked Architects, Interior Designers and Construction Experts. No provisions. Open communication with experts. Search, find, and hire today!"
+    form:
+      business-types:
+        field: "Who do you need to make your project work?"
+        field-1: "Architects & Building Designers"
+        field-2: "General Home Builders"
+        field-3: "Masonry"
+        field-4: "Interior Designers & Decorators"
+        field-5: "Kitchen and Bathroom Designers & Fitters"
+        field-6: "Kitchen and Bathroom Renovators"
+        field-7: "Landscape Architects & Garden Designers"
+        field-8: "Landscape Contractors"
+        field-9: "Stone, Paving & Concrete"
+        field-10: "Cheramics, Stone & Marble"
+        field-11: "Many different professionals"
+      country: "Country"
+      country-1: "Austria"
+      country-2: "Belgium"
+      country-3: "Bolgaria"
+      country-4: "Croatia"
+      country-5: "Cyprus"
+      country-6: "Czech Republic"
+      country-7: "Denmark"
+      country-8: "Estonia"
+      country-9: "Finland"
+      country-10: "France"
+      country-11: "Germany"
+      country-12: "Greece"
+      country-13: "Hungary"
+      country-14: "Ireland"
+      country-15: "Italy"
+      country-16: "Latvia"
+      country-17: "Lithuania"
+      country-18: "Luxemburg"
+      country-19: "Malta"
+      country-20: "Netherlands"
+      country-21: "Poland"
+      country-22: "Portugal"
+      country-23: "Romania"
+      country-24: "Slovakia"
+      country-25: "Slovenia"
+      country-26: "Spain"
+      country-27: "Sweden"
+      country-28: "United Kingdom"
+      country-29: "Non EU country"
+      country-prompt: "In which country"
+      form-time:
+        asap: "As soon as possible"
+        fourteendays: "In the next 14 days"
+        onetothreemonths: "In 1-3 months"
+        flexible: "Flexible"
+        consulting: "Need consulting/brainstorming"
+        informative: "Interested in informative price"
+      prompt-business-type: "Who are you looking for?"
+      prompt-time: "When?"
+      business_type: "Business type"
+      time: "Time"
+      zip: "Zip code"
+      link: "Links"
+      title: "What needs to be done?"
+      description: "Description"
+      name: "Your name"
+      email: "Email"
+      phone: "Phone"
+      submit: "Send"
+    back: "Back"
+    next: "Next"
+    submit: "Send"
+    paragraph-1: "Make your projects come true."
+    paragraph-2: "Search for and connect with talented providers from all over Europe."
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
+
+# ############################################################################################
+# Page 11 - ACTIVE ADMIN
+# ############################################################################################
+    flash_notice:
+      name_of_flashnotice: "Do you REALLY want make this article as startpage?"
+      action_Startpage: "Make this article startpage"
+      startpage: "This article is the startpage!"
+      online: "Change the visibility of the article?"
+      delete_article: "Realy want to delete this article?"
+    filter:
+      filter_titel: "Title"
+      filter_subtitel: "Subtitle"
+      filter_breadcrumb: "Breadcrumb title"
+      filter_url: "Website address"
+      filter_template: "Layout"
+      filter_created: "Created at"
+      filter_updated: "Edited at"
+      filter_parent: "Parent element"
+      filter_type: "Article type"
+    menue:
+      menue: "Menu"
+      name: "Name"
+      list: "list"
+      create: "create"
+    manage:
+      admin_article_management_content:
+        link1: "logout"
+        link1_text: "Article edit in Backend"
+        link2: "Set Article offline"
+        confirm2: "Set Page offline?"
+        link3: "Set Article offline"
+        confirm3: "Set page online?"
+    sessions:
+      login:
+        link1: "logout"
+        label_email: "E-Mail Address"
+        label_password: "Password"
+        submit: "Login"
+    register:
+      label_email: "E-Mail Address *"
+      label_username: 'Username *'
+      label_password: 'Password *'
+      label_pass_confirmation: 'Password confirmation *'
+      div: "I accept AGB & Privacy Policy *"
+      submit: "Sign-up"
+  active_admin:
+    dashboard: "Dashboard"
+    dashboard_welcome:
+      welcome: "Welcome to Active Admin. This is the standard dashboard page."
+      call_to_action: "See 'app/admin/dashboards.rb' to add new dashboard elements."
+    view: "Show"
+    devise:
+      login:
+        title: " -- administration"
+        remember_me: "Remember me"
+      links:
+        sign_up: "Sign up"
+        forgot_your_password: "Forgot password?"
+        resend_unlock_instructions: "Send email with unlock instructions"
+    edit: "Edit"
+    delete: "Delete"
+    delete_confirmation: "Do you really want to delete this element?"
+    new_model: "New %{model}"
+    create_model: "Create %{model}"
+    edit_model: "Edit %{model}"
+    delete_model: "Delete %{model}"
+    update_model: "Update %{model}"
+    details: "%{model} details"
+    cancel: "Cancel"
+    empty: "Empty"
+    previous: "Back"
+    next: "Next"
+    download: "Download:"
+    has_many_new: "Add %{model}"
+    has_many_delete: "Delete"
+    filter: "Filter"
+    clear_filters: "Remove filter"
+    search_field: "Search %{field}"
+    equal_to: "Equal to"
+    greater_than: "Greater than"
+    less_than: "Less than"
+    main_content: "Please, implement %{model}#main_content for content view."
+    logout: "Logout"
+    sidebars:
+      submit_widget: "Save selection"
+      submit_layout: "Submit layout"
+      widgets_options: "Widget options"
+      startpage_options: "Startpage options"
+      filters: "Filter"
+      layout: "Article type & layout"
+      image_module: "Image galery"
+      image_formates: "Image formats"
+      overview: "Overview"
+      menue_options: "Menu options"
+      link_checker: "Links confirmation"
+    per_page: "Entries per page"
+    pagination:
+      empty: "No %{model} found"
+      one: "Show <b>1</b> %{model}"
+      one_page: "Show <b>all %{n}</b> %{model}"
+      multiple: "Show %{model} <b>%{from}&nbsp;–&nbsp;%{to}</b> from <b>%{total}</b>"
+      entry:
+        one: "Entry"
+        other: "Entries"
+    any: "All"
+    blank_slate:
+      content: "There are no %{resource_name} yet."
+      link: "Create"
+    batch_actions:
+      labels:
+        set_article_online: "Set article online"
+        set_article_offline: "Set article offline"
+        set_menue_offline: "Set menu online"
+        set_menue_online: "Set menu offline"
+        reset_cache: "Clear cache"
+        send_default_conf_mails: "Send confirmation emails"
+        destroy: "Delete"
+      button_label: "Edit batch"
+      delete_confirmation: "Are you sure you want to delete those %{plural_model}? Undo option not available."
+      succesfully_destroyed:
+        one: "1 %{model} was successfully deleted"
+        other: "%{count} %{plural_model} was successfully deleted"
+      selection_toggle_explanation: "(reverse selection)"
+      link: "Create one"
+    comments:
+      as: "Comments"
+      title: "Edit"
+      title0: "Delete"
+      show: "Show"
+      delete_comment: "Delete comment?"
+      body: "Content"
+      author: "Author"
+      title: "Comment"
+      resource: "Resource"
+      add: "Add a Comment"
+      no_comments_yet: "No comments yet."
+      title_content: "Comments (%{count})"
+      errors:
+        empty_text: "Comment was not saved. Missing text"
+    settings:
+      as: "Website settings"
+      scope: "All website settings"
+      action_item:
+        link: "Undo"
+      form:
+        general: "General"
+      notice:
+        undid_event: "Undid"
+    articles:
+      as: "Article"
+      parent: "Content-Management"
+      tag-select-placeholder: "Select a tag"
+      filter:
+        default1: "Parent element"
+        default2: "Article type"
+        default3: "Title"
+        default4: "Filter criteria"
+        default5: "Internal tags"
+        default6: "Website"
+        default7: "Created"
+        default8: "Edited"
+      scope1: "All"
+      scope2: "Online"
+      scope3: "Offline"
+      form:
+        general: "General"
+        title_label: "Title"
+        label_hint: "Blank spaces and special characters can be used for title or heading for the article/site."
+        content_label: "Main Text-Field"
+        teaser_hint: "This text is used for short describtion of the article and can also be used for Facebook and Google."
+        tag_list_label: "List of internal tags"
+        tag_list_hint: "Tags are keywords, separated by comma, with which article is categorized."
+        frontent_tag_list_label:  "Filter criteria"
+        frontent_tag_list_hint: "Entries will be used as filtering options on overview pages."
+        active_label: "Active?"
+        active_hint: "Should this article stay active in the system and visible online?"
+        weiterer_inhalt: "Next content"
+        subtitle_label: "Subtitle"
+        context_info_hint: "This text is created for the sidebar."
+        summary_label: "Summary"
+        summary_hint: "Creates highlited summarized introduction of the main text"
+        metadescriptions: "Meta descriptions"
+        name_label: "Art"
+        name_hint: "Different meta tags and create OpenGraph settings can be defined."
+        value_label: "Value"
+        destroy_label: "Remove/set back"
+        destroy_hint: "Values will be removed or set back to default."
+        settings: "Settings"
+        breadcrump_label: "Breadcrumb title"
+        breadcrump_hint: "Short title for breadcrumb navigation"
+        url_name_label: "Website address for the article"
+        url_name_hint: "Can not contain more than 64 characters, no special or blank characters are accepted. If the page should be reachable under 'http://my-site.com/my-article', enter 'my-article'."
+        parent_id_label: "Parent article"
+        parent_id_hint: "Selection of the article that should be _above_ this article in the site structure. Example: http://www.my-site.com/above-article/my-article"
+        canonical_url_label: "Canonical url"
+        canonical_url_hint: "If content of this page has been published on another page, the url to that page should be entered to avoid Googles punishment for duplicated content."
+        active_since_label: "Active since"
+        active_since_hint: "Article active since i.e. example 24.10.2011 15:35"
+        enable_social_sharing_label: "show social sharing actions"
+        enable_social_sharing_hint: "Should visitors see links, which enables them to share this article in their social network?"
+        robots_no_index_label: "Article shouldn't be found through search engines."
+        robots_no_index_hint: "To avoid competition with other important pages on your own website, Google may here be told not to index this page"
+        cacheable_label: "Cacheable article"
+        cacheable_hint: "This article is allowed to be in cache"
+        commentable_label: "Commentable article"
+        commentable_hint: "Activate commenting function for this article?"
+        dynamic_redirection_label: "Automatic forwarding"
+        external_url_redirect_label: "Forwarding to exernal url"
+        redirect_link_title_label: "Name of external links"
+        redirection_target_in_new_window_label: "Forwarding open in the new window?"
+        author_label: "Author"
+        author_hint: "Who is the author of these articles?"
+        access_rights: "Access rights"
+        role: "All"
+        media: "Media"
+        JS_scripts: "JS-Scripts"
+      views:
+        article_type:
+          input: "test"
+        image_module_sidebar:
+          h5: "Insert photo gallery"
+          p: "All images that are provided with the following tags should be displayed"
+          placeholder: "Choose tags"
+          type_p: "Choose display style on website"
+          tag1: "Photo"
+          tag2: "Photos"
+          submit: "Choose photos"
+        layout_sidebar:
+          h5: "Article-Pagetype:"
+          submit: "Assign an article type"
+        link_checker:
+          h5: "Here you can check the functionality of all the links in this article."
+          h4: "All the links are ok!"
+          status: "Status: "
+          link: "Check links now"
+        link_checker_index:
+          link1: "Edit"
+          link2: "now"
+        select_article_type:
+          label_type: "Article type"
+          label_title: "Title"
+          hint_title: "Title/headline of the article/page can contain spaces and/or special characters"
+          label_short: "Shorter Title"
+          hint_short: "In URL for breadcrumb trail and for meta title of the page only 70 characters are allowed"
+          label_text: "Main text field"
+          hint_text: "The main text box will be used for the content of the entire page"
+          hint_teaser: "Text offers short describtion of the article. The description can also be used for Google & Facebook."
+          label_tags: "List of internal tags"
+          hint_tags: "Tags are values, separated by a comma, with which article is groupped internally"
+          label_filter: "Filter criteria"
+          hint_filter: "Here registered terms are offered on overview pages as filter options"
+        sort_articles_index:
+          inputs: "Manually sorting index"
+        toggle_expert_mode:
+          text1: "Expert-Modus deaktivieren"
+          text2: "Expert-Modus aktivieren"
+        widgets_sidebar:
+          h5: "The following widgets are displayed in addition to the standard widgets"
+          position: "Position: "
+      index:
+        website_title: "Website title"
+        website_url: "Website address"
+        active: "Active?"
+        article_type: "Article type"
+        permission: "Permission"
+        default: "Default"
+        restricted: "<span class='secured'>shortened</span>"
+        list_menu: "List menu items"
+        create_menu: "Create menu item for the article"
+        article_preview: "Preview if the article"
+        article_edit: "Edit article"
+        create_subarticle: "Create new sub article"
+        delete_article: "Delete article"
+        views:
+          inputs: "Overview Options"
+          label1: "Index of articles in the directory"
+          hint1: "All Articles beneath this Article are listed, except for this Article."
+          label2: "Pages"
+          hint2: "Which Pages should be displayed in the Overview?"
+      sidebar:
+        h5: "Menu items for this article already exist."
+        seo_link: "SEO view"
+        new_sub_article: "create subarticle"
+        div_link: "You can list them here"
+        div_link1: "create additional menu item"
+        h5_1: "Menu items for this article don't exist yet."
+        div_link2: "Create matching menu item"
+        h5_achtung: "ATTENTION!!! There"
+        h5_achtung2: "are other articles"
+        h5_achtung3: "is another article"
+        h5_achtung4: "with this url:"
+      member_action:
+        flash:
+          article_online: "This article is now online."
+          article_offline: "This article is now offline."
+          widgets: "Widgets added"
+          link_checker: "Links for this article will be inspected. This can take couple of minutes. Thank you for your patience."
+      batch_action:
+        cache: "Are you sure you want to clear the cache?"
+        flash:
+          cache: "Cache has been cleared."
+          set_article_online: "Article has been set online."
+          set_article_offline: "Article has been set offline."
+        confirm_online: "Are you sure you want to set article online?"
+        confirm_offline: "Are you sure you want to set article offline?"
+      action_item:
+        link_to:
+          article_preview: "Show article preview"
+          expert_modus: "Expert mode"
+          deactivate: "deactivate"
+          activate: "activate"
+          import: "Import"
+          undo: "Undo"
+    dashboards:
+      article_section: "Newest article"
+      title1: "Preview article"
+      title2: "Edit article"
+      title3: "Create new sub article"
+      widget_section: "Newest widget"
+      title4: "Edit widget"
+      new_link: "Create new article"
+    domains:
+      form:
+        hint: "This domain has been set as main domain. All canonical urls use this prefix"
+    imports:
+      link_to:
+        start_import: "Start import"
+        edit: "Edit"
+        delete: "Delete"
+        allocation: "Allocation"
+        edit_import: "Edit import"
+      title:
+        start_import: "Start import"
+        edit: "Edit"
+        delete: "Delete"
+      form:
+        select_file: "Choose data"
+        upload: "Upload"
+        csv_file: "Csv data"
+        hint: "Currently chosen data:"
+      flash:
+        member_action:
+          run: "Import has started."
+    linkcheck_articles:
+      link_to:
+        run: "Run link checker"
+    menues:
+      as: "Menus"
+      parent: "Content-Management"
+      active: "Active"
+      inactive: "Inactive"
+      labels:
+        title: "Target"
+        target: "Target"
+        css_class: "Css classes"
+        sorter: "Sorting number"
+      form:
+        generals:
+          general: "General"
+          title: "Title"
+          title_hint: "Title of menu items, visible on the website."
+          target: "Target"
+          target_hint: "Where should the menu items lead? If item should lead to 'http://my-site.com/my-article', then enter 'my-article'. No special special characters or blank spaces allowed."
+          parent_id: "Parent menu item"
+          parent_id_hint: "Under which menu should current item appear?"
+        options:
+          class: "foldable closed inputs"
+          option: "Options"
+          sorter_label: "Sorting number"
+          sorter_hint: "Menues will be sorted after this number - the higher, the further down the view"
+          checkbox_label: "Shown?"
+          checkbox_hint: "Should this menu item be visible on the page?"
+          css_class_label: "Css classes"
+          css_class_hint:  "Style classes for the menu item separated by spaces - special feature: 'hidden' makes the menu item invisible"
+          active_label: "Active?"
+          active_hint: "Should this menu item stay active in the system and visible online?"
+          remote_label: "Remote?"
+          remote_hint: "Should this menu item be sent through Ajax?"
+        access:
+          access_rights: "Access rights"
+          include_blank: "All"
+        details: "Details for extended menu"
+        image_label: "Photo"
+        image_hint: "Choose from uploaded photos in media List"
+        details_description_title: "Title"
+        details_decription_label: "Description"
+        details_description_call_to_action: "Call-to-action text"
+        index:
+          column: "Title"
+          title: "Edit menu item"
+          column1: "Target"
+          column2: "Active?"
+          column3: "Sort"
+          column4: "Access"
+          column5: "Article"
+          search_link: "search"
+          search_class: "list"
+          search_title: "List article"
+          search_link1: "create one"
+          search_class1: "create"
+          search_title1: "Generate article, matching menu item."
+        column:
+          edit: "Edit"
+          edit_title: "Edit menu item"
+          submenu: "New submenu"
+          submenu_class1: "New sub article"
+          submenu_title: "Create new sub menu item"
+          delete: "Delete"
+          delete_confirm: "Really delete menu items?"
+          delete_title: "Delete menue items"
+        sidebar:
+          link_name: "title"
+          url_path: "menu"
+          order_by: "title"
+        batch_action:
+          confirm: "Are you sure, you want to set menu items offline"
+          flash: "Menu items have been set offline"
+          confirm1: "Are you sure, you want to set menu items online"
+          flash1: "Menu items have been set online"
+          confirm_clone: "Replicate this menu?"
+          title_clone: "Replicated from:"
+          flash_clone: "Menu will be replicated"
+        member_action:
+          notice: "Undo:"
+        action_item:
+          link_to: "undo"
+    permissions:
+      as: "Permissions"
+      scope: "All"
+      index:
+        column: "Role"
+        title_edit: "edit"
+        confirm: "Delete comment?"
+        title_delete: "delete"
+      form:
+        include_blank: "All"
+      sidebar:
+        sidebar: "Sorting / weighting"
+        sidebar_info: "the higher the number, the more important is the access right: <b>10 is more important than 1</b>. <br/> If not defined, the role gets by default all the rights in this model"
+    roles:
+      as: "Roles"
+    seo_articles:
+      as: "SEO-Article"
+      scope1: "All"
+      scope2: "online"
+      scope3: "offline"
+      scope4: "no title tags"
+      scope5: "no Meta description"
+      index:
+        title_column: "Title"
+        tag_column: "Title tag"
+        meta_column: "Meta description"
+        search_column: "Search engines closed"
+        search_column_yes: "Yes"
+        search_column_no: "No"
+        links_column: "Links"
+        active_online: "online"
+        active_offline: "offline"
+      column:
+        title1: "Preview"
+        title2: "edit"
+        title3: "New subarticle"
+        title4: "delete"
+      collection_flash: "Checking all Links. This can last a few minutes."
+      action_link: "Link checker index"
+      action_link1: "Run link checker"
+    supports:
+      label: "Live support"
+      panel: "Support inquiry"
+      h3: "Instructions"
+      para1: "Here is how you require help: ..."
+      para_raw: "Request help!"
+      para2: "This service is supported by https://togetherjs.com"
+    translations:
+      as: "Translations"
+      all: "All"
+      general: "General"
+    uploads:
+      as: "Uploads/Media"
+      file: "File"
+      file_hint: "Upload a new picture for this resource, if the file name is the same!"
+      file_url_hint: "or a url to download an image"
+      content_type_hint: "e.g.: image/png, image/jpg, image/jpeg, application/pdf, application/octet-stream, ..."
+      preview: "Preview"
+      photo: "Photo Cut"
+      photo_hint: "Make a selection in the preview image above before saving"
+      data: "Data Name"
+      general: "General"
+      general_hint: "Tags are keywords, separated by comma, with which article is described."
+      general_label: "Tag list"
+      js: "JS-Scripts"
+      url: "url"
+      preview1: "preview"
+      tags: "Tags"
+      zip: "zip"
+      pack: "unpack"
+      title1: "Preview"
+      title2: "edit"
+      title3: "delete"
+      preview_row: "Preview"
+      original_row: "original"
+      format_original: "original => AxB>"
+      format_large: "large => 900x900>"
+      format_big: "big => 600x600>"
+      format_medium: "medium => 300x300>"
+      format_px250: "px250 => 250x250>"
+      format_px200: "px200 => 200x200>"
+      format_px150: "px150 => 150x150>"
+      format_thumb: "thumb => 100x100>"
+      format_mini: "mini => 50x50>"
+      unzip_notice: "File unzipped"
+    users:
+      as: "Users"
+      general: "General"
+      hint1: "Leave empty if password will not be changed."
+      hint2: "If Password has been changed, type it again."
+      history: "History"
+      label1: "Entry"
+      label2: "Editor"
+      hint3: "Enter your name here, so that the action can be assigned."
+      user: "User"
+    visitors:
+      status: "Status"
+      status1: "unlocked"
+      general: "General"
+      hint1: "Leave empty if password will not be changed."
+      hint2: "If password has been changed, type it again."
+      hint3: "Article id of runner/blogger"
+      status2: "closed"
+      flash: "This account has been"
+      yes_check: "yes"
+      no_check: "no"
+    widget:
+      as: "Widgets"
+      title: "Title"
+      css_class: "Css class"
+      id: "ID Name"
+      sorter: "Sorting number"
+      scope1: "All"
+      scope2: "Active"
+      scope3: "Not active"
+      scope4: "Standards"
+      general: "General"
+      label1: "Title"
+      label2: "Position"
+      label3: "Active?"
+      label4: "Standard?"
+      hint1: "Name of the widget"
+      hint2: "Name the title of the position in the page layout"
+      hint3: "Should this widget stay active in the System and visible online?"
+      hint4: "Confirm, if you want the widget to be shown on ever page"
+      layout_web: "Layout - website"
+      label_web: "Main text field"
+      hint_web: "Widget content for webpage, possible also in HTML"
+      layout_mobile: "Layout - mobile"
+      label_mobile: "Mobile text field"
+      hint_mobile: "Alternative widget content for mobile pages, possible also in HTML"
+      info: "Extended information"
+      label_info1: "Sorting number"
+      label_hint1: "After this number is sorted, the higher, the further down the view"
+      label_info2: "Css classes"
+      label_hint2: "Style classes for the menu item separated by spaces - special feature: 'hidden' makes the menu item invisible"
+      label_info3: "Id name"
+      label_hint3: "Unique identifier of this element within the site"
+      label_info4: "Description"
+      label_hint4: "Internal description of the widget"
+      time: "Time regulation"
+      time_label1: "Time regulated?"
+      time_label2: "Starting date"
+      time_label3: "Ending date"
+      time_label4: "Days, when alternative content should be shown"
+      time_hint1: 'Should this widget be visible differently on different days/hours?'
+      time_hint2: "From this date will Widget every Mon, Tue, ... be shown from xx:xx until xx:xx each day... If you leave date field empty, the time settings will apply to all chosen days."
+      time_hint3: "Until this date will Widget every Mon, Tue, ... be shown from xx:xx until xx:xx each day... If you leave date field empty, the time settings will apply to all chosen days."
+      access_rights: "Access rights"
+      article: "Assigned article"
+      article_label: "Article"
+      article_hint: "Selection of all the articles where widget is present."
+      article_placeholder: "Please select"
+      title: "Title"
+      title1: "Edit widget"
+      position: "Position"
+      active: "Active?"
+      online: "online"
+      offline: "offline"
+      sorternr: "Sorting number"
+      standard: "Default?"
+      css_classes: "Css classes"
+      yes: "Yes"
+      no: "No"
+      access: "Access"
+      title_widget_edit: "Edit widget"
+      title_widget_delete: "Delete widget"
+      widget: "Widget"
+      articles: "Articles"
+      revert_notice: "Undid"
+      undo: "Undo"
+    articletypes:
+      as: "Article types"
+      general: "General"
+      article_fields: "Article fields"
+      position_hint: "Field options of article type between first and last block"
+      foldable_hint: "Is this part foldable?"
+      closed_hint: "Is this part closed on load?"
+      expert_hint: "Is this part only visible in expert mode?"
+      sorter_hint: "Sort number/position"
+    authors:
+      as: "Authors"
+    shared:
+      views:
+        item:
+          link1: "edit"
+          title1: "Edit"
+          link2: "new"
+          title2: "New"
+  time:
+    formats:
+      long: "%d/%m/%Y %H:%M"
+
+# ############################################################################################
+# PROJECTS/SHOW
+# ############################################################################################
+
+  project-show:
+    edit: "Edit my project"
+    send-message: "Contact me"
+    get-in-touch: "Contact me"
+    message-subject: "is interested in"
+    submit: "Send"
+    data-filter-6: "Children area"
+    data-filter-7: "Working area"
+    data-filter-8: "Utility & Storage"
+    data-filter-9: "Entrance & Checkroom"
+    data-filter-10: "Corridor"
+    data-filter-11: "Stairs"
+    data-filter-12: "Basement"
+    data-filter-13: "Garage & Hobby"
+    data-filter-14: "House & Facades"
+    data-filter-15: "Surroundings"
+    data-filter-16: "Lights"
+    data-filter-17: "Art & Decor"
+
+# ############################################################################################
+# PROJECTS/INDEX
+# ############################################################################################
+
+  project-index:
+    data-filter-1: "CLIENT PROJECT - Check it out."
+    data-filter-2: "TEACHING/MENTORING - I can share my skills with you on this topic."
+    data-filter-3: "APP - Check it out, spread the word or connect your API."
+    data-filter-4: "IDEA - Would love to get some feedback and find collaborators."
+    data-filter-5: "OTHER"
+    # data-filter-7: "Working area"
+    # data-filter-8: "Utility & Storage"
+    # data-filter-9: "Entrance & Checkroom"
+    # data-filter-10: "Corridor"
+    # data-filter-11: "Stairs"
+    # data-filter-12: "Basement"
+    # data-filter-13: "Garage & Hobby"
+    # data-filter-14: "House & Facades"
+    # data-filter-15: "Surroundings"
+    # data-filter-16: "Lights"
+    # data-filter-17: "Art & Decor"
+
+# ############################################################################################
+# PROJECTS/NEW
+# ############################################################################################
+
+  project-new:
+    exaplanation-1: "Upload your project"
+    exaplanation-2: "Add links"
+    exaplanation-3: "Create a portfolio"
+    title: "ADD A PROJECT TO YOUR PORTFOLIO"
+    instructions: "Working on (or finished) a project, app or service? Share it with your amigos."
+    instructions-additional: "First you need to sign-in."
+    form:
+      business-type-prompt: "What is your project about?"
+      title: "Project title"
+      description: "Description"
+      submit: "Add"
+    help:
+      title: "On CodingAmigos you can list your company's projects for free."
+      text: "Do you have a portfolio of successful projects? List them on CodingAmigos and let customers & partners find you."
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
+# ############################################################################################
+# PROJECTS/EDIT
+# ############################################################################################
+
+  project-edit:
+    title: "Edit your project"
+    form:
+      submit: "Confirm changes"
+
+# ############################################################################################
+# USERS/SHOW
+# ############################################################################################
+
+  user-show:
+    country: "Country"
+    city: "City"
+    hourly-rate: "Hourly rate"
+    business_type: "Payment terms"
+    name: "Contact name"
+    bio: "Bio"
+    services: "Services"
+    phone: "Phone"
+    link: "Web page"
+    tax-id: "Tax id"
+    send-message:
+      placeholder: "Contact me"
+      submit: "Send"
+    edit-profile: "Edit my profile"
+    contact-provider: "Contact me"
+
+  # ############################################################################################
+  # USERS/INDEX
+  # ############################################################################################
+
+  users-index:
+    field-1: "Architects & Building Designers"
+    field-2: "General Home Builders"
+    field-3: "Masonry"
+    field-4: "Interior Designers & Decorators"
+    field-5: "Kitchen and Bathroom Designers & Fitters"
+    field-6: "Kitchen and Bathroom Renovators"
+    field-7: "Landscape Architects & Garden Designers"
+    field-8: "Landscape Contractors"
+    field-9: "Stone, Paving & Concrete"
+    field-10: "Cheramics, Stone & Marble"
+    field-11: "Other"
+
+# ############################################################################################
+# TOP MENU
+# ############################################################################################
+
+  top-menu:
+    my-profile: "MY PROFILE"
+    edit-profile: "EDIT PROFILE"
+    available-jobs: "JOB OFFERS"
+    dashboard: "DASHBOARD"
+    professionals: "Browse profiles"
+    post-a-job: "FIND & HIRE"
+    providers-list: "PROVIDERS"
+    messages: "MESSAGES"
+    info: "INFO"
+    sign-out: "SIGN OUT"
+    publish-project: "PUBLISH A PROJECT"
+    find-provider: "FIND & HIRE"
+    sign-in: "LOG IN"
+    sign-up: "SIGN UP"
+    signin-signup: "LOG IN/SIGN UP"
+
+
+
+# ############################################################################################
+# MAILBOXER
+# ############################################################################################
+
+  mailboxer:
+    message_mailer:
+      subject_new: " new message %{subject}"
+      subject_reply: "CodingAmigos new reply %{subject}"
+    notification_mailer:
+      subject: " new notification: %{subject}"
+    conversations-index:
+      title: "Conversations"
+      new-message: "Send new message"
+      submit: "Send"
+
+# ############################################################################################
+# ACTIVERECORD
+# ############################################################################################
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              invalid: "is not correct"
+      messages:
+        not_saved: "Changes have not been saved."

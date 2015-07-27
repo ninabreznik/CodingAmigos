@@ -1,0 +1,13 @@
+<h1>Conversations</h1>
+<h2>Prejeta pošta</h2>
+<ul>
+  <%= render collection: mailbox.inbox, partial: 'conversation' %>
+</ul>
+<h2>Poslano</h2>
+<ul>
+  <%= render collection: mailbox.sentbox, partial: 'conversation' %>
+</ul>
+<h2>Izbrisano</h2>
+<ul>
+  <%= render collection: mailbox.trash, partial: 'conversation' %>
+</ul>

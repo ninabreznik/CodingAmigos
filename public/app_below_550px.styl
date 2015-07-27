@@ -1,0 +1,1111 @@
++below(550px)
+  /* :::::::::::: APPLICATION.html.erb => menu buttons & login :::::::::::: */
+  body
+    margin 0px
+    padding 0px
+    .bottom_menu_bar
+      background-color Menu-Bottom-Color
+      position fixed
+      bottom 0px
+      z-index 999
+      width 100%
+      font-weight bold
+      font-family App-Font-Family
+      letter-spacing 1.4px
+      .button_home
+        bottomButtonMixin(defaultFontSize = 10px)
+        span
+          display none
+      .fa.fa-home
+        font-size 21px
+        padding-right 5px
+        &:hover
+            color Lead-Orange
+      .button_reserved
+        bottomButtonMixin(defaultFontSize = 10px)
+        span
+          display none
+      .fa.fa-comments
+        font-size 21px
+        padding-right 5px
+      .button_address_book
+        bottomButtonMixin(defaultFontSize = 10px)
+        span
+          display none
+      .fa.fa-users
+        font-size 21px
+        padding-right 5px
+      .button_profile
+        bottomButtonMixin(defaultFontSize = 10px)
+        span
+          display none
+      .fa.fa-cog
+        font-size 21px
+        padding-right 5px
+        text-align center
+    a[href="#top"]
+      text-decoration none
+      opacity 0.2
+      position fixed
+      bottom 50px
+      right 30px
+      font-size 48px
+      fa.fa-arrow-circle-up
+      &:hover
+        opacity 0.8
+        color Lead-Orange
+    /* :::::::::::: LEADS/INDEX => homepage :::::::::::: */
+    .body_leads_index
+      body-mixin()
+      background-color #F6F6F6
+      #filters
+        list-style-type: none;
+        text-align: center;
+        margin: 0 0% 200px 5%;
+      #filters li
+        button(#F6F6F6)
+        font-size: 10px;
+        float: left;
+        padding: 6px 0 4px 0;
+        cursor: pointer;
+        margin: 0 1% 0 1%;
+        width: 45%;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      .columns
+        column-mixin(margin-top = 55px)
+        .wookmark
+          wookmarkMixin()
+          top 100px
+          .lead_box
+            leadBoxMixin()
+            .lead_title
+              opacity 0.85
+              background-color #F6F6F6
+              padding 15px
+              color Offer-Font-Color
+              font-weight bold
+              font-size 14px
+              .fa.fa-star
+                color #fcd229
+                font-size 16px
+                shift 0.05
+                &:hover
+                  color Offer-Font-Color
+            .lead_body
+              font-size 14px
+              padding 15px
+              padding-bottom 0px
+              padding-left 0px
+              -webkit-font-smoothing: antialiased
+              -moz-osx-font-smoothing: grayscale
+              color Offer-Font-Color
+              line-height 150%
+              width 300px
+              .lead_subtitle
+                font-weight bold
+                -webkit-font-smoothing: antialiased
+                padding-top 7px
+      .leads_index_no_leads_available
+        position: absolute
+        margin-top 20px
+        margin-left 50px
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        position fixed
+        blur-mixin(intensity = 0px)
+        padding: 50px;
+        top: 200px;
+        font-size 12px
+        font-weight bold
+        -webkit-font-smoothing: antialiased
+        max-width 550px
+        min-width 200px
+        color: white;
+        letter-spacing: -1px;
+        line-height 150%
+    /* :::::::::::: LEADS/show => individual lead :::::::::::: */
+    .body_leads_show
+      body-mixin(backgroundImage: url(/images/interior2.png))
+      padding-bottom 100px
+      .back_to_main_page_button
+        width 100%
+        height 100%
+        position absolute
+        top 0
+        left 0
+      .lead_show
+        left 5px
+        opacity 0.9
+        top 30px
+        background: #FEFEFE;
+        border-radius 6px
+        border: 2px solid #FAFAFA;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        opacity: 0.9;
+        margin 29px 0px 80px 0px
+        padding 4.5%
+        width 98%
+        min-width 330px
+        -webkit-column-break-inside: avoid
+        -moz-column-break-inside: avoid
+        column-break-inside: avoid
+        background-color white
+        line-break 1px
+        .lead_show_title
+          background-color #F6F6F6
+          padding 18px
+          margin-bottom 10px
+          font-weight bold
+          text-align center
+          -webkit-font-smoothing: antialiased
+          font-size 28px
+        .lead_show_body
+          font-size 20px
+          padding-top 0px
+          -webkit-font-smoothing: antialiased
+          -moz-osx-font-smoothing: grayscale
+          color Offer-Font-Color
+          line-height 150%
+          .lead_show_items_long
+            width 95%
+            padding-left 0px
+          .lead_show_items_short,
+          .lead_show_items_long
+            display inline-block
+            vertical-align top
+            .lead_show_item img
+              width 330px
+            .lead_show_item
+              -webkit-font-smoothing: antialiased
+              margin-top 10px
+              line-height 150%
+              padding-bottom 10px
+              .lead_show_subtitle
+                font-weight bold
+                display inline-block
+        .lead_show_buy input,
+        .lead_show_buy a
+          shift 0.3
+          margin 0px 0 40px 0px
+          button(color = Lead-Orange-dark)
+          background-color Lead-Orange
+          font-size 14px
+    /* :::::::::::: ORDERS/show => buy lead :::::::::::: */
+    .body_orders_show
+      body-mixin(backgroundImage: url(/images/interior3.png))
+      padding-bottom 100px
+      .back_to_main_page_button
+        width 100%
+        height 100%
+        position absolute
+        top 0
+        left 0
+      .order_show
+        shift 0.03
+        opacity 0.9
+        margin 29px 0px 0px 0px
+        left 90px
+        width 70%
+        max-width 550px
+        min-width 200px
+        -webkit-column-break-inside: avoid
+        -moz-column-break-inside: avoid
+        column-break-inside: avoid
+        background-color white
+        line-break 1px
+        .order_show_title
+          background-color Lead-Orange
+          padding 18px
+          margin-bottom 10px
+          font-weight bold
+          text-align center
+          -webkit-font-smoothing: antialiased
+          font-size 28px
+        .lead_show_body
+          font-size 20px
+          padding-left 25px
+          -webkit-font-smoothing: antialiased
+          -moz-osx-font-smoothing: grayscale
+          color Offer-Font-Color
+          line-height 150%
+          .lead_show_items_long
+            width 90%
+            padding-left 0px
+          .lead_show_items_short_additional
+            padding 5px
+            width 100%
+            background-color #F6F6F6
+            blur-mixin(intensity = 0.7px)
+          .lead_show_items_short,
+          .lead_show_items_long,
+          .lead_show_items_short_additional
+            display inline-block
+            vertical-align top
+            .lead_show_item
+              -webkit-font-smoothing: antialiased
+              margin-top 10px
+              line-height 150%
+              padding-bottom 10px
+              .lead_show_subtitle
+                font-weight bold
+                display inline-block
+        .order_show_buy_popup
+          shift 0.1
+          font-size 16px
+          line-height 130%
+          color black
+          border-radius 4px
+          background-color #F6F6F6
+          padding 15px
+          width 85%
+          text-align center
+          .order_show_buy_popup_item
+            button(color = Lead-Blue)
+            padding 5px
+            padding-top 15px
+            padding-bottom 15px
+            font-size 12px
+            margin-bottom 10px
+            margin-top 10px
+            text-align center
+            width 80%
+        .payment_buttons_choose_payment_text
+          text-align center
+          padding 30px 10px 20px 0px
+        .order_show_buy_buttons
+          padding 7px
+          shift 0.1
+          width 50px
+          .order_show_buy
+            display inline-block
+          .order_show_buy input,
+          .order_show_buy a
+            margin-bottom 2px
+            button(color: Lead-Orange)
+            font-size 22px
+      .order_show_notes
+        margin-top 5px
+        margin-bottom 50px
+        font-size 20px
+        .order_show_notes_title
+          padding 7px
+          margin-top 40px
+          margin-bottom 4px
+          color Offer-Font-Color
+          font-weight bold
+          width 150px
+        #order_notes
+          position relative
+          blur-mixin(intensity = 0.7px)
+          background: rgb(0, 0, 0); /* fallback color */
+          background-color white
+          opacity 0.95
+          -webkit-column-break-inside: avoid
+          -moz-column-break-inside: avoid
+          column-break-inside: avoid
+          text-decoration none
+          color Offer-Font-Color
+          padding 20px
+          font-size 16px
+          -webkit-font-smoothing: antialiased
+          height 300px
+          width 95%
+          max-width 550px
+          min-width 200px
+          margin-bottom 7px
+          margin-top 7px
+          line-break 1px
+          border 2px solid #F6F6F6
+          &:hover
+            background-color #F0F0F0
+        .order_show_notes_submit input
+        .order_show_notes_submit a
+          shift 0.6
+          margin-top 10px
+          margin-bottom 40px
+          margin-right 5px
+          button(color = Lead-Orange-dark)
+    /* :::::::::::: BANK TRANSACTION => offer for the lead :::::::::::: */
+    .body_bank_transaction
+      body-mixin(backgroundImage: url(/images/interior4.png))
+      margin-top 29px
+      .offer
+        center(550px)
+        opacity 0.95
+        width 95%
+        position relative
+        top 10px
+        padding 40px
+        padding-top 70px
+        padding-bottom 70px
+        background-color white
+        .offer_title
+          color Offer-Font-Color
+          font-weight bold
+          font-size 28px
+          padding-bottom 60px
+        .offer_company_info
+          color Offer-Font-Color
+          border 1px solid #e7e7e7
+          box-shadow inset 0 0 0 0 #CCC
+          border-radius 4px
+          padding 4px 7px 4px 10px
+          background-color Lead-Subtitle
+        .offer_company_info td:last-child
+          text-align left
+        .offer_company_info td:first-child
+          text-align left
+          width 109px
+        .offer_date
+          color Offer-Font-Color
+          font-size 13px
+          margin 10px 10px 20px 10px
+          text-align left
+        .offer_sosed_info
+          margin-top 20px
+          color Offer-Font-Color
+          text-align left
+          border 1px solid #e7e7e7
+          box-shadow inset 0 0 0 0 #CCC
+          border-radius 4px
+          .offer_sosed_info_price td,
+            font-weight bold
+            padding 30px 30px 15px 15px
+            font-size 16px
+            background-color Lead-Subtitle
+          .offer_sosed_info_item td
+            background-color Lead-Subtitle
+            padding 15px 30px 10px 15px
+            font-size 12px
+        .offer_show_lead
+          margin-top 37px
+          padding-bottom 20px
+          height 30%
+          vertical-align bottom
+          -webkit-column-break-inside: avoid
+          -moz-column-break-inside: avoid
+          column-break-inside: avoid
+          background-color white
+          background-clip padding-box
+          border-radius 4px
+          box-shadow 0 1px 2px rgba(0, 0, 0, 0.05)
+          border 1px solid #ccc
+          line-break 1px
+          .offer_show_lead_title
+            background-color Lead-Orange
+            border-top-left-radius 4px
+            border-top-right-radius 4px
+            padding 10px
+            font-weight bold
+            -webkit-font-smoothing: antialiased
+            font-size 20px
+            border-bottom 1px solid #e7e7e7
+          .offer_show_lead_body
+            font-size 16px
+            padding-top 3px
+            padding-left 25px
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+            color Offer-Font-Color
+            line-height 150%
+            width 280px
+            .offer_show_lead_subtitle
+              font-weight bold
+              -webkit-font-smoothing: antialiased
+              margin-top 20px
+              margin-right 15px
+            .ordersindex-notifications.customer-info
+              color red
+        .offer_instructions
+          margin-top 20px
+          font-size 12px
+          font-weight bold
+    /* :::::::::::: ORDERS/RESERVED => Reserved Leads :::::::::::: */
+    .body_orders_reserved
+      body-mixin(backgroundImage: url(/images/interior5.png))
+      .address_book_reserved_leads
+        opacity 0.9
+        shift(0.37)
+        margin-top 29px
+        font-size 20px
+        font-weight bold
+      .columns
+
+        .wookmark
+          wookmarkMixin()
+          .lead_box
+            leadBoxMixin()
+            .address_book_lead_title
+              opacity 0.85
+              background-color Lead-Orange
+              padding 15px
+              color Offer-Font-Color
+              font-weight bold
+              font-size 14px
+            .address_book_lead_body
+              font-size 14px
+              padding 15px
+              -webkit-font-smoothing: antialiased
+              -moz-osx-font-smoothing: grayscale
+              color Offer-Font-Color
+              line-height 150%
+              width 280px
+              .address_book_lead_subtitle
+                font-weight bold
+                -webkit-font-smoothing: antialiased
+                padding-top 7px
+            .address_book_lead_notification
+              font-size 14px
+              padding 10px
+              -webkit-font-smoothing: antialiased
+              -moz-osx-font-smoothing: grayscale
+              color Offer-Font-Color
+              line-height 150%
+              font-weight bold
+              padding-top 7px
+              .address_book_lead_notification_explanation
+                font-weight normal
+            .address_book_buttons
+              margin-top 20px
+              .address_book_buy_button
+                margin-left 80px
+                button(color = Lead-Orange-dark)
+              .address_book_remove_button input,
+              .address_book_remove_button a
+                margin 10px 0px 5px 50px
+                button(color = Lead-Orange-dark)
+                decoration none
+    .body_dummy_orders_reserved
+      position relative
+      blur-mixin(intensity = 1.1px)
+    .reserved_link_to_signup
+      position: absolute
+      margin-top 20px
+      margin-left 10%
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.85);
+      position fixed
+      padding: 50px;
+      top: 200px;
+      font-size 12px
+      font-weight bold
+      -webkit-font-smoothing: antialiased
+      max-width 550px
+      min-width 200px
+      color: white;
+      letter-spacing: -1px;
+      line-height 150%
+      .address_book_signin
+        color Lead-Orange
+    /* :::::::::::: ORDERS/ADDRESS_BOOK => Bought Leads :::::::::::: */
+    .body_orders_address_book
+      body-mixin(backgroundImage: url(/images/interior6.png))
+      .columns
+        column-mixin(defaultTop: 55px)
+        .wookmark
+          wookmarkMixin()
+          .lead_box
+            mobileLeadBoxMixin()
+              width
+            .address_book_lead_title
+              opacity 0.85
+              background-color Lead-Blue
+              padding 15px
+              color Offer-Font-Color
+              font-weight bold
+              font-size 14px
+            .address_book_lead_body
+              font-size 14px
+              padding 15px
+              -webkit-font-smoothing: antialiased
+              -moz-osx-font-smoothing: grayscale
+              color Offer-Font-Color
+              line-height 150%
+              width 280px
+              .address_book_lead_subtitle
+                font-weight bold
+                -webkit-font-smoothing: antialiased
+                padding-top 7px
+            .address_book_lead_notes
+              padding 5px
+              #order_notes
+                background-color white
+                position relative
+                text-decoration none
+                color Offer-Font-Color
+                padding 7px
+                font-size 12px
+                height 150px
+                width 100%
+                vertical-align bottom
+                -webkit-column-break-inside: avoid
+                -moz-column-break-inside: avoid
+                column-break-inside: avoid
+                margin 7px 0px 7px 0px
+                line-break 1px
+                border 2px solid #82c0c7
+              .address_book_lead_notes_button input,
+              .address_book_lead_notes_button a
+                button(color = Lead-Orange-dark)
+                shift(0.66)
+                margin-bottom 7px
+                margin-top 3px
+            .address_book_link_to-signup
+              font-size 12px
+      .address_book_bought_leads
+        font-size 20px
+        font-weight bold
+        width 70%
+        max-width 1100px
+        min-width 1050px
+        margin-top 100px
+        margin-left 450px
+    .body_dummy_orders_address_book
+      blur-mixin(intensity = 1.1px)
+    .address_book_link_to_signup
+      position: absolute
+      margin-top 20px
+      margin-left 10%
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.85);
+      position fixed
+      padding: 50px;
+      top: 200px;
+      font-size 12px
+      font-weight bold
+      -webkit-font-smoothing: antialiased
+      max-width 550px
+      min-width 200px
+      color: white;
+      letter-spacing: -1px;
+      line-height 150%
+      .address_book_signup,
+      .address_book_signin
+        color Lead-Orange
+    /* :::::::::::: DEVISE/LOGIN (sessions/new)  :::::::::::: */
+    .body_devise_login
+      body-mixin(backgroundImage: url(/images/cream_pixels.png))
+      margin-top 59px
+      padding-top 20px
+      padding-bottom 100px
+      .login
+        padding-top 30px
+        margin-left 70px
+        .login_title
+          font-size 28px
+          font-weight bold
+          margin-bottom 20px
+        .login_form_email,
+        .login_form_password
+          font-size 14px
+          font-weight bold
+          margin-bottom 14px
+          #user_email,
+          #user_password
+            padding 4px
+            border-radius 4px
+            margin-top 4px
+            height 30px
+            width 200px
+            border 1px solid #E8E8E8
+        .login_form_remember_me
+          font-size 14px
+          font-weight bold
+        .login_form_submit input
+        .login_form_submit a
+          position relative
+          padding 4px
+          padding-left 20px
+          padding-right 20px
+          margin-top 10px
+          margin-bottom 10px
+          button(color = Lead-Orange-dark)
+        .login_shared_links
+          font-size 14px
+          &:hover
+            text-decoration underline
+    /* :::::::::::: DEVISE/SIGNUP (registrations/new) :::::::::::: */
+    .body_devise_signup
+      body-mixin(backgroundImage: url(/images/cream_pixels.png))
+      margin-top 59px
+      padding-top 20px
+      padding-bottom 1050px
+      .signup
+        width 90%
+        padding-top 30px
+        margin-left 70px
+        .signup_title
+          font-size 28px
+          font-weight bold
+          margin-bottom 20px
+        .signup_form_email,
+        .signup_form_password,
+        .signup_form_password_confirmation
+          font-size 14px
+          font-weight bold
+          margin-bottom 14px
+          #user_email,
+          #user_password,
+          #user_password_confirmation
+            padding 4px
+            border-radius 4px
+            margin-top 4px
+            height 30px
+            width 200px
+            border 1px solid #E8E8E8
+        .signup_form_submit input
+        .signup_form_submit a
+          position relative
+          padding 4px
+          padding-left 20px
+          padding-right 20px
+          margin-top 10px
+          margin-bottom 10px
+          button(color = Lead-Orange-dark)
+          background-color Lead-Orange
+        .signup_shared_links
+          font-size 14px
+          &:hover
+            text-decoration underline
+    /* :::::::::::: DEVISE/PASSWORD/NEW (passwords/new) :::::::::::: */
+    .body_devise_password_new
+      body-mixin(backgroundImage: url(/images/cream_pixels.png))
+      margin-top 59px
+      padding-top 20px
+      padding-bottom 1050px
+      .password_new
+        padding-top 30px
+        margin-left 70px
+        .password_new_title
+          font-size 28px
+          font-weight bold
+          margin-bottom 20px
+        .password_new_form_email
+          font-size 14px
+          font-weight bold
+          margin-bottom 14px
+          #user_email
+            padding 4px
+            border-radius 4px
+            margin-top 4px
+            height 30px
+            width 300px
+            border 1px solid #E8E8E8
+        .password_new_form_submit input
+        .password_new_form_submit a
+          margin-top 10px
+          margin-bottom 10px
+          button(color = Lead-Orange-dark)
+          background-color Lead-Orange
+        .password_new_shared_links
+          font-size 14px
+          &:hover
+            text-decoration underline
+    /* :::::::::::: DEVISE/USERS/EDIT (registrations/new) :::::::::::: */
+    .body_devise_users_edit
+      body-mixin(backgroundImage: url(/images/cream_pixels.png))
+      margin-top 59px
+      padding-top 20px
+      padding-bottom 100px
+      .user_edit
+        padding-top 30px
+        margin-left 70px
+        .user_edit_title
+          font-size 28px
+          font-weight bold
+          margin-bottom 20px
+        .user_edit_form_email,
+        .user_edit_form_password,
+        .user_edit_form_password_confirmation,
+        .user_edit_form_current_password
+          font-size 14px
+          font-weight bold
+          margin-bottom 14px
+          #user_email,
+          #user_password,
+          #user_password_confirmation,
+          #user_current_password,
+          #user_first_name,
+          #user_surname,
+          #user_city,
+          #user_bio,
+          #user_business_type,
+          #user_service,
+          #user_company,
+          #user_tax_id,
+          #user_website,
+          #user_phone
+            padding 4px
+            border-radius 4px
+            margin-top 4px
+            height 30px
+            width 200px
+            border 1px solid #E8E8E8
+          #user_bio
+            width 67%
+            height 230px
+        .user_edit_form_submit input
+        .user_edit_form_submit a
+          margin-top 10px
+          margin-bottom 10px
+          button(color = Lead-Orange-dark)
+        .user_edit_cancel_acount,
+        .user_edit_unhappy,
+        .user_edit_back
+          font-size 14px
+          &:hover
+            text-decoration underline
+        .user_edit_button_cancel_account input
+        .user_edit_button_cancel_account a
+          margin-top 10px
+          margin-bottom 10px
+          button(color = Lead-Orange-dark)
+    /* :::::::::::: LEADS/NEW (new lead - for end customers (B2C))  :::::::::::: */
+    .body_leads_new
+      margin-top 33px
+      font-family App-Font-Family
+      .lead_new_photo
+        background-image  url(/images/interior1.png)
+        background-image  backgroundImage
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed
+        padding-top 20px
+        padding-bottom 1000px
+        .lead_new
+          span(1.5/3)
+          background-color black
+          padding-bottom 14px
+          margin-top 30px
+          margin-bottom 40px
+          .lead_new_title
+            -webkit-font-smoothing: antialiased
+            color Lead-Orange
+            padding-top 20px
+            padding-left 20px
+            padding-right 20px
+            font-size 24px
+            font-weight bold
+            margin-bottom 20px
+            line-height 120%
+          .lead_new_instructions
+            -webkit-font-smoothing: antialiased
+            padding-left 20px
+            padding-right 20px
+            color white
+            font-size 17px
+            margin-bottom 40px
+            line-height 1.5em
+          .lead_new_form_business_type,
+          .lead_new_form_time,
+          .lead_new_form_zip,
+          .lead_new_form_location,
+          .lead_new_form_description,
+          .lead_new_form_name,
+          .lead_new_form_email,
+          .lead_new_form_phone,
+          .lead_new_form_property_type,
+          .lead_new_form_material_supply
+            color white
+            padding-left 20px
+            padding-right 20px
+            font-size 12px
+            margin-bottom 14px
+            #lead_business_type,
+            #lead_time,
+            #lead_location,
+            #lead_property_type,
+            #lead_material_supply
+              color Offer-Font-Color
+              font-weight bold
+              font-size 10px
+              padding 2px
+              border-radius 4px
+              margin-top 4px
+              height 30px
+              width 90%
+              border 1px solid #E8E8E8
+            #lead_name,
+            #lead_email,
+            #lead_phone
+              center()
+              padding 4px
+              border-radius 4px
+              margin-top 2px
+              margin-left 0px
+              font-size 12px
+              height 30px
+              width 90%
+              border 1px solid #E8E8E8
+            #lead_zip,
+            #lead_link,
+            #lead_location
+              color Offer-Font-Color
+              font-weight bold
+              center()
+              padding 4px
+              border-radius 4px
+              margin-top 2px
+              margin-left 0px
+              font-size 12px
+              height 30px
+              width 90%
+              border 1px solid #E8E8E8
+            #lead_description
+              color Offer-Font-Color
+              font-weight bold
+              center()
+              padding 4px
+              border-radius 4px
+              margin-top 2px
+              margin-left 0px
+              font-size 12px
+              height 70px
+              width 90%
+              border 1px solid #E8E8E8
+          .lead_new_form_remember_me
+            font-size 10px
+          .lead_new_form_submit input
+          .lead_new_form_submit a
+            shift 0.49
+            color red
+            button(color = Lead-Orange-dark)
+          .lead_new_shared_links
+            font-size 10px
+            &:hover
+              text-decoration underline
+        .lead_new_explanation
+          span(1/3)
+          margin-left 25px
+          margin-top 60px
+          padding 5px
+          font-size 16px
+          font-weight bold
+          color white
+          background-color black
+          .lead_new_explanation_first,
+          .lead_new_explanation_second,
+          .lead_new_explanation_third
+            margin-left 0px
+            padding-bottom 30px
+            width 100%
+            text-align center
+            a
+              color Lead-Orange
+              &:hover
+                opacity 0.8
+            .fa.fa-pencil,
+            .fa.fa-files-o,
+            .fa.fa-check-square-o
+              font-size 30px
+              padding-right 10px
+              padding-bottom 10px
+      .lead_new_we_help
+        padding 80px 40px 80px 40px
+        background-color white
+        color #606060
+        .lead_new_we_help_title
+          font-size 19px
+          text-transform: uppercase
+          text-align center
+          color Lead-Orange
+          margin-bottom 50px
+        .lead_new_we_help_categories_title
+          font-size 18px
+          font-weight bold
+          text-align center
+          margin-bottom 60px
+        .lead_new_we_help_categories_list
+          text-align center
+          font-size 14px
+          shift 0.03
+          .fa.fa-check-square-o
+            padding 10px 10px 0px 0px
+            font-size 18px
+            color #606060
+            opacity 0.8
+      .lead_new_company_info
+        padding 50px 0px 50px 0px
+        background-color black
+        text-align center
+        font-size 18px
+        .lead_new_company_info_name
+          font-size 16px
+          text-transform: uppercase
+          color white
+          font-weight bold
+        .lead_new_company_info_name,
+        .lead_new_company_info_contact
+          padding 7px 0px 0px 0px
+          color white
+    /* :::::::::::: WALLET_PAYMENT => adding money to the wallet :::::::::::: */
+    /* :::::::::::: same styling also for ORDERS/WALLET_PAYMENT_FOR LEADS:::::::::::: */
+    .body_wallet_payment
+      body-mixin(backgroundImage: url(/images/interior6.png))
+      margin-top 29px
+      .wallet_payment_offer
+        center(720px)
+        opacity 0.95
+        width 95%
+        position relative
+        top 10px
+        padding 40px
+        padding-top 70px
+        padding-bottom 70px
+        background-color white
+        .wallet_payment_offer_title
+          center(550px)
+          color Offer-Font-Color
+          font-weight bold
+          font-size 28px
+          padding-bottom 50px
+        .wallet_payment_offer_promotion
+          margin-top 20px
+          margin-bottom 50px
+          font-size 13px
+          font-weight bold
+          background-color Lead-Orange
+          padding 4px
+        .wallet_payment_offer_company_info
+          color Offer-Font-Color
+          border 1px solid #e7e7e7
+          box-shadow inset 0 0 0 0 #CCC
+          border-radius 4px
+          padding 4px 7px 4px 10px
+          background-color Lead-Subtitle
+        .wallet_payment_offer_company_info  td:last-child
+          text-align left
+        .wallet_payment_offer_company_info  td:first-child
+          text-align left
+          width 109px
+        .wallet_payment_offer_date
+          color Offer-Font-Color
+          font-size 13px
+          margin 10px 10px 20px 10px
+          text-align left
+        .wallet_payment_offer_sosed_info
+          margin-top 20px
+          color Offer-Font-Color
+          text-align left
+          border 1px solid #e7e7e7
+          box-shadow inset 0 0 0 0 #CCC
+          border-radius 4px
+          .wallet_payment_offer_sosed_info_price td
+            font-weight bold
+            padding 15px 30px 15px 30px
+            font-size 16px
+            background-color Lead-Orange
+            color white
+          .wallet_payment_offer_sosed_info_item td
+            font-weight bold
+            background-color #F6F6F6
+            padding 15px 30px 0px 30px
+            font-size 12px
+          .wallet_payment_offer_sosed_info_item td:last-child
+            padding 15px 30px 15px 30px
+        .wallet_payment_offer_instructions
+          margin-top 20px
+          font-size 12px
+          font-weight bold
+    /* :::::::::::: DEVISE ALERTS :::::::::::: */
+    .alert.alert-notice
+      position relative
+      top 60px
+      left 70px
+      color Lead-Orange
+      font-size 14px
+    /* :::::::::::::::::::::::: STATICPAGES/NEW_LEAD_CONFIRMATION :::::::::::::::::::::::::: */
+    .body_new_lead_confirmation
+      body-mixin(backgroundImage: url(/images/interior1.png))
+      margin-top 16px
+      padding-top 200px
+      padding-bottom 300px
+      .new_lead_confirmation
+        center(550px)
+        margin-top 0px
+        padding 20px
+        background-color black
+        opacity 0.8
+        color white
+        .new_lead_confirmation_thank_you
+          font-size 26px
+          font-weight bold
+        .new_lead_confirmation_text
+          font-size 18px
+          padding-top 40px
+    /* :::::::::::::::::::::::: STATICPAGES/NEW_LEAD_CONFIRMATION :::::::::::::::::::::::::: */
+    .body_plans
+      body-mixin()
+      margin-top 29px
+      padding-bottom 50px
+      .plans_title
+        color Lead-Blue
+        opacity 0.85
+        font-size 28px
+        text-align center
+        padding-top 80px
+        padding-bottom 80px
+      .lead_box
+        margin-top 250px
+        padding 25px
+        background-color #F6F6F6
+        opacity 0.85
+        color black
+        text-align center
+        .plans_item_text
+          font-size 14px
+          padding 10px
+        .plans_item_text:first-child
+          font-weight bold
+          color black
+          font-size 16px
+          background-color Lead-Blue
+          padding-bottom 20px
+          &:hover
+            color #606060
+      .plans_item_note
+        color black
+        font-size 14px
+        shift 0.3
+        padding-bottom 40px
+        width 60%
+      .plans_faq_item
+        margin-top 40px
+        shift 0.28
+        width 40%
+        color black
+        font-size 14px
+        line-height 150%
+        .plans_faq_item_question
+          font-size 18px
+          font-weight bold
+          padding-bottom 7px
+        .plans_faq_item_answer
+          font-weight italics
+          padding-bottom 20px
+
+      /* :::::::::::: PROJECTS/show => individual project - contact provider :::::::::::: */
+    .project_show_send_message
+      color black
+      background-color #F6F6F6
+      border-radius: 6px
+      #conversation_body
+        font-size 10px
+        margin-left 0
+        margin-right 0
+        padding 8px
+        width 100%
+      .project_show_send_message_button,
+      .project_show_send_message_button button,
+      .project_show_send_message_button a
+        button(color = Lead-Orange-dark)
+        margin-top 8px
+        padding 3px

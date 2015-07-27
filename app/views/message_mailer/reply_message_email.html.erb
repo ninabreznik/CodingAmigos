@@ -1,0 +1,13 @@
+
+    <h1>Nov odgovor: <%= @subject %></h1>
+    <p>
+      Prejeli ste nov odgovor:
+    </p>
+    <blockquote>
+      <p>
+        <%= raw @message.body %>
+      </p>
+    </blockquote>
+    <p>
+      Obiščite <%= link_to "Sporočila", conversations_url %> in si oglejte Prejeta sporočila.
+    </p>

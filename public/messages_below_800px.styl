@@ -1,0 +1,213 @@
++below(800px)
+  /* :::::::::::::::::::::::: CONVERSATIONS / SHOW  (chat window / iframe) :::::::::::::::::::::::::: */
+  body
+    margin 0px
+    padding 0px
+    .body_messages
+      width 100%
+      padding-left 5%
+      color Offer-Font-Color
+      font-family App-Font-Family
+      a
+        text-decoration none
+        color Offer-Font-Color
+        font-family App-Font-Family
+      margin-bottom 15px
+      .conversation_messages_title
+        margin-top 80px
+        text-align center
+        font-weight bold
+        font-size 16px
+        color #606060
+        text-transform uppercase
+      .conversation_messages
+        padding 20px 5% 150px 5%
+        font-size 12px
+        .mailboxer_receipt
+          padding 0 10px 0 10px
+        .conversation_message_sender_my_pic,
+        .conversation_message_sender_other_pic
+          width 42px
+          height 42px
+          border-radius 50%
+          margin 0 15px 0 0
+          float left !important
+          .conversation_message_sender_pic_initials
+            line-height: 42px
+            display: block
+            color white
+            text-align: center
+            text-transform: uppercase
+        .conversation_message_sender_my_pic
+          background-color Lead-Orange-dark
+        .conversation_message_sender_other_pic
+          background-color Lead-Blue
+        .conversation_message_sender_body_time
+          padding 0 10px 0 10px
+          text-align: right
+          float right !important
+          font-size 12px
+          color #606060
+        .conversation_message_sender_body
+          display block
+          margin 30px 0 20px 0
+          .conversation_message_sender_body_my_name,
+          .conversation_message_sender_body_other_name
+            margin 1px 0 4px
+            margin-top 0px
+            display inline-bloc
+            font-size 12px
+            font-weight bold
+          .conversation_message_sender_body_my_name
+            color Lead-Orange-dark
+          .conversation_message_sender_body_other_name
+            color Lead-Blue
+          .conversation_message_sender_body_text
+            word-wrap break-word
+            line-height 150%
+            font-size 12px
+      .conversation_reply
+        padding-top 20px
+        background-color white
+        width 100%
+        position fixed
+        z-index 999
+        bottom 0px
+        padding-left 5%
+        padding-right 5%
+        .conversation_reply_message_pic
+          width 42px
+          height 42px
+          border-radius 50%
+          margin 0 15px 0 0
+          float left !important
+          background-color Lead-Orange-dark
+          .conversation_reply_message_pic_initials
+            line-height: 42px
+            display: block
+            color white
+            text-align: center
+            text-transform: uppercase
+        #message_body
+          width 80%
+          color #606060
+          font-size 12px
+          border-radius: 0;
+          border 2px solid Lead-Orange-dark
+          padding: 10px 10px 10px 10px
+          margin: 0;
+          min-height: 50px;
+          line-height: 20px;
+          height auto
+          max-height: 284px
+        .conversation_reply_message_body_sent_button
+          color: #499dd9;
+          font-size: 13px;
+          line-height: 18px;
+          height: 18px;
+          border-radius: 0;
+          float: right !important
+          min-width: 0;
+          margin-top: 5px;
+          width: 100px
+          padding: 0;
+          padding-bottom 80px
+          font-weight: bold;
+          .btn-primary
+            button(Lead-Orange-dark)
+    /* :::::::::::::::::::::::: CONVERSATIONS / INDEX  (all messages) :::::::::::::::::::::::::: */
+    .body_conversations
+      width 100%
+      margin-top 30px
+      font-family App-Font-Family
+      margin-bottom 15px
+      padding 0 0px 100px 0px
+      a
+        text-decoration none
+        font-family App-Font-Family
+      #chat_window_iframe
+        width 70%
+        height 100%
+        top 0px
+        padding-right 5%
+        position absolute
+        display inline-block
+        border 0px
+      .conversations_title
+        position fixed
+        z-index 999
+        top 0px
+        width 25%
+        margin-left 5%
+        text-transform: uppercase
+        text-align center
+        padding 25px 20px 25px 20px
+        font-weight bold
+        font-size 30px
+        color white
+        background-color Lead-Blue
+      .conversations_wrapper
+        height 450px
+        position relative
+        display inline-block
+        width 30%
+        padding 70px 0px 40px 0px
+        overflow: scroll
+        border-right 1px solid #eee
+        .conversations_inbox_title,
+        .conversations_sent_title
+          font-size 14px
+          padding 10px 14px 8px 8px
+          text-decoration none
+          color Menu-Bottom-Button-Color
+          text-align left
+          font-size defaultFontSize
+          -webkit-font-smoothing: antialiased
+          text-transform: uppercase
+          font-weight bold
+          color Lead-Orange-dark
+          a
+            color #606060
+            text-decoration none
+            font-weight bold
+        .conversations_inbox_list,
+        .conversations_sent_list
+          text-align center
+          font-size 12px
+          line-height 150%
+          display inline-block
+          color #606060
+          &:hover
+              color #606060
+            a
+              color #606060
+              text-decoration none
+              font-weight bold
+              &:hover
+                color #606060
+          .mailboxer_conversation
+            margin-bottom 20px
+            text-align left
+            width 220px
+            padding-bottom 10px
+            padding-left 10px
+            border-left 9px solid Lead-Orange-dark
+            a
+             color #606060
+             &:hover
+                  color Lead-Orange-dark
+            .index_message
+              width 190px
+            .inbox_pic
+              width 30px
+              height 30px
+              border-radius 50%
+              margin 0 15px 0 0
+              float left !important
+              background-color #606060
+              .inbox_pic_initials
+                line-height: 30px
+                display: block
+                color white
+                text-align: center
+                text-transform: uppercase

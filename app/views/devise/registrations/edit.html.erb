@@ -1,0 +1,69 @@
+<!-- :html => { :multipart => true } -->
+<div class="body_devise_users_edit">
+  <div class="user_edit">
+<div class="user_edit_title">
+  Add some more details about <br>
+  yourself and stuff you do
+</div>
+
+<%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+  <div class="user_edit_form_email">
+    <br><%= f.label :"Name" %><br>
+    <%= f.text_field :first_name%></div>
+
+  <div class="user_edit_form_email"><%= f.label :"#{I18n.t'users-edit.edit-fields.add-pic-label'}" %><br>
+    <%= f.file_field :picture %></div><br>
+
+
+   <div class="user_edit_form_email">
+    <%= f.label :"Background, Skills, Technologies " %><br>
+    <%= f.text_area :service %>
+  </div><br>
+
+    <div class="user_edit_form_email">
+    <%= f.label :"Philosophy, Values, Interests" %><br>
+    <%= f.text_area :bio %>
+  </div><br>
+
+    <div class="user_edit_form_email">
+    <%= f.label :"What best describes your current status?" %><br>
+    <%= f.select :status, [
+      ["Available for hire"],
+      ["Interested in Collaboration"],
+      ["Searching for co-founder"],
+      ["Employed"],
+      ["Looking for a job"],
+      ["Busy"]],
+      :prompt=>"Your status" %>
+  </div><br>
+
+  <!-- <div class="user_edit_form_email">
+    <%= f.label :"What are you currently working on?" %><br>
+    <%= f.text_field :currently_working_on %></div><br> -->
+
+  <div class="user_edit_form_email"><%= f.label :"Links to your stuff" %><br>
+  <%= f.text_field :website %></div><br>
+
+  <div class="user_edit_form_email"><%= f.label :"Current city" %><br />
+  <%= f.text_field :city%></div><br>
+
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="user_edit_form_submit"><%= f.submit "#{I18n.t'users-edit.edit-fields.confirm'}" %> </div>
+<% end %><br>
+
+<div class="user_edit_back"><%= link_to "#{I18n.t'users-edit.back'}", :back %> </div><br><br><br><br><br>
+
+<!--
+<div class="user_edit_unhappy"><%= mail_to 'nina.breznik@sosed.si', 'Niste zadovoljni? Povejte nam, zakaj. Dali bomo vse od sebe, da najdemo rešitev.' %> </div>
+  <div class="user_edit_button_cancel_account">
+    <%= button_to "#{I18n.t'users-edit.cancel-account-button'}", registration_path(resource_name), data: { confirm: "#{I18n.t'users-edit.sure'}"}, method: :delete %>
+  </div> -->
+</div>
+
+
+</div>

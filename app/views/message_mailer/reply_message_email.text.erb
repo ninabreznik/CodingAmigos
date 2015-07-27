@@ -1,0 +1,10 @@
+Nov odgovor: <%= @subject %>
+===============================================
+
+Prejeli ste nov odgovor:
+
+-----------------------------------------------
+<%= @message.body.html_safe? ? @message.body : strip_tags(@message.body) %>
+-----------------------------------------------
+
+ Obiščite <%= link_to "Sporočila", conversations_url %> in si oglejte Prejeta sporočila.

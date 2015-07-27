@@ -1,0 +1,34 @@
+<div class="body_leads_index">
+        <div class="columns">
+        <ul class="wookmark">
+    <% if @leads.present? %>
+        <% @sorted_leads.each do |lead| %>
+          <div class="lead_box">
+            <div class ="lead_title">
+              <%= link_to "#{lead.title}", lead_path(lead) %> 
+            </div>
+            <%= render 'lead_body_for_index', :lead => lead %>
+          </div>
+        <% end %>
+    <% else %>
+        </ul>
+        </div>
+      <div class="leads_index_no_leads_available">
+        <%= I18n.t'leadsindex-notification.no-leads-available' %>
+      </div>
+    <% end %>
+</div>
+
+<script type="text/javascript">
+    var leadboxes = document.querySelectorAll('.lead_box');
+    for(var i = 0; i < leadboxes.length; i++) {
+      (function leadbox (ID) {
+        leadboxes[ID].addEventListener('click', function onClick (event) {
+          var leadpath =leadboxes[ID].querySelector('a').getAttribute('href');
+          window.location.href = leadpath;
+        });
+      })(i);
+    }
+</script>
+
+

@@ -1,0 +1,76 @@
++below(800px)
+  /* :::::::::::: APPLICATION.html.erb => menu buttons & login :::::::::::: */
+  body
+    margin 0px
+    padding 0px
+    .top_menu_bar
+      position fixed
+      top 0
+      z-index 999
+      width 100%
+      background-color Menu-Top-Color
+      blur-mixin(intensity =  0px)
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom 1px solid #ccc
+      padding-top 3px
+      font-family App-Font-Family
+      .publish_project,
+      .find-provider,
+      .messages
+        padding-bottom 2px
+        font-size 11px
+        -webkit-font-smoothing: antialiased
+        font-weight bold
+        display inline-block
+      .publish_project
+        shift 0.43
+        button(Lead-Orange-dark)
+        padding 10px 11px 10px 11px
+        bottom 4px
+        &:hover
+          opacity 0.7
+      .find_provider
+        shift 0.437
+        button(black)
+        padding 10px 11px 10px 11px
+        bottom 4px
+        margin-left 4px
+        &:hover
+          opacity 0.7
+        a
+          text-decoration none
+          color white
+          font-size 11px
+      .messages
+        shift(0.1)
+        display: inline-block;
+        font-size 19px
+      .logo
+        top 4px
+        shift(0.04)
+        height 37px
+        display inline-block
+        &:hover
+          opacity 0.7
+      .select_bar
+        shift(0.37)
+        display: inline-block;
+        width: 120px;
+        height: 20px;
+        padding: 3px 3px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        line-height: 20px;
+        color: #606060;
+        vertical-align: middle;
+        border: 0px
+      .info
+        padding-bottom 2px
+        shift(0.63)
+        font-size 21px
+        display inline-block
+        .fa.fa-info-circle
+          color Offer-Font-Color
+          &:hover
+            color Lead-Orange

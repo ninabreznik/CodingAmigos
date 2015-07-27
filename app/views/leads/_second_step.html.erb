@@ -1,0 +1,59 @@
+
+<div class="lead_new_form_zip">
+  <%= l.select :location, [
+      ["#{I18n.t'lead-new.form.country-1'}", "#{I18n.t'lead-new.form.country-1'}"], 
+      ["#{I18n.t'lead-new.form.country-2'}", "#{I18n.t'lead-new.form.country-2'}"], 
+      ["#{I18n.t'lead-new.form.country-3'}", "#{I18n.t'lead-new.form.country-3'}"], 
+      ["#{I18n.t'lead-new.form.country-4'}", "#{I18n.t'lead-new.form.country-4'}"], 
+      ["#{I18n.t'lead-new.form.country-5'}", "#{I18n.t'lead-new.form.country-5'}"], 
+      ["#{I18n.t'lead-new.form.country-6'}", "#{I18n.t'lead-new.form.country-6'}"], 
+      ["#{I18n.t'lead-new.form.country-7'}", "#{I18n.t'lead-new.form.country-7'}"], 
+      ["#{I18n.t'lead-new.form.country-8'}", "#{I18n.t'lead-new.form.country-8'}"], 
+      ["#{I18n.t'lead-new.form.country-9'}", "#{I18n.t'lead-new.form.country-9'}"], 
+      ["#{I18n.t'lead-new.form.country-10'}", "#{I18n.t'lead-new.form.country-10'}"], 
+      ["#{I18n.t'lead-new.form.country-11'}", "#{I18n.t'lead-new.form.country-11'}"], 
+      ["#{I18n.t'lead-new.form.country-12'}", "#{I18n.t'lead-new.form.country-12'}"], 
+      ["#{I18n.t'lead-new.form.country-13'}", "#{I18n.t'lead-new.form.country-13'}"], 
+      ["#{I18n.t'lead-new.form.country-14'}", "#{I18n.t'lead-new.form.country-14'}"], 
+      ["#{I18n.t'lead-new.form.country-15'}", "#{I18n.t'lead-new.form.country-15'}"], 
+      ["#{I18n.t'lead-new.form.country-16'}", "#{I18n.t'lead-new.form.country-16'}"], 
+      ["#{I18n.t'lead-new.form.country-17'}", "#{I18n.t'lead-new.form.country-17'}"], 
+      ["#{I18n.t'lead-new.form.country-18'}", "#{I18n.t'lead-new.form.country-18'}"], 
+      ["#{I18n.t'lead-new.form.country-19'}", "#{I18n.t'lead-new.form.country-19'}"], 
+      ["#{I18n.t'lead-new.form.country-20'}", "#{I18n.t'lead-new.form.country-20'}"], 
+      ["#{I18n.t'lead-new.form.country-21'}", "#{I18n.t'lead-new.form.country-21'}"], 
+      ["#{I18n.t'lead-new.form.country-22'}", "#{I18n.t'lead-new.form.country-22'}"], 
+      ["#{I18n.t'lead-new.form.country-23'}", "#{I18n.t'lead-new.form.country-23'}"], 
+      ["#{I18n.t'lead-new.form.country-24'}", "#{I18n.t'lead-new.form.country-24'}"], 
+      ["#{I18n.t'lead-new.form.country-25'}", "#{I18n.t'lead-new.form.country-25'}"], 
+      ["#{I18n.t'lead-new.form.country-26'}", "#{I18n.t'lead-new.form.country-26'}"], 
+      ["#{I18n.t'lead-new.form.country-27'}", "#{I18n.t'lead-new.form.country-27'}"], 
+      ["#{I18n.t'lead-new.form.country-28'}", "#{I18n.t'lead-new.form.country-28'}"], 
+      ["#{I18n.t'lead-new.form.country-29'}", "#{I18n.t'lead-new.form.country-29'}"] 
+    ], :prompt=>"#{I18n.t'lead-new.form.country-prompt'}"%> 
+</div>
+<div class="lead_new_form_zip">
+  <%= l.label :"#{I18n.t'lead-new.form.zip'}" %>
+  <%= l.text_field :zip %>
+</div>
+<br>
+<!-- <div class="lead_new_form_zip">
+  <%= l.label :"#{I18n.t'lead-new.form.link'}" %>
+  <%= l.text_field :link %>
+</div> -->
+<% if user_signed_in? %>
+  <div class="lead_new_form_name">
+    <%= l.label :"#{I18n.t'lead-new.form.name'}"  %>
+    <%= l.text_field :name, value: "#{current_user.email.split("@")[0]}" %>
+  </div>
+  <%= l.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+<% else %>
+  <div class="lead_new_form_name">
+    <%= l.label :"#{I18n.t'lead-new.form.name'}"  %>
+    <%= l.text_field :name %>
+  </div>
+    <div class="lead_new_form_email">
+      <%= l.label :"#{I18n.t'lead-new.form.email'}" %>
+      <%= l.text_field :email %>
+    </div>
+<% end %>

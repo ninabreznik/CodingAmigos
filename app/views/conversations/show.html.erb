@@ -1,0 +1,58 @@
+<div class="body_messages">
+  <div class="conversation_messages_title">
+    <%= @conversation_subject%>
+  </div>
+  <div class="conversation_messages">
+  <%= content_tag_for(:div, conversation.receipts_for(current_user)) do |receipt| %>
+    <% message = receipt.message %>
+    <% if message.sender.email == current_user.email %>
+      <div class="conversation_message_sender_my_pic">
+        <div class="conversation_message_sender_pic_initials">
+        <%= initial = message.sender.email[0] %>
+        </div>
+      </div>
+    <% else %>
+      <div class="conversation_message_sender_other_pic">
+        <div class="conversation_message_sender_pic_initials">
+        <%= initial = message.sender.email[0] %>
+        </div>
+      </div>
+    <% end %>
+    <div class="conversation_message_sender_body_time">
+      <%= message.updated_at.strftime("%d.%m. ob %H:%M") %>
+    </div>
+    <div class="conversation_message_sender_body">
+      <% if message.sender.email == current_user.email %>
+        <div class="conversation_message_sender_body_my_name">
+          <%=link_to "#{message.sender.email.split('@')[0]}", user_url(message.sender), :target => "_blank" %>
+        </div>
+    <% else %>
+      <div class="conversation_message_sender_body_other_name">
+        <%=link_to "#{message.sender.email.split('@')[0]}", user_url(message.sender), :target => "_blank" %>
+      </div>
+    <% end %>
+      <div class="conversation_message_sender_body_text">
+        <%= message.body %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+  <div id="after_all_messages">
+    &nbsp
+  </div>
+  <div class="conversation_reply">
+    <div class="conversation_reply_message_pic">
+      <div class="conversation_reply_message_pic_initials">
+        <%= @current_user_nick %>
+      </div>
+    </div>
+    <div class="conversation_reply_message_body">
+    <%= form_for :message, url: reply_conversation_path(conversation) do |f| %>
+      <%= f.text_area :body, :placeholder => "#{I18n.t'mailboxer.conversations-index.new-message'}" %>
+    </div>
+    <div class="conversation_reply_message_body_sent_button">
+      <%= f.button :"#{I18n.t'mailboxer.conversations-index.submit'}", class: 'btn-primary' %>
+    </div>
+<% end %>
+</div>
+</div>

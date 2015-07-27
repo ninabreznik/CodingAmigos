@@ -1,0 +1,56 @@
+<footer>
+  <div class="footer_container">
+    <div class="footer_main_row">
+      <div class="footer_column_1">
+          <%= image_tag 'sosed.biz.png'%>
+          <br><br>
+            Coding Amigos is a community of professional developers. It is made for people who like what they do and are good at it.
+      </div>
+      <div class="footer_column_2">
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Community</li>
+            <br>
+            <li><%= link_to "About", info_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </div>
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Service</li>
+            <br>
+            <li><%= link_to "How it works", info_path %></li>
+            <li><%= link_to "Contribution", pricing_path %></li>
+          </ul>
+        </div>
+        <div class="footer_column_2_column_3">
+          <ul>
+            <li>Links</li>
+            <br>
+            <li><%= link_to "Terms", terms_path %></li>
+            <li><%= link_to "Privacy", privacy_path %></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_column_1">
+        <ul>
+          <li>Contact us today</li>
+          <li><%= link_to "community@codingamigos.com", "mailto:contact@zweidesign.co"%></li>
+          <br>
+          <li>Or find us on Gitter</li>
+          <li><a href="https://gitter.im/codingamigos/chat">Chat with us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_social_row">
+      <ul>
+        <li><a href="https://github.com/codingamigos"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/codingamigos"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://gitter.im/codingamigos/chat"><i class="fa fa-comment"></i></a></li>
+        <br>
+        <br>
+        <li class="copyright">&copy; <%= Time.now.year %> Vision Baker Ltd.</li>
+      </ul>
+    </div>
+  </div>
+</footer>

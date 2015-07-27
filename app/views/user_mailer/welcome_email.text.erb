@@ -1,0 +1,20 @@
+<%=I18n.t'welcome-message.h1'%> <%= root_url %>
+===============================================
+ 
+<%=I18n.t'welcome-message.paragraph-1'%> <%= @user.email %>.
+
+<%- if @pass %>
+<%=I18n.t'welcome-message.temporary-pass-1'%> <%= @pass %>
+<%=I18n.t'welcome-message.temporary-pass-2'%>
+<%- end %>
+
+<%=I18n.t'welcome-message.paragraph-2'%> <%= link_to "#{I18n.t'welcome-message.this-link'}", root_url %>.
+
+
+<%=I18n.t'welcome-message.thanks-for-joining'%>
+
+
+
+<%=I18n.t'welcome-message.have-a-nice-day'%>
+
+<%=I18n.t'welcome-message.nina'%> <%= root_url %>

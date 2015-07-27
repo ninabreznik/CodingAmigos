@@ -1,0 +1,54 @@
+<div class="body_project_index">
+<div class="columns" id="main" role="main">
+
+<ul id="tiles" class="wookmark">
+<% if @projects.present? %>
+  <% @projects.each do |project| %>
+    <div class="lead_body">
+      <div class="lead_subtitle" ></div>
+        <%= link_to "#{image_tag project.picture.url(:medium), :width => '287'}".html_safe, project_path(project) %> <br><br>
+      <div class="lead_subtitle"></div>
+        <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.first_name}".html_safe, user_path(project.user) %>
+        <br><br>
+        <% if project.user.city.present? %>
+          <i class="fa fa-map-marker"></i>
+          <%= project.user.city %>
+        <% end %>
+      <div class="lead_subtitle"></div>
+        <% if current_user.present? %>
+          <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>
+                  <%= form_for(current_user.likes.build(likee_id: project.id)) do |l| %>
+                    <%= l.hidden_field :likee_id %>
+                    <%= l.button do %>
+                      <% if @likes.where(likee_id: project.id).count == nil %>
+                        <i class="fa fa-heart-o"></i>
+                      <% else %>
+                        <i class="fa fa-heart-o"></i> <%= @likes.where(likee_id: project.id).count %>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+          <% else %>
+             <%= form_for(current_user.likes.find_by_likee_id(project.id),
+                html: { method: :delete }) do |l| %>
+                <%= l.button do %>
+                  <% if @likes.where(likee_id: project.id).count == nil %>
+                    <i class="fa fa-heart-o"></i>
+                  <% else %>
+                    <i class="fa fa-heart"></i> <%= @likes.where(likee_id: project.id).count %>
+                  <% end %>
+                <% end %>
+              <% end %>
+          <% end %>
+        <% else %>
+          <div class="like_heart">
+            <%= link_to '<i class="fa fa-heart-o"></i>'.html_safe, new_user_session_path %>
+            <%= @likes.where(likee_id: project.id).count %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+</ul>
+</div>
+</div>

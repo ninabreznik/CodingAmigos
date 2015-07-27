@@ -1,0 +1,47 @@
+<div class="body_leads_show">
+  <a class="back_to_main_page_button" href="/"></a>
+    <div class="lead_show">
+      <div class="lead_show_title">
+        <%= link_to "#{@project.title}", user_path(id: User.all.where(email: @project.email).first.id)%>
+      </div>
+      <div class="lead_show_body">
+        <div class="lead_show_items_short">
+          <div class="lead_show_item">
+            <div class="lead_show_subtitle"></div>
+            <%=link_to "#{image_tag @project.picture.url(:full)}".html_safe, user_path(@project.user) %><br>
+            <% if @project.description.present? %>
+              <div class="lead_show_subtitle"></div>
+              <%= @project.description %> <br><br>
+            <% end %>
+          </div>
+            <div class="lead_subtitle">
+              <%=link_to "#{image_tag @project.user.picture.url(:thumb), :width => "25"} #{@project.user.company}".html_safe, user_path(@project.user) %></div><br><br>
+          </div>
+        <% if current_user.present? %>
+          <% if @project.email == current_user.email %>
+            <div class="project_show_send_message">
+              <%= link_to "#{I18n.t'project-show.edit'}", edit_project_url(@project) %>
+            </div>
+          <% else %>
+            <div class="project_show_send_message">
+              <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
+              <%= form_for :conversation, url: :conversations do |f| %>
+                <%= f.text_field :recipients, type: "hidden", value: "#{@project.email}" %>
+                <%= f.text_field  :subject, type: "hidden", value: "Hi"  %>
+                <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'project-show.send-message'}" %>
+                <div class="project_show_send_message_button">
+                  <%= f.button :"#{I18n.t'project-show.submit'}" %>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="project_show_send_message">
+            <i class='fa fa-envelope-o'></i>
+            <%= link_to "#{I18n.t'project-show.get-in-touch'}", new_user_registration_path %>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>

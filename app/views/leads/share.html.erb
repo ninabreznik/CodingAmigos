@@ -1,0 +1,68 @@
+<div class="body_leads_new">
+<section class="lead_new_photo">
+  <div class="lead_new_explanation">
+    <div class="lead_new_explanation_first">  
+      <i class="fa fa-pencil"></i>         Delite povpraševanje </div>
+    <div class="lead_new_explanation_second"> 
+      <i class="fa fa-files-o"></i>        Spoznajte zainteresirane izvajalce </div>
+    <div class="lead_new_explanation_third">  
+      <i class="fa fa-check-square-o"></i> Dogovorite se za provizijo </div>
+  </div>
+  <div class="lead_new">
+    <div class="lead_new_title">
+      Gradbenik gradbeniku 
+    </div>
+    <div class="lead_new_instructions">
+      Oddajte storitev, ki je ne izvajate - dogovorite se za provizijo. <br><br>Delite povpraševanje in povezali vas bomo z izvajalci, zainteresiranimi za sodelovanje.<br>
+    </div>
+    <%= form_for (@lead) do |l| %>
+      <%= render "#{@lead.current_step}_step", :l => l %>
+      <div class="lead_new_form_submit">
+        <%= l.submit "Nazaj", :name => "back_button" unless @lead.first_step? %>
+        <%= l.submit "Naprej" unless @lead.last_step? %>
+        <%= l.submit "Pošlji" if @lead.last_step? %>
+      </div>
+    <% end %>
+  </div>
+</section>
+<section class="lead_new_we_help">
+  <div class="lead_new_we_help_title">
+    Zaslužite s projekti, ki jih ne morete sprejeti. Oddajte povpraševanje in se z izbranim izvajalcem dogovorite za provizijo. 
+  </div>
+  <div class="lead_new_we_help_categories_title">
+    Uspešni so tisti, ki se znajo povezati.<br>
+    Za vsako povpraševanje, ki ga boste oddali, pa bomo v vašo Denarnico dodali tudi 10€, ki jih lahko potem uporabite za nakup kontaktov, ki jih potrebujete vi. 
+  </div>
+  <div class="lead_new_we_help_categories_list">
+    <i class="fa fa-check-square-o"> Arhitekti</i> 
+    <i class="fa fa-check-square-o"> Gradnja</i> 
+    <i class="fa fa-check-square-o"> Zidarstvo</i> 
+    <i class="fa fa-check-square-o"> Prenove</i>  
+    <i class="fa fa-check-square-o"> Strojne instalacije</i> 
+    <i class="fa fa-check-square-o"> Električne instalacije</i> 
+    <i class="fa fa-check-square-o"> Slikopleskarstvo</i> 
+    <i class="fa fa-check-square-o"> Fasade</i> 
+    <i class="fa fa-check-square-o"> Strehe</i> 
+  </div>
+</section> 
+<section class="lead_new_testimonials">
+  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Super zadeva. S projekti, ki jih ne morem opraviti lahko torej vsaj nekaj zaslužim.<i class="fa fa-quote-right"></i>(Janez)</div>
+  
+
+  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Bravo, zdi se mi zelo pametno, da si podjetniki pomagamo med sabo. Enkrat dobiš projekt ti, drugič ga pa nekdo drug dobi preko tebe.<i class="fa fa-quote-right"></i>(Maja)</div>
+  
+
+  <div class="lead_new_testimonials_text"><i class="fa fa-quote-left"></i>Zelo pametna zadeva. Všeč mi je, da lahko preko aplikacije urejamo sodelovanje in se dogovarjamo glede provizije. Tako je vse črno na belem in je potem več verjetnosti za pozitivno sodelovanje.<i class="fa fa-quote-right"></i>(Srečko)</div>
+</section>
+<section class="lead_new_company_info">
+  <div class="lead_new_company_info_phone"> Priporočajte nas prijateljem</div>
+  <ul class="share-buttons" >
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.zweidesign.co&t=Zweidesign.co" target="_blank" style="color:#606060;" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.zweidesign.co&text=Zweidesign.co:%20http%3A%2F%2Fwww.zweidesign.co" target="_blank" style="color:#606060;" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-2x"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.zweidesign.co&title=Zweidesign.co&summary=ZweiDesign&source=http%3A%2F%2Fwww.zweidesign.co" target="_blank" style="color:#606060;" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-2x"></i></a>
+<a href="mailto:?subject=Zweidesign.co&body=ZweiDesign:%20http%3A%2F%2Fwww.zweidesign.co" target="_blank" style="color:#606060;" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><i class="fa fa-envelope fa-2x"></i></a>
+</ul><br>
+  <div class="lead_new_company_info_name">ZWEI DESIGN</div>
+  <div class="lead_new_company_info_contact">Moj sosed d.o.o.</div>
+  <div class="lead_new_company_info_contact"><%= mail_to "info@sosed.si", "info@sosed.si" %></div>
+</section> 

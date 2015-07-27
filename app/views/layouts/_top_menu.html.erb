@@ -1,0 +1,43 @@
+<div class="top_menu_bar">
+  <a href="<%= root_path %>"><%= image_tag 'sosed.biz.png', :class => 'logo' %></a>
+  <% if user_signed_in? %>
+      <!-- <select id="menu_bar_select" class="select_bar">
+        <option value=""><%= current_user.email.split('@').first %></option>
+        <option value="<%= dashboard_path %>"><%=I18n.t'top-menu.dashboard'%></option>
+        <option value="<%= user_path(current_user)%>"><%=I18n.t'top-menu.my-profile'%></option>
+        <option value="<%= leads_path %>"><%=I18n.t'top-menu.available-jobs'%></option>
+        <option value="<%= destroy_user_session_path %>"><%=I18n.t'top-menu.sign-out'%></option>
+      </select> -->
+      <div class="find_provider">
+        <%= link_to "#{current_user.email}", dashboard_path %>
+      </div>
+      <div class="publish_project">
+        <%= link_to "#{I18n.t'top-menu.publish-project'}", new_project_path %>
+      </div>
+      <!-- <div class="messages">
+        <%= link_to messages_path do %>
+          <i class="fa fa-envelope"></i>
+        <% end %>
+      </div> -->
+  <% else %>
+      <div class="menu_bar_login">
+        <%= link_to "Log In", new_user_session_path %>
+      </div>
+      <!-- <div class="find_provider">
+        <%= link_to "#{I18n.t'top-menu.find-provider'}", find_professional_path %>
+      </div> -->
+      <div class="publish_project">
+        <%= link_to "CREATE YOUR PROFILE", new_user_registration_path %>
+      </div>
+  <% end %>
+
+
+  <script>
+    document.getElementById("menu_bar_select").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }
+    };
+  </script>
+
+</div>

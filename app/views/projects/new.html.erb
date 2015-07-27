@@ -1,0 +1,62 @@
+
+<div class="body_leads_new">
+<section class="lead_new_photo">
+  <div class="lead_new_explanation">
+    <div class="lead_new_explanation_first">
+      <i class="fa fa-check-square-o"></i> <%=I18n.t'project-new.exaplanation-1'%></div>
+    <div class="lead_new_explanation_second">
+      <i class="fa fa-pencil"></i> <%=I18n.t'project-new.exaplanation-2'%></div>
+    <div class="lead_new_explanation_third">
+      <i class="fa fa-files-o"></i> <%=I18n.t'project-new.exaplanation-3'%></div>
+  </div>
+  <div class="lead_new">
+    <div class="lead_new_title">
+      <%=I18n.t'project-new.title'%>
+    </div>
+    <div class="lead_new_instructions">
+      <%=I18n.t'project-new.instructions'%>
+    </div>
+    <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.title'}" %>
+        <%= p.text_field :title %>
+      </div>
+
+      <div class="lead_new_form_business_type">
+        <%= p.select :category, [
+      ["#{I18n.t'project-index.data-filter-1'}", "#{I18n.t'project-index.data-filter-1'}"],
+      ["#{I18n.t'project-index.data-filter-2'}", "#{I18n.t'project-index.data-filter-2'}"],
+      ["#{I18n.t'project-index.data-filter-3'}", "#{I18n.t'project-index.data-filter-3'}"],
+      ["#{I18n.t'project-index.data-filter-4'}", "#{I18n.t'project-index.data-filter-4'}"],
+      ["#{I18n.t'project-index.data-filter-5'}", "#{I18n.t'project-index.data-filter-5'}"]
+    ], :prompt=>"#{I18n.t'project-new.form.business-type-prompt'}"%>
+      </div><br>
+      <div class="lead_new_form_description">
+        <%= p.label "Upload image or screenshot" %>
+        <%= p.file_field :picture %>
+      </div><br>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.description'}" %>
+        <%= p.text_area :description %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "Link to live demo" %>
+        <%= p.text_field :live_demo %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "Link to repository" %>
+        <%= p.text_field :repository %>
+      </div>
+      <% if user_signed_in? %>
+        <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+      <div class="lead_new_form_submit">
+        <%= p.submit "#{I18n.t'project-new.form.submit'}" %>
+      </div>
+      <% else %>
+        <div class="lead_new_form_submit">
+          <%= link_to "#{I18n.t'project-new.form.submit'}", new_user_registration_path %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>

@@ -1,0 +1,169 @@
+@import '../node_modules/jeet/stylus/jeet'
+@import '../node_modules/axis/axis'
+
+// edit()
+
+// :::::::::::: BOX SIZING :::::::::::::: //
+
+html
+  box-sizing border-box
+  background-color #F6F6F6
+
+*, *:before, *:after
+  box-sizing inherit
+
+// :::::::::::: COLORS :::::::::::::: //
+
+// ::: LEAD ::: //
+Lead-Orange = #2a9c6d
+Lead-Blue = #82c0c7
+Lead-Orange-dark = #2a9c6d
+Lead-Subtitle = #F0F0F0
+
+// ::: ORDER ::: //
+Order-Orange = #FFAE4D
+Order-Orange-light = #FFAE4D
+Order-Subtitle = #FFEED9
+
+
+// ::: MENU ::: //
+Menu-Bottom-Color = white
+Menu-Bottom-Button-Color = black
+Menu-Bottom-Button-Hover-Color = #FFAE4D
+Menu-Top-Color = white
+Menu-Top-Button-Color = black
+Menu-Top-Button-Hover-Color = #FFAE4D
+
+// ::: BODY ::: //
+Background-Color = #EEEEEE
+Buy-Button-Color = #FFAE4D
+
+// ::: BODY ::: //
+Offer-Font-Color = black
+
+// ::: FONT ::: //
+App-Font-Family = Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+
+
+// :::::::::::: MIXINS :::::::::::::: //
+
+body-mixin()
+  background-image  backgroundImage
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed
+  background-color #F6F6F6
+  margin 0px
+  font-size 12px
+  color Offer-Font-Color
+  font-family App-Font-Family
+  a
+    text-decoration none
+    color white
+    font-family App-Font-Family
+
+mobile-body-mixin(backgroundImage = url(/images/cream_pixels.png))
+  background-image  backgroundImage
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-attachment: fixed
+  margin 0px
+  font-size 8px
+  color Offer-Font-Color
+  font-family App-Font-Family
+  a
+    text-decoration none
+    color Offer-Font-Color
+    font-family App-Font-Family
+
+blur-mixin(intensity = 1.6px)
+  -webkit-filter blur(intensity)
+  -moz-filter blur(intensity)
+  -o-filter blur(intensity)
+  filter blur(intensity)
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                LEAD LISTING MIXINS
+ :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+column-mixin(defaultTop = 35px)
+  position: relative;
+  margin-top: defaultTop
+  margin-bottom 200px
+  padding-top 40px
+  padding-bottom 20px
+
+wookmarkMixin(defautPadding = 0px)
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  padding: defautPadding
+
+leadBoxMixin(defaultMarginLeft = 0px)
+  margin-left defaultMarginLeft
+  width 303px
+  padding: 6px;
+  display none
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  opacity: 0.9;
+
+mobileLeadBoxMixin(defaultMarginLeft = 40px)
+  margin-left defaultMarginLeft
+  padding: 5px;
+  display none
+  border-radius 6px
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  opacity: 0.9;
+
+bottomButtonMixin(defaultFontSize = 12px)
+  padding 8px
+  text-decoration none
+  color Menu-Bottom-Button-Color
+  background-color white
+  span(1/3)
+  text-align center
+  border-right 1px solid #e7e7e7
+  font-size defaultFontSize
+  -webkit-font-smoothing: antialiased
+  &:hover
+    background-color Menu-Bottom-Button-Hover-Color
+    text-decoration none
+  a
+    text-decoration none
+    color Menu-Bottom-Button-Color
+
+
+@import "app_below_5000px"
+@import "app_below_804px"
+@import "app_below_706px"
+@import "app_below_550px"
+@import "app_below_350px"
+@import "top_menu_below_5000px"
+@import "top_menu_below_1100px"
+@import "top_menu_below_1000px"
+@import "top_menu_below_900px"
+@import "top_menu_below_800px"
+@import "top_menu_below_720px"
+@import "top_menu_below_650px"
+@import "top_menu_below_500px"
+@import "messages_below_5000px"
+@import "messages_below_1150px"
+@import "messages_below_1000px"
+@import "messages_below_900px"
+@import "messages_below_800px"
+@import "messages_below_700px"
+@import "messages_below_600px"
+@import "messages_below_500px"
+@import "footer"
+@import "footer_below_1040px"
+@import "footer_below_935px"
+@import "footer_below_740px"
+@import "footer_below_630px"
+@import "footer_below_490px"

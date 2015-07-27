@@ -1,0 +1,52 @@
+
+<div class="body_leads_new">
+<section class="lead_new_photo">
+  <div class="lead_new_explanation">
+    <div class="lead_new_explanation_first">  
+      <i class="fa fa-pencil"></i>  <%=I18n.t'project-edit.title'%></div>
+  </div>
+  <div class="lead_new">
+    <div class="lead_new_title">
+      <%=I18n.t'project-edit.title'%> 
+    </div>
+    <%= form_for @project, :html => { :multipart => true, method: :put } do |p| %>
+
+      <div class="lead_new_form_business_type">
+        <%= p.select :category, [
+      ["#{I18n.t'project-index.data-filter-1'}", "#{I18n.t'project-index.data-filter-1'}"], 
+      ["#{I18n.t'project-index.data-filter-2'}", "#{I18n.t'project-index.data-filter-2'}"], 
+      ["#{I18n.t'project-index.data-filter-3'}", "#{I18n.t'project-index.data-filter-3'}"], 
+      ["#{I18n.t'project-index.data-filter-4'}", "#{I18n.t'project-index.data-filter-4'}"], 
+      ["#{I18n.t'project-index.data-filter-5'}", "#{I18n.t'project-index.data-filter-5'}"], 
+      ["#{I18n.t'project-index.data-filter-6'}", "#{I18n.t'project-index.data-filter-6'}"], 
+      ["#{I18n.t'project-index.data-filter-7'}", "#{I18n.t'project-index.data-filter-7'}"], 
+      ["#{I18n.t'project-index.data-filter-8'}", "#{I18n.t'project-index.data-filter-8'}"], 
+      ["#{I18n.t'project-index.data-filter-9'}", "#{I18n.t'project-index.data-filter-9'}"], 
+      ["#{I18n.t'project-index.data-filter-10'}", "#{I18n.t'project-index.data-filter-10'}"], 
+      ["#{I18n.t'project-index.data-filter-11'}", "#{I18n.t'project-index.data-filter-11'}"], 
+      ["#{I18n.t'project-index.data-filter-12'}", "#{I18n.t'project-index.data-filter-12'}"], 
+      ["#{I18n.t'project-index.data-filter-13'}", "#{I18n.t'project-index.data-filter-13'}"], 
+      ["#{I18n.t'project-index.data-filter-14'}", "#{I18n.t'project-index.data-filter-14'}"], 
+      ["#{I18n.t'project-index.data-filter-15'}", "#{I18n.t'project-index.data-filter-15'}"], 
+      ["#{I18n.t'project-index.data-filter-16'}", "#{I18n.t'project-index.data-filter-16'}"], 
+      ["#{I18n.t'project-index.data-filter-17'}", "#{I18n.t'project-index.data-filter-17'}"]
+    ], :prompt=>"#{I18n.t'project-new.form.business-type-prompt'}"%> 
+      </div>
+      <div class="lead_new_form_description"> 
+        <%= p.file_field :picture %>
+      </div><br>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.title'}" %>
+        <%= p.text_field :title %>
+      </div>
+      <div class="lead_new_form_description">
+        <%= p.label "#{I18n.t'project-new.form.description'}" %>
+        <%= p.text_area :description %>
+      </div>
+        <%= p.text_field :email, type: "hidden", value: "#{current_user.email}" %>
+      <div class="lead_new_form_submit">
+        <%= p.submit "#{I18n.t'project-edit.form.submit'}" %>
+      </div>  
+    <% end %> 
+  </div>
+</section>

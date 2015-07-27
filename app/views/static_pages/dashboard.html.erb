@@ -1,0 +1,208 @@
+<div class="body_profile">
+  <div class="columns">
+  <ul class="wookmark">
+
+  <% if user_signed_in? %>
+
+    <div class="lead_box">
+      <div class ="profile_dashboard_title">
+        Stats page for:
+      </div>
+      <div class="profile_dashboard_body">
+        <div class="profile_dashboard_body_username">
+          <%= link_to "#{current_user.email}", user_path(current_user)  %>
+        </div>
+        <div class="profile_dashboard_body_logout">
+          <%= link_to "#{I18n.t'staticpagesprofile-links.logout'}", destroy_user_session_path, method: :get %>
+        </div>
+        <div class="profile_dashboard_body_edit">
+          <%= link_to "Edit my profile", edit_user_registration_path %>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="lead_box">
+      <div class="profile_dashboard_body">
+        <div class="profile_dashboard_stats_data">
+          <%= @login_count %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          Login count
+        </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class="profile_dashboard_body">
+        <div class="profile_dashboard_stats_data">
+          <%= @updated_at %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          Last update at
+        </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class="profile_dashboard_body">
+        <div class="profile_dashboard_stats_data">
+          <%= @joined %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          Joined
+        </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class="profile_dashboard_body">
+      <% if current_user.projects.any? %>
+          <div class="profile_dashboard_stats_data">
+            <%= @published_projects %>
+          </div>
+          <div class="profile_dashboard_stats_title">
+            Published projects
+          </div>
+      <% else %>
+        <div class="profile_dashboard_stats_data">
+          0
+        </div>
+        <div class="profile_dashboard_stats_title">
+          Published projects
+        </div>
+      <% end %>
+      </div>
+    </div>
+
+    <!-- <div class="lead_box">
+      <div class ="profile_dashboard_title">
+        <%= I18n.t'staticpagesprofile-notification.wallet' %>:
+      </div>
+      <div class="profile_dashboard_body">
+        <div class="profile_dashboard_body_wallet_amount">
+          <%= current_user.wallet %> €
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <% if Order.all.where(selector_id: current_user.id, paid: true).present? %>
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          <%= I18n.t'staticpagesprofile-notification.bought-leads' %>:
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_bought_leads_amount">
+            <%= Order.all.where(selector_id: current_user.id, paid: true).count %>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+           <%= I18n.t'staticpagesprofile-notification.last-bought-lead' %>:
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_bought_leads_last">
+            <%= Order.all.where(selector_id: current_user.id, paid: true).last.selected.business_type %> (<%= Order.all.where(selector_id: current_user.id, paid: true).last.selected.location %>)
+          </div>
+        </div>
+      </div>
+
+      <% else %>
+
+        <div class="lead_box">
+          <div class ="profile_dashboard_title">
+            <%= I18n.t'staticpagesprofile-notification.bought-leads' %>:
+          </div>
+          <div class="profile_dashboard_body">
+            <div class="profile_dashboard_body_no_bought_leads">
+              <%= I18n.t'staticpagesprofile-notification.no-bought-leads' %>
+            </div>
+          </div>
+        </div>
+
+        <div class="lead_box">
+          <div class ="profile_dashboard_title">
+            <%= I18n.t'staticpagesprofile-notification.last-bought-lead' %>:
+          </div>
+          <div class="profile_dashboard_body">
+            <div class="profile_dashboard_body_no_bought_leads">
+             <%= I18n.t'staticpagesprofile-notification.no-bought-leads' %>
+            </div>
+          </div>
+        </div>
+      <% end %> -->
+
+  <% else %>
+
+  <div class="lead_box">
+    <div class ="profile_dashboard_title">
+      <%= I18n.t'staticpagesprofile-notification.not-logged-in' %>:
+    </div>
+    <div class="profile_dashboard_body">
+      <div class="profile_dashboard_title_login_or_signup">
+        <div class="profile_dashboard_body_login">
+          <%= link_to "#{I18n.t'staticpagesprofile-links.sign-in'}", new_user_session_path %>
+        </div>
+        <div class="profile_dashboard_body_signup">
+          <%= link_to "#{I18n.t'staticpagesprofile-links.sign-up'}", new_user_registration_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="lead_box">
+  <div class ="profile_dashboard_title">
+    Outsourcing:
+  </div>
+  <div class="profile_dashboard_body">
+    <div class="profile_dashboard_body_not_signed_in">
+      Need sub-contractors for your project? Post a request and receive quotes from qualified professionals.
+    </div>
+    <div class="profile_dashboard_body_wallet_buttons">
+      <div class="profile_dashboard_body_wallet_button">
+        <%= link_to "Find a professional", find_professional_path %>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+  <div class="lead_box">
+    <div class ="profile_dashboard_title">
+        <%= I18n.t'staticpagesprofile-notification.wallet' %>:
+    </div>
+    <div class="profile_dashboard_body">
+      <div class="profile_dashboard_body_not_signed_in">
+         <%= I18n.t'staticpagesprofile-notification.you-need-to-sign-in' %>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="lead_box">
+    <div class ="profile_dashboard_title">
+        <%= I18n.t'staticpagesprofile-notification.bought-leads' %>:
+    </div>
+    <div class="profile_dashboard_body">
+      <div class="profile_dashboard_body_no_bought_leads">
+        <%= I18n.t'staticpagesprofile-notification.you-need-to-sign-in' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead_box">
+    <div class ="profile_dashboard_title">
+       <%= I18n.t'staticpagesprofile-notification.last-bought-lead' %>:
+    </div>
+    <div class="profile_dashboard_body">
+      <div class="profile_dashboard_body_no_bought_leads">
+       <%= I18n.t'staticpagesprofile-notification.you-need-to-sign-in' %>
+      </div>
+    </div>
+  </div> -->
+
+<% end %>
+
+  </ul>
+  </div>
+</div>

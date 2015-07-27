@@ -1,0 +1,29 @@
+<%
+  informal_from ||= false
+%>
+<p style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; font-style: normal; font-weight: normal; line-height: 125%; letter-spacing: normal; margin-bottom: 0;">Cheers,<br /><%= informal_from ? "Nina" : "ZweiDesign" %></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #8F93A3; font-family: Helvetica, Arial; font-size: 12px !important; line-height: 100% !important; text-align: left; padding: 15px 30px 15px 30px;" align="left">
+                    <p style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; font-style: normal; font-weight: normal; line-height: 125%; letter-spacing: normal;">
+                      You are receiving this email because you signed up for ZweiDesign.
+                    </p>
+                    <p style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; font-style: normal; font-weight: normal; line-height: 125%; letter-spacing: normal;">
+                      Visit <%= link_to "Account Settings", edit_user_registration_url, style: "-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; color: #41A4CD; font-weight: normal; text-decoration: underline;" %> to manage your settings.
+                    </p>
+                    <p style="-webkit-text-size-adjust: none !important; -ms-text-size-adjust: 100%; font-style: normal; font-weight: normal; line-height: 125%; letter-spacing: normal;">
+                      &copy; <%= Time.now.year %> ZweiDesign.
+                    </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

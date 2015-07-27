@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+  <title>CodingAmigos</title>
+  <%= favicon_link_tag 'sosed.biz.png' %>
+  <meta name="description" content="CodingAmigos community." />
+  <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Update your html tag to include the itemscope and itemtype attributes.
+  <!-- <html itemscope itemtype="http://schema.org/Article"> -->
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="CodingAmigos.com">
+  <meta itemprop="description" content="CodingAmigos community.">
+  <meta itemprop="image" content="http://www./images/interior1.jpg">
+
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="CodingAmigos.com" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.CodingAmigos.com/" />
+  <meta property="og:image" content="http://www./images/interior1.jpg" />
+  <meta property="og:description" content="CodingAmigos community." />
+  <meta property="og:site_name" content="CodingAmigos" />
+  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+  <meta property="article:section" content="My beautiful home" />
+  <meta property="article:tag" content="web, mobile, development, coding, CodingAmigos" />
+  <meta property="fb:admins" content="1455836059" />
+  <style>
+    @-ms-viewport{
+      width: device-width;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <a id="top" name="top"> &nbsp; </a>
+
+  <%= render 'layouts/top_menu' %>
+
+  <%= yield %>
+
+  <a href='#top'><i class="fa fa-arrow-circle-up"></i></a>
+
+  <%= render 'layouts/wookmark' %>
+
+</body>
+  <%= render 'layouts/footer' %>
+</html>

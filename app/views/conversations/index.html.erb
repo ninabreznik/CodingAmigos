@@ -1,0 +1,14 @@
+<div class="body_conversations">
+  <!-- <div class="conversations_title"><i class="fa fa-envelope"></i></div> -->
+  <div class="conversations_wrapper">
+    <div class="conversations_inbox_title"><%= I18n.t'mailboxer.conversations-index.title' %></div>
+    <div class="conversations_inbox_list">
+      <%= render collection: mailbox.conversations, partial: 'conversation' %>
+    </div>
+  </div>
+  <% if @no_message %>
+    <iframe src="<%= no_message_path %>" name="chat_window" id="chat_window_iframe"></iframe>
+  <% else %>
+    <iframe src="<%= conversation_path(mailbox.conversations.first, anchor: 'after_all_messages') %>" name="chat_window" id="chat_window_iframe"></iframe>
+  <% end %>
+</div>

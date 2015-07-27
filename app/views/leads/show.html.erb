@@ -1,0 +1,66 @@
+<div class="body_leads_show">
+  <a class="back_to_main_page_button" href="/"></a>
+  <% if @lead.present? %>
+    <div class="lead_show">
+      <% if @lead.business_type.present? %>
+        <div class="lead_show_title">
+          <%=link_to "#{@lead.title}", user_path(@lead.user) %>
+        </div>
+      <% end %>
+      <div class="lead_show_body">
+        <div class="lead_show_items_short">
+          <div class="lead_show_item">
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.business_type' %>:</div>
+            <%= @lead.business_type %>
+          </div>
+          <div class="lead_show_item">
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.time' %></div>
+            <%= @lead.time %>
+          </div>
+          <div class="lead_show_item">
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.description' %>:</div>
+            <%= @lead.description %>
+          </div>
+          <br>
+          <div class="lead_show_item">
+            <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.location' %>:</div>
+            <%= @lead.location %>
+          </div>
+          <% if @lead.zip.present? %>
+            <div class="lead_show_item">
+                <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.zip' %>:</div>
+                <%= @lead.zip %>
+            </div>
+          <% end %>
+          <% if @lead.link.present? %>
+            <div class="lead_show_item">
+                <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.link' %>:</div>
+                <%= link_to "#{@lead.link}", "http://#{@lead.link.split('http://').last}" %>
+            </div>
+          <% end %>
+          <br>
+        </div>
+    <% if user_signed_in? %>
+        <div class="project_show_send_message">
+          <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
+          <%= form_for :conversation, url: :conversations do |f| %>
+            <%= f.text_field :recipients, type: "hidden", value: "#{@lead.email}" %>
+            <%= f.text_field  :subject, type: "hidden", value: "Hi"  %>
+            <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'leadsshow-lead.send-message.placeholder'}" %>
+            <div class="project_show_send_message_button">
+              <%= f.button :"#{I18n.t'leadsshow-lead.send-message.submit'}" %>
+            </div>
+          <% end %>
+        </div>
+    <% else%>
+      <br>
+      <div class="project_show_send_message">
+        <i class='fa fa-envelope-o'></i>
+        <%= link_to "Contact me", new_user_session_path %>
+      </div>
+    <% end %>
+    </div>
+<% else %>
+  This lead isn't available.
+<% end %>
+</div>

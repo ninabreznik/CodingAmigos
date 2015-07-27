@@ -1,0 +1,26 @@
+<% if conversation.last_message.sender.present? %>
+  <%= content_tag_for(:div, conversation) do |conversation| %><br>
+    <div class="inbox_pic">
+      <div class="inbox_pic_initials">
+        <%= conversation.last_message.sender.email[0] %> 
+      </div>
+    </div>
+    <div class="index_message" >
+      <%= link_to conversation.subject, conversation_path(conversation, anchor: 'after_all_messages'), target: :chat_window %> <br>
+      <%= conversation.last_message.body[0..25] + "..." %> 
+      <%= conversation.updated_at.strftime("%d.%m. ob %H:%M") %><br>
+    </div>
+  <% end %> 
+<% end %>
+
+
+<script type="text/javascript">
+    var mailboxer_conversations = document.querySelectorAll('.mailboxer_conversation');
+    for(var i = 0; i < mailboxer_conversations.length; i++) {
+      (function mailboxer_conversation (ID) {
+        mailboxer_conversations[ID].addEventListener('click', function onClick (event) {
+          mailboxer_conversations[ID].querySelector('a').click();
+        });
+      })(i);
+    }
+</script>
