@@ -9,10 +9,9 @@ Rails.application.configure do
     password:             'GnUQAUKHxIO7YpSGcY2Lzg',
     authentication:       'plain',
     enable_starttls_auto: true  }
-    
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { :host => 'http://zweidesign.co' }
 
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { :host => 'http://www.codingamigos.com' }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
