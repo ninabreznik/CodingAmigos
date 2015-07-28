@@ -12,35 +12,28 @@
         <div class="lead_subtitle" ></div>
           <%= link_to "#{image_tag @user.picture.url(:thumb)}".html_safe, user_path(@user) %><br>
 
-        <% if @user.city.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.city'%>:</div>
-            <i class="fa fa-map-marker"></i> <%= @user.city %><br><br>
-        <% end %>
-
-        <% if @user.service.present? %>
-          <div class="lead_subtitle">Technologies I use:</div>
-            <%= @user.service %> <br>
-        <% end %>
-
-        <% if @user.hourly_rate.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.hourly-rate'%>:</div>
-            <%= @user.hourly_rate %>€/h <br><br>
-        <% end %>
-
-        <% if @user.business_type.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.business_type'%>:</div>
-            <%= @user.business_type %><br><br>
-        <% end %>
-
-        <% if @user.bio.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.bio'%>:</div>
-            <%= @user.bio %><br><br>
-        <% end %>
-
-        <% if @user.website.present? %>
-          <div class="lead_subtitle"><%=I18n.t'user-show.link'%>:</div>
-          <%= link_to "#{@user.website}", "http://#{@user.website.split('http://').last}" %>
-        <% end %><br>
+          <% if @user.city.present? %>
+            <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= @user.city %></div>
+            <br>
+          <% end %>
+          <% if @user.status.present? %>
+            <div class="lead_subtitle">Current status:</div>
+             <%= @user.status %><br><br>
+          <% end %>
+          <% if @user.bio.present? %>
+            <div class="lead_subtitle">Philosophy, Values, Interests:</div>
+             <%= @user.bio %>
+               <br><br>
+          <% end %>
+          <% if @user.service.present? %>
+            <div class="lead_subtitle">Skills:</div>
+             <%= @user.service %>
+               <br><br>
+          <% end %>
+            <div class="lead_subtitle">Currently working on:</div>
+            <a href="https://github.com/#{@user.first_name}?tab=activity">Check my Github activity stream</a>
+            <br>
+            <br>
 
           <br>
           <% if user_signed_in? && current_user == @user %>
@@ -50,7 +43,7 @@
             </div>
           <% else %>
           <div class="project_show_send_message">
-            <a href="https://gitter.im/codingamigos/chat"><i class="fa fa-comment"></i></a>
+            <a href="http://www.gitter.im/#{@project.user.first_name}">Contact me</a>
           </div>
           <% end %>
       </div>
@@ -60,7 +53,7 @@
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>
       <div class="lead_body">
         <div class="lead_subtitle"></div>
-          <%= link_to "#{image_tag project.picture.url(:medium), :width => '287'}".html_safe, project_path(project) %> <br>
+          <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br>
         <div class="lead_subtitle"></div>
         <% if project.description.present? %>
           <div class="lead_show_subtitle"></div>

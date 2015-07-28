@@ -9,39 +9,43 @@
           <div class="lead_show_item">
             <div class="lead_show_subtitle"></div>
             <%=link_to "#{image_tag @project.picture.url(:full)}".html_safe, user_path(@project.user) %><br>
+            <% if @project.category.present? %>
+              <div class="lead_show_subtitle">Category:</div>
+              <br>
+              <%= @project.category %> <br><br>
+            <% end %>
             <% if @project.description.present? %>
-              <div class="lead_show_subtitle"></div>
+              <div class="lead_show_subtitle">Description:</div>
+              <br>
               <%= @project.description %> <br><br>
+            <% end %>
+            <% if @project.live_demo.present? %>
+              <div class="lead_show_subtitle">Live demo:</div>
+              <br>
+              <%= link_to "#{@project.live_demo}", "http://#{@project.live_demo.split('http://').last}" %>
+              <br><br>
+            <% end %>
+            <% if @project.repository.present? %>
+              <div class="lead_show_subtitle">Repository:</div>
+              <br>
+              <%= link_to "#{@project.repository}", "http://#{@project.repository.split('http://').last}" %>
+              <br><br>
             <% end %>
           </div>
             <div class="lead_subtitle">
-              <%=link_to "#{image_tag @project.user.picture.url(:thumb), :width => "25"} #{@project.user.company}".html_safe, user_path(@project.user) %></div><br><br>
+              <%=link_to "#{image_tag @project.user.picture.url(:thumb), :width => "25"} #{@project.user.first_name}".html_safe, user_path(@project.user) %></div><br><br>
           </div>
         <% if current_user.present? %>
           <% if @project.email == current_user.email %>
             <div class="project_show_send_message">
               <%= link_to "#{I18n.t'project-show.edit'}", edit_project_url(@project) %>
             </div>
-          <% else %>
-            <div class="project_show_send_message">
-              <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
-              <%= form_for :conversation, url: :conversations do |f| %>
-                <%= f.text_field :recipients, type: "hidden", value: "#{@project.email}" %>
-                <%= f.text_field  :subject, type: "hidden", value: "Hi"  %>
-                <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'project-show.send-message'}" %>
-                <div class="project_show_send_message_button">
-                  <%= f.button :"#{I18n.t'project-show.submit'}" %>
-                </div>
-              <% end %>
-            </div>
           <% end %>
         <% else %>
           <div class="project_show_send_message">
-            <i class='fa fa-envelope-o'></i>
-            <%= link_to "#{I18n.t'project-show.get-in-touch'}", new_user_registration_path %>
+            <a href="http://www.gitter.im/#{@project.user.first_name}">Contact me</a>
           </div>
         <% end %>
-        </div>
-      </div>
-    </div>
+     </div>
   </div>
+</div>

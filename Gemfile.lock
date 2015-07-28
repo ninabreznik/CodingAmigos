@@ -188,6 +188,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -284,6 +285,7 @@ DEPENDENCIES
   mailboxer
   omniauth-github
   paperclip (~> 4.2)
+  pg
   puma
   rails (= 4.1.0)
   railties (~> 4.1.0)

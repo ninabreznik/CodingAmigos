@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "CodingAmigos <communitz@codingamigos.com>"
+  default from: "CodingAmigos <community@codingamigos.com>"
   layout 'mailer'
   def welcome_email(user, pass=nil)
     @user = user
