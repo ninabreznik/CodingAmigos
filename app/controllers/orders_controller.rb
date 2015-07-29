@@ -41,14 +41,6 @@ class OrdersController < ApplicationController
   end
 
   def update
-    @order = Order.find(params[:id])
-    notes_before_update = @order.notes
-    @order.update_attributes(order_params)
-    if @order.notes != notes_before_update
-      redirect_to order_url(@order)
-    else
-      redirect_to address_book_url
-    end
   end
 
   def bank_transaction
@@ -82,7 +74,6 @@ class OrdersController < ApplicationController
   def order_params
     params.require(:order).permit(
       :paid,
-      :notes
     )
   end
 
@@ -90,7 +81,7 @@ class OrdersController < ApplicationController
     if user.country == "Slovenia"
       current_user.send_message(beta, "Pozdrav, zanima me vaš projekt (#{order.selected.description})", ":)")
     else
-      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", ":)")      
+      current_user.send_message(beta, "Hi, I'm interested in your project (#{order.selected.description})", ":)")
     end
   end
 

@@ -1,5 +1,5 @@
 ActiveAdmin.register Order do
-  permit_params :paid, :notes, :selector_id, :selected_id
+  permit_params :paid, :selector_id, :selected_id
 
   index do
     selectable_column
@@ -9,15 +9,13 @@ ActiveAdmin.register Order do
     column :selector_id
     column :selected_id
     column :paid
-    column :notes
     column :created_at
     actions
   end
 
-    filter :selector_id 
+    filter :selector_id
     filter :selected_id
     filter :paid
-    filter :notes
     filter :created_at
 
   form do |f|
@@ -25,11 +23,8 @@ ActiveAdmin.register Order do
       f.input :selector_id
       f.input :selected_id
       f.input :paid
-      f.input :notes
     end
     f.actions
   end
 
 end
-
-
