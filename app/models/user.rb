@@ -64,15 +64,21 @@ class User < ActiveRecord::Base
       user.email = auth.info.email
       user.first_name = auth.info.name
       user.password = Devise.friendly_token[0,20]
-    end
-  end
-
-  def self.new_with_session(params, session)
-    super.tap do |user|
-      if data = session["devise.github_data"] && session["devise.github_data"]["extra"]["raw_info"]
-        user.email = data["email"] if user.email.blank?
+      user.save
+      pass = user.password
+      beta = user
+      if user.created_at > Time.now - 15.seconds
+        UserMailer.welcome_email(user, pass).deliver
       end
     end
   end
+  #
+  # def self.new_with_session(params, session)
+  #   super.tap do |user|
+  #     if data = session["devise.github_data"] && session["devise.github_data"]["extra"]["raw_info"]
+  #       user.email = data["email"] if user.email.blank?
+  #     end
+  #   end
+  # end
 
 end
