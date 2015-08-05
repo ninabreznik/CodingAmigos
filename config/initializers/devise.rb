@@ -14,9 +14,9 @@ Devise.setup do |config|
 
   config.secret_key = '-- secret key --'
 
-  config.omniauth :github, '3890535131581b9b93ee', '45f53f1d49362b3db443300295e9bf89c58cbef5', scope: 'user:email,user:follow, public_repo'
+  config.omniauth :github, '3890535131581b9b93ee', '68c62544821f97925a21fec666825f263466cb50', scope: 'user:email,user:follow, public_repo'
 
-  OmniAuth.config.full_host = "http://polar-escarpment-9469.herokuapp.com/"
+  # OmniAuth.config.full_host = "http://polar-escarpment-9469.herokuapp.com/"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
