@@ -6,8 +6,8 @@
     Welcome to Coding Amigos
   </div>
   <div class="index_welcome_message_subtitle">
-    Share your current hacks
-    with people around you!
+    Share values and current hacks
+    with your community!
   </div>
 </div>
 <ul id="tiles" class="wookmark">
@@ -22,9 +22,10 @@
         <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= user.city %></div>
         <br>
       <% end %>
-      <% if user.status.present? %>
-        <div class="lead_subtitle">Current status:</div>
-         <%= user.status %><br><br>
+      <% if user.status_updates.present? %>
+        <div class="lead_subtitle">Updates:</div>
+         <%= user.status_updates %>
+           <br><br>
       <% end %>
       <% if user.bio.present? %>
         <div class="lead_subtitle">Philosophy, Values, Interests:</div>
@@ -36,10 +37,6 @@
          <%= user.service %>
            <br><br>
       <% end %>
-        <div class="lead_subtitle">Currently working on:</div>
-        <a href="https://github.com/#{user.first_name}?tab=activity">Check my Github activity stream</a>
-        <br>
-        <br>
       <% if user.projects.any? %>
         <div class="lead_subtitle">
           Portfolio:
@@ -48,20 +45,6 @@
           <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br><br>
         <% end %>
       <% end %>
-      <% if user_signed_in? && current_user != user %>
-            <div class="lead_subtitle"></div>
-              <div class="project_show_send_message">
-                <%=image_tag current_user.picture.url(:thumb), :width =>"25" %>
-                <%= form_for :conversation, url: :conversations do |f| %>
-                  <%= f.text_field :recipients, type: "hidden", value: "#{user.email}" %>
-                  <%= f.text_field  :subject, type: "hidden", value: "Hi"  %>
-                  <%= f.text_area  :body, as: :text, placeholder: "#{I18n.t'user-show.contact-provider'}" %>
-                  <div class="project_show_send_message_button">
-                    <%= f.button :"#{I18n.t'user-show.send-message.submit'}" %>
-                  </div>
-                <% end %>
-              </div>
-          <% end %>
     </div>
   </div>
   <% end %>

@@ -8,6 +8,10 @@
 
 <%= form_for(resource, as: resource_name, url: users_path, html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
+  <!-- <div class="user_edit_form_email">
+    <br><%= f.label :"What is on your mind?" %><br>
+    <%= f.text_area :status_updates%></div> -->
+
   <div class="user_edit_form_email">
     <br><%= f.label :"Name" %><br>
     <%= f.text_field :first_name%></div>
@@ -34,7 +38,8 @@
       ["Searching for co-founder"],
       ["Employed"],
       ["Looking for a job"],
-      ["Busy"]],
+      ["Busy"],
+      ["Just making burritos and playing La Cucaracha"]],
       :prompt=>"Your status" %>
   </div><br>
 
@@ -42,7 +47,7 @@
     <%= f.label :"What are you currently working on?" %><br>
     <%= f.text_field :currently_working_on %></div><br> -->
 
-  <div class="user_edit_form_email"><%= f.label :"Links to your stuff" %><br>
+  <div class="user_edit_form_email"><%= f.label :"Webpage" %><br>
   <%= f.text_field :website %></div><br>
 
   <div class="user_edit_form_email"><%= f.label :"Current city" %><br />

@@ -4,10 +4,24 @@
 <div class="signup">
   <br>
   <div class="signup_title">
-    <%= I18n.t'users-login.login' %>
+    <%- if devise_mapping.omniauthable? %>
+      <%- resource_class.omniauth_providers.each do |provider| %>
+        <%= link_to omniauth_authorize_path(resource_name, provider) do  %>
+        Sign in with
+        <i class="fa fa-github separator"></i>
+        <% end %>
+        <br>
+        <br>
+      <% end -%>
+    <% end -%>
   </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="signup_form_email">
+  OR CREATE NEW ACCOUNT
+</div>
+
   <div class="signup_form_email"><%= f.label :"#{I18n.t'users-login.email'}" %><br />
   <%= f.email_field :email, autofocus: true %></div>
 
