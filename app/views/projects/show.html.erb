@@ -34,7 +34,6 @@
           </div>
             <div class="lead_subtitle">
               <%=link_to "#{image_tag @project.user.picture.url(:thumb), :width => "25"} #{@project.user.first_name}".html_safe, user_path(@project.user) %></div><br><br>
-          </div>
         <% if current_user.present? %>
           <% if @project.email == current_user.email %>
             <div class="project_show_send_message">
@@ -46,6 +45,7 @@
             <a href="http://www.gitter.im/#{@project.user.first_name}">Contact me</a>
           </div>
         <% end %>
+          </div>
      </div>
   </div>
 </div>

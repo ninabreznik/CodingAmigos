@@ -40,11 +40,12 @@
              <%= link_to "#{@user.website}", "http://#{@user.website.split('http://').last}" %>
                <br><br>
           <% end %>
+          <% if @user.username.present? %>
             <div class="lead_subtitle">Currently working on:</div>
             <a href="https://github.com/<%=@user.username%>?tab=activity">Check my Github activity stream</a>
             <br>
             <br>
-
+          <% end %>
           <br>
           <% if user_signed_in? && current_user == @user %>
           <br>
