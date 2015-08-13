@@ -16,7 +16,7 @@
     <div class="lead_new_instructions">
       <%=I18n.t'project-new.instructions'%>
     </div>
-    <%= form_for @project, :url => projects_path, :html => { :multipart => true } do |p| %>
+    <%= form_for @project, :url => projects_path, :html => { :multipart => true, class: "directUpload" } do |p| %>
       <div class="lead_new_form_description">
         <%= p.label "#{I18n.t'project-new.form.title'}" %>
         <%= p.text_field :title %>
@@ -33,7 +33,7 @@
       </div><br>
       <div class="lead_new_form_description">
         <%= p.label "Upload image or screenshot" %>
-        <%= p.file_field :picture %>
+        <%= p.file_field :picture_url %>
       </div><br>
       <div class="lead_new_form_description">
         <%= p.label "#{I18n.t'project-new.form.description'}" %>

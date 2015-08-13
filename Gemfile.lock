@@ -68,6 +68,11 @@ GEM
     arbre (1.0.2)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
+    aws-sdk (1.64.0)
+      aws-sdk-v1 (= 1.64.0)
+    aws-sdk-v1 (1.64.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.7)
     bourbon (3.2.3)
       sass (~> 3.2)
@@ -160,6 +165,7 @@ GEM
       foreigner (>= 0.9.1)
       rails (>= 3.2.0)
     mime-types (1.25.1)
+    mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
@@ -167,6 +173,8 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -278,6 +286,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  aws-sdk (< 2)
   capistrano-bundler
   capistrano-rails
   capistrano-rbenv

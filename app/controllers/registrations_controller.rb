@@ -1,6 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
 
-
 def create
   super()
   user = User.last

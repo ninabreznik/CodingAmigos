@@ -5,17 +5,24 @@ class Lead < ActiveRecord::Base
 # ###############################################################################
 # Relationship betweer User & Lead, through Order
 # ###############################################################################
-  has_many :reverse_orders, foreign_key: "selected_id", 
+  has_many :reverse_orders, foreign_key: "selected_id",
                                    class_name: "Order",
                                    dependent: :destroy
   has_many :selectors, through: :reverse_orders, source: :selector
   belongs_to :user
 
-  has_attached_file :picture, :styles => { :full => "1400x1400>", :large => "500x500>", :medium => "250x250>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :picture,
+                    :styles => { :medium => "300x300>", :thumb => "100x100>" },
+                    :default_url => "/images/:style/missing.png",
+                    :storage => :s3,
+                    :s3_credentials => {  :access_key_id  => ENV['AWS_ACCESS_KEY_ID'],
+                                          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
+                                          :bucket => ENV['S3_BUCKET'] }
+                                            
   validates_attachment_size :picture, less_than: 1.megabytes
   validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp"]
   validates :picture_file_name, length: { maximum: 150 }
-  
+
   attr_writer :current_step
 
   # :::::::::::::: VALIDATIONS :::::::::::::::::::
@@ -24,7 +31,7 @@ class Lead < ActiveRecord::Base
   validates :time, presence: true
   validates :description, presence: true
   validates :location, presence: true
-  validates :email, presence: true, format: {with: /.+@.+\..+/i} 
+  validates :email, presence: true, format: {with: /.+@.+\..+/i}
   # validates :name, presence: true
 
 
@@ -36,7 +43,7 @@ class Lead < ActiveRecord::Base
   #   elsif self.zip > 2999 && self.zip < 3999
   #     self.location = "Celje"
   #   elsif self.zip > 3999 && self.zip < 4999
-  #     self.location = "Kranj" 
+  #     self.location = "Kranj"
   #   elsif self.zip > 4999 && self.zip < 5999
   #     self.location = "Nova Gorica"
   #   elsif self.zip > 5999 && self.zip < 6999
@@ -44,16 +51,16 @@ class Lead < ActiveRecord::Base
   #   elsif self.zip > 7999 && self.zip < 8999
   #     self.location = "Novo mesto"
   #   elsif self.zip > 8999 && self.zip < 10000
-  #     self.location = "Murska Sobota"                 
-  #   end 
+  #     self.location = "Murska Sobota"
+  #   end
   # end
 
-  # :::::::::::::: LEAD/NEW forms :::::::::::::::::::  
+  # :::::::::::::: LEAD/NEW forms :::::::::::::::::::
 
   def current_step
     @current_step || steps.first
   end
-  
+
   def steps
     %w[first second]
   end
