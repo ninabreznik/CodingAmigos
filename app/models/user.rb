@@ -13,14 +13,12 @@ class User < ActiveRecord::Base
   has_many :likes, as: :likeable
 
   has_attached_file :picture,
-                    :styles => { :medium => "300x300>", :thumb => "100x100>" },
+                    :styles => { :full => "1400x1400>", :large => "400x400>", :medium => "250x250>", :thumb => "100x100>" },
                     :default_url => "/images/:style/missing.png",
-                    :storage => :s3,
-                    :s3_credentials => {  :access_key_id  => ENV['AWS_ACCESS_KEY_ID'],
-                                          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-                                          :bucket => ENV['S3_BUCKET'] }
+                    :storage => :s3
+
   validates_attachment_size :picture, less_than: 1.megabytes
-  validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp"]
+  validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp", "image/svg"]
   validates :picture_file_name, length: { maximum: 150 }
 
 

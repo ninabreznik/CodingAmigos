@@ -15,6 +15,15 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  # Sets Paperclip to upload images to Amazon S3
+    config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {  :access_key_id  => 'AWS_ACCESS_KEY_ID',
+                            :secret_access_key => 'AWS_SECRET_ACCESS_KEY',
+                            :bucket => 'S3_BUCKET'}
+    }
+
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.

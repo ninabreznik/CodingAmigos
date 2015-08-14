@@ -9,7 +9,7 @@ Rails.application.configure do
     password:             'GnUQAUKHxIO7YpSGcY2Lzg',
     authentication:       'plain',
     enable_starttls_auto: true  }
-    
+
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # In the development environment your application's code is reloaded on
@@ -19,6 +19,19 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+
+# Sets Paperclip to upload images to Amazon S3
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {  :access_key_id  => ENV['AWS_ACCESS_KEY_ID'],
+                          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
+                          :bucket => ENV['S3_BUCKET'] }
+  }
+
+
+
+
+
 
 
   # Show full error reports and disable caching.
@@ -46,7 +59,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

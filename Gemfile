@@ -6,6 +6,8 @@ gem 'rails_12factor', group: :production
 ruby '2.1.2'
 # Use sqlite3 as the database for Active Record
 
+# Loads .env into ENV in local environment
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :production do
   gem 'pg'
@@ -19,7 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rmagick', '2.13.2'
 
 
-gem 'aws-sdk', '< 2'
+gem 'aws-sdk', '~> 1.6'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
