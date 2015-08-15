@@ -37,7 +37,11 @@
           <% end %>
           <% if @user.website.present? %>
             <div class="lead_subtitle">Website:</div>
+            <% if @user.website.include?("https") %>
+             <%= link_to "#{@user.website}", "https://#{@user.website.split('https://').last}" %>
+            <% else %>
              <%= link_to "#{@user.website}", "http://#{@user.website.split('http://').last}" %>
+            <% end %>
                <br><br>
           <% end %>
           <% if @user.username.present? %>

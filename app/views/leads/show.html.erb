@@ -35,7 +35,11 @@
           <% if @lead.link.present? %>
             <div class="lead_show_item">
                 <div class="lead_show_subtitle"><%= I18n.t'leadsshow-lead.link' %>:</div>
-                <%= link_to "#{@lead.link}", "http://#{@lead.link.split('http://').last}" %>
+                <% if @lead.link.include?("https") %>
+                 <%= link_to "#{@lead.link}", "https://#{@lead.link.split('https://').last}" %>
+                <% else %>
+                 <%= link_to "#{@lead.link}", "http://#{@lead.link.split('http://').last}" %>
+                <% end %>
             </div>
           <% end %>
           <br>

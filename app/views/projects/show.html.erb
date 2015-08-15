@@ -22,13 +22,21 @@
             <% if @project.live_demo.present? %>
               <div class="lead_show_subtitle">Live demo:</div>
               <br>
-              <%= link_to "#{@project.live_demo}", "http://#{@project.live_demo.split('http://').last}" %>
+              <% if @project.live_demo.include?("https") %>
+               <%= link_to "#{@project.live_demo}", "https://#{@project.live_demo.split('https://').last}" %>
+              <% else %>
+               <%= link_to "#{@project.live_demo}", "http://#{@project.live_demo.split('http://').last}" %>
+              <% end %>
               <br><br>
             <% end %>
             <% if @project.repository.present? %>
               <div class="lead_show_subtitle">Repository:</div>
               <br>
-              <%= link_to "#{@project.repository}", "#{@project.repository}" %>
+              <% if @project.repository.include?("https") %>
+               <%= link_to "#{@project.repository}", "https://#{@project.repository.split('https://').last}" %>
+              <% else %>
+               <%= link_to "#{@project.repository}", "http://#{@project.repository.split('http://').last}" %>
+              <% end %>
               <br><br>
             <% end %>
           </div>
