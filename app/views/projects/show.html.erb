@@ -28,7 +28,7 @@
             <% if @project.repository.present? %>
               <div class="lead_show_subtitle">Repository:</div>
               <br>
-              <%= link_to "#{@project.repository}", "http://#{@project.repository.split('http://').last}" %>
+              <%= link_to "#{@project.repository}", "#{@project.repository}" %>
               <br><br>
             <% end %>
           </div>
