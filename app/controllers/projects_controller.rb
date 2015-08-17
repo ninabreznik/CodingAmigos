@@ -3,25 +3,6 @@ class ProjectsController < ApplicationController
   def new
     @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: 201, acl: :public_read)
     @project = Project.new
-    @categories = [
-      ["Kuhinja"],
-      ["Kopalnica"],
-      ["Spalnica"],
-      ["Dnevni prostor"],
-      ["Jedilnica"],
-      ["Otroški prostor"],
-      ["Delovni prostor"],
-      ["Utility & shramba"],
-      ["Vhod & garderoba"],
-      ["Hodnik"],
-      ["Stopnišče"],
-      ["Klet"],
-      ["Garaža"],
-      ["Hiša & fasade"],
-      ["Okolica"],
-      ["Svetila"],
-      ["Hobi & dekor"]
-    ]
   end
 
   def create
@@ -43,49 +24,11 @@ class ProjectsController < ApplicationController
 
   def edit
     @project = Project.find(params[:id])
-    @categories = [
-      ["Kuhinja"],
-      ["Kopalnica"],
-      ["Spalnica"],
-      ["Dnevni prostor"],
-      ["Jedilnica"],
-      ["Otroški prostor"],
-      ["Delovni prostor"],
-      ["Prostor za shranjevanje"],
-      ["Vhod in garderoba"],
-      ["Hodnik"],
-      ["Stopnišče"],
-      ["Klet"],
-      ["Garaža in hobi prostor"],
-      ["Hiša in fasade"],
-      ["Okolica"],
-      ["Svetila"],
-      ["Dekor"]
-    ]
   end
 
   def update
       @project = Project.find(params[:id])
       @user = current_user
-      @categories = [
-      ["Kuhinja"],
-      ["Kopalnica"],
-      ["Spalnica"],
-      ["Dnevni prostor"],
-      ["Jedilnica"],
-      ["Otroški prostor"],
-      ["Delovni prostor"],
-      ["Prostor za shranjevanje"],
-      ["Vhod in garderoba"],
-      ["Hodnik"],
-      ["Stopnišče"],
-      ["Klet"],
-      ["Garaža in hobi prostor"],
-      ["Hiša in fasade"],
-      ["Okolica"],
-      ["Svetila"],
-      ["Dekor"]
-    ]
     if @project.update_attributes(project_params)
       redirect_to user_path(@user)
     else
@@ -93,8 +36,6 @@ class ProjectsController < ApplicationController
     end
     @project.save
   end
-
-
 
   def index
     @projects = Project.all
@@ -163,8 +104,6 @@ class ProjectsController < ApplicationController
         project.user_id = user.id
         user.projects << project
         UserMailer.welcome_email(user, pass).deliver
-        beta = user
-        User.find_by_id(1).send_message(beta, "Hi, this is Nina from ZweiDesign. Congrats on creating your account. I noticed you haven't set up your profile. The longer you wait, the more clients you're missing out on. Log in, add your information, and upload the best three examples of your work (projects). Once you do, I'll have a chance to review your profile. If you have questions, please contact me and I'll get back to you shortly.", ":)")
       end
     end
     project.save

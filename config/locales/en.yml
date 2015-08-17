@@ -145,6 +145,7 @@ en:
       title: "Change your password"
       new-password: "New password"
       submit: "Change my password"
+      change-password: "Type new password"
 #Links
   users-links:
     login: "Log in"
@@ -1164,7 +1165,7 @@ en:
 # ############################################################################################
 
   project-index:
-    data-filter-1: "CLIENT PROJECT - Check it out."
+    data-filter-1: "CLIENT PROJECT - Check it out"
     data-filter-2: "TEACHING/MENTORING - I can share my skills with you on this topic."
     data-filter-3: "APP - Check it out, spread the word or connect your API."
     data-filter-4: "IDEA - Would love to get some feedback and find collaborators."

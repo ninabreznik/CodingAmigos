@@ -9,6 +9,7 @@
           <div class="lead_show_item">
             <div class="lead_show_subtitle"></div>
             <%=link_to "#{image_tag @project.picture.url(:full)}".html_safe, user_path(@project.user) %><br>
+            <br>
             <% if @project.category.present? %>
               <div class="lead_show_subtitle">Category:</div>
               <br>

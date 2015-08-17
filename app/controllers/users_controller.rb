@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @users.each do |user|
       @user = user
     end
-    @sorted_users = User.all.sort_by{|updated| @user.updated_at}
+    @sorted_users = User.all.sort_by{|updated| @user.last_sign_in_at}.reverse
     @services = []
   end
 
