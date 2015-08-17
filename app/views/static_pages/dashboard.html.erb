@@ -28,7 +28,7 @@
           <%= @login_count %>
         </div>
         <div class="profile_dashboard_stats_title">
-          Login count
+          <%= link_to "Login count", dashboard_path %>
         </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
           <%= @updated_at %>
         </div>
         <div class="profile_dashboard_stats_title">
-          Last update at
+          <%= link_to "Last update at", user_path(current_user) %>
         </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
           <%= @joined %>
         </div>
         <div class="profile_dashboard_stats_title">
-          Joined
+          <%= link_to "Joined", user_path(current_user) %>
         </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
             <%= @published_projects %>
           </div>
           <div class="profile_dashboard_stats_title">
-            Published projects
+            <%= link_to "Published projects", user_path(current_user) %>
           </div>
       <% else %>
         <div class="profile_dashboard_stats_data">
