@@ -6,7 +6,7 @@
     Welcome to Coding Amigos
   </div>
   <div class="index_welcome_message_subtitle">
-    Share values and current hacks
+    Share values & current hacks
     with your community!
   </div>
 </div>
@@ -17,7 +17,7 @@
     <div class="lead_title"><%= link_to "#{user.first_name}", user_path(user) %></div>
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
-        <%= link_to "#{image_tag user.picture.url(:full), :width => '287'}".html_safe, user_path(user) %> <br><br>
+        <%= link_to "#{image_tag user.picture.url(:large), :width => '287'}".html_safe, user_path(user) %> <br><br>
       <% if user.city.present? %>
         <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= user.city %></div>
         <br>
