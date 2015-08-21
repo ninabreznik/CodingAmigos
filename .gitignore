@@ -1,2 +1,6 @@
 # Ignore ENV FILE
 .env
+
+tmp/*
+.ssh/*
+log/*
