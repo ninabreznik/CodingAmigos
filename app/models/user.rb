@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp", "image/svg"]
   validates :picture_file_name, length: { maximum: 150 }
 
-
+  scope :search_by_id, ->(search){ where('users.id LIKE ?', "%#{search}%") }
 
    # #############################################################################
   # Order between User and Lead
@@ -55,10 +55,6 @@ class User < ActiveRecord::Base
 
   def mailboxer_email(object)
     email
-  end
-
-  def self.search_by_id(search)
-    where('users.id LIKE ?', "%#{search}%")
   end
 
   def self.from_omniauth(auth)
