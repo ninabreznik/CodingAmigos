@@ -1,5 +1,7 @@
 license
 =======
+
+[![Join the chat at https://gitter.im/ninabreznik/CodingAmigos](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ninabreznik/CodingAmigos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [[back to top](#table-of-content)]
 
 ![CC BY-NC-ND 4.0](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License")
