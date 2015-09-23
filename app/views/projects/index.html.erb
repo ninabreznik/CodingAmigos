@@ -1,11 +1,20 @@
-<div class="body_project_index">
-<div class="columns" id="main" role="main">
 
+<div class="body_users_index">
+<div class="columns" id="main" role="main">
+<div class="index_welcome_message">
+ <div class="index_welcome_message_title">
+    Browse all projects
+  </div>
+  <div class="index_welcome_message_subtitle">
+    See what your Amigas & Amigos are working on!
+  </div>
+</div>
 <ul id="tiles" class="wookmark">
 <% if @projects.present? %>
   <% @projects.each do |project| %>
+  <div class="lead_box">
     <div class="lead_body">
-      <div class="lead_subtitle" ></div>
+      <div class="lead_subtitle_image" ></div>
         <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br><br>
       <div class="lead_subtitle"></div>
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.first_name}".html_safe, user_path(project.user) %>

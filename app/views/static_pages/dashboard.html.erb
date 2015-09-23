@@ -47,10 +47,10 @@
       <div class="lead_box">
         <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
-          <%= @joined %>
+          <%= @project_count %>
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "Joined", user_path(current_user) %>
+          <%= link_to "See what your community is working on", projects_path %>
         </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
             <%= @published_projects %>
           </div>
           <div class="profile_dashboard_stats_title">
-            <%= link_to "Published projects", user_path(current_user) %>
+            <%= link_to "My projects", user_path(current_user) %>
           </div>
       <% else %>
         <div class="profile_dashboard_stats_data">

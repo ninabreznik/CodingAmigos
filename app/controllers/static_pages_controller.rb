@@ -23,7 +23,7 @@ class StaticPagesController < ApplicationController
 
   def dashboard
     if user_signed_in?
-      @joined = current_user.created_at.strftime("20%y")
+      @project_count = Project.all.count
       @login_count = current_user.sign_in_count
       @updated_at = current_user.created_at.strftime("%d/%m")
       if current_user.projects.any?

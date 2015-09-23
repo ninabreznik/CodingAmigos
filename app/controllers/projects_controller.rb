@@ -44,7 +44,7 @@ class ProjectsController < ApplicationController
     User.all.each do |user|
       @user = user
     end
-    @sorted_users = User.all.sort_by{|updated| @user.updated_by}
+    @sorted_users = User.all.shuffle
     projects_old = -1
     i=0
     while projects_old < @projects.count
