@@ -19,9 +19,8 @@
       <div class="lead_subtitle"></div>
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.first_name}".html_safe, user_path(project.user) %>
         <br><br>
-        <% if project.user.city.present? %>
-          <i class="fa fa-map-marker"></i>
-          <%= project.user.city %>
+        <% if project.title.present? %>
+          <%= link_to "#{project.title}", project_path(project) %>
         <% end %>
       <div class="lead_subtitle"></div>
         <% if current_user.present? %>
