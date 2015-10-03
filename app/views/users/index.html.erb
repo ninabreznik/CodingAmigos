@@ -6,7 +6,7 @@
     CodingAmigas & Amigos
   </div>
   <div class="index_welcome_message_subtitle">
-    Share values & current hacks
+    Share values & hacks
     with your community!
   </div>
 </div>
@@ -21,6 +21,11 @@
       <% if user.city.present? %>
         <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= user.city %></div>
         <br>
+      <% end %>
+      <% if user.status.present? %>
+        <div class="lead_subtitle"> Current status:</div>
+        <%= user.status %>
+           <br><br>
       <% end %>
       <% if user.status_updates.present? %>
         <div class="lead_subtitle">Updates:</div>
