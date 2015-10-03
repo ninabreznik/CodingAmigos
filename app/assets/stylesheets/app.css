@@ -625,7 +625,7 @@ html {
 
 /* line 96 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .index_welcome_message {
-    background-image: url("/images/start_background.png");
+    background-image: url("http://codingamigosapp.s3.amazonaws.com/background/start_background.jpg");
     position: relative;
     padding-bottom: 155px;
     text-align: center;
