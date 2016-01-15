@@ -19,7 +19,6 @@ class User < ActiveRecord::Base
 
   validates_attachment_size :picture, less_than: 1.megabytes
   validates_attachment_content_type :picture, content_type: ["image/jpeg", "image/png", "image/jpg", "image/bmp", "image/svg"]
-  validates :picture_file_name, length: { maximum: 150 }
 
   scope :search_by_id, ->(search){ where('users.id LIKE ?', "%#{search}%") }
 
