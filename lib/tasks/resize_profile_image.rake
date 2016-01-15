@@ -1,8 +1,8 @@
 namespace :users do
-  desc "Add Slovenia to user.country"
-  task :add_slovenia => :environment do
+  desc "Resize user profile images"
+  task :resize_images => :environment do
     User.all.tap{|users| puts "Found #{users.size} users to work on"}.each do |user|
-      user.country = "Slovenia"
+      user.picture.reprocess!
     end
   end
 end

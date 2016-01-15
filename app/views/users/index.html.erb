@@ -10,14 +10,37 @@
     with your community!
   </div>
 </div>
+<ol id="filters">
+  <li data-filter="Available for hire">
+    Available for hire
+  </li>
+  <li data-filter="Interested in Collaboration">
+    Interested in Collaboration
+  </li>
+  <li data-filter="Searching for co-founder">
+    Searching for co-founder
+  </li>
+  <li data-filter="Employed">
+    Employed
+  </li>
+  <li data-filter="Looking for a job">
+    Looking for a job
+  </li>
+  <li data-filter="Busy">
+    Busy
+  </li>
+  <li data-filter="Just making burritos and playing La Cucaracha">
+    Just making burritos and playing La Cucaracha
+  </li>
+</ol>
 <ul id="tiles" class="wookmark">
 <% if @users.present? %>
   <% @sorted_users.each do |user| %>
-  <div class="lead_box">
+  <div class="lead_box" data-filter-class='["<%= user.status %>"]'>
     <div class="lead_title"><%= link_to "#{user.first_name}", user_path(user) %></div>
     <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
-        <%= link_to "#{image_tag user.picture.url(:large), :width => '287'}".html_safe, user_path(user) %> <br><br>
+        <%= link_to "#{image_tag user.picture.url(:large), :width => '287', :height => '287'}".html_safe, user_path(user) %> <br><br>
       <% if user.city.present? %>
         <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= user.city %></div>
         <br>

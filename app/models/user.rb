@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   has_many :likes, as: :likeable
 
   has_attached_file :picture,
-                    :styles => { :full => "1400x1400>", :large => "400x400>", :medium => "250x250>", :thumb => "100x100>" },
+                    :styles => { :full => "1400x1400>", :large => "400x400#", :medium => "250x250#", :thumb => "100x100#" },
                     :default_url => "/images/:style/missing.png",
                     :storage => :s3
 
