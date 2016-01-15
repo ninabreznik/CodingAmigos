@@ -21,14 +21,35 @@
       </div>
     </div>
 
+    <div class="lead_box">
+      <div class="profile_dashboard_body">
+        <div class="profile_dashboard_stats_data">
+          <%= @project_count %>
+        </div>
+        <div class="profile_dashboard_stats_title">
+          <%= link_to "See all Community's Project", projects_path %>
+        </div>
+      </div>
+    </div>
 
     <div class="lead_box">
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_stats_data">
-          <%= @login_count %>
+          Chat
         </div>
         <div class="profile_dashboard_stats_title">
-          <%= link_to "Login count", dashboard_path %>
+          <a href="http://www.gitter.im/codingamigos/chat">Join the Public Chat</a>
+        </div>
+        </div>
+      </div>
+
+    <div class="lead_box">
+      <div class="profile_dashboard_body">
+        <div class="profile_dashboard_stats_data">
+          Meetup
+        </div>
+        <div class="profile_dashboard_stats_title">
+          <a href="http://www.meetup.com/CodingAmigos/">Check next Meetups</a>
         </div>
         </div>
       </div>
@@ -44,16 +65,6 @@
         </div>
       </div>
 
-      <div class="lead_box">
-        <div class="profile_dashboard_body">
-        <div class="profile_dashboard_stats_data">
-          <%= @project_count %>
-        </div>
-        <div class="profile_dashboard_stats_title">
-          <%= link_to "See what your community is working on", projects_path %>
-        </div>
-        </div>
-      </div>
 
       <div class="lead_box">
         <div class="profile_dashboard_body">

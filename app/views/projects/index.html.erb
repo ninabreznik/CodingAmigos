@@ -13,15 +13,17 @@
 <% if @projects.present? %>
   <% @projects.each do |project| %>
   <div class="lead_box">
-    <div class="lead_body">
+      <div class="lead_title">
+        <% if project.title.present? %>
+        <%= link_to "#{project.title}", project_path(project) %>
+        <% end %>
+      </div>
+      <div class="lead_body">
       <div class="lead_subtitle_image" ></div>
         <%= link_to "#{image_tag project.picture.url(:large), :width => '287'}".html_safe, project_path(project) %> <br><br>
       <div class="lead_subtitle"></div>
         <%=link_to "#{image_tag project.user.picture.url(:thumb), :width => "25"} #{project.user.first_name}".html_safe, user_path(project.user) %>
-        <br><br>
-        <% if project.title.present? %>
-          <%= link_to "#{project.title}", project_path(project) %>
-        <% end %>
+
       <div class="lead_subtitle"></div>
         <% if current_user.present? %>
           <% if @likes.where(likee_id: project.id, likeable_id: current_user.id).count == 0 %>
