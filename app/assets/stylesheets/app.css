@@ -237,7 +237,7 @@ html {
                 LEAD LISTING MIXINS
  :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* line 1974 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/node_modules/axis/axis/print.styl */
+/* line 1975 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/node_modules/axis/axis/print.styl */
 
 /* line 33 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
 @media only screen and (max-width: 5000px) {
@@ -657,17 +657,21 @@ html {
   }
 
 /* line 102 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+  .body_users_index .columns .chat_button a {
+    color: #fff;
+  }
+
+/* line 104 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .index_welcome_message {
     background-image: url("/images/start_background.png");
     position: relative;
     text-align: center;
     text-shadow: 1px 1px #606060;
     overflow: hidden;
-    padding: 4%;
-    height: 400px;
+    padding-bottom: 155px;
   }
 
-/* line 110 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 111 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .index_welcome_message .video {
     z-index: 1;
     opacity: 0.8;
@@ -680,11 +684,11 @@ html {
     height: auto;
   }
 
-/* line 120 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 121 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .index_welcome_message .index_welcome_message_title {
     z-index: 2;
     position: relative;
-    top: 30%;
+    top: 110px;
     left: 22%;
     padding: 20px;
     background: #000; /* fallback color */
@@ -692,7 +696,7 @@ html {
     color: #fff;
     width: 65%;
     margin-bottom: 6.25px;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     line-height: 1.1;
@@ -700,11 +704,11 @@ html {
     text-rendering: optimize legibility;
   }
 
-/* line 137 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 138 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .index_welcome_message .index_welcome_message_subtitle {
     z-index: 2;
     position: relative;
-    top: 30%;
+    top: 115px;
     padding: 20px;
     background: #000; /* fallback color */
     background: rgba(0,0,0,0.7);
@@ -720,34 +724,34 @@ html {
     font-weight: bold;
     line-height: 1.6em;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 26px;
   }
 
-/* line 157 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 158 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 159 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 160 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark #tiles {
     margin: 0;
   }
 
-/* line 161 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 162 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark #tiles #tiles li.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 164 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 165 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 167 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 168 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -759,7 +763,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 169 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 170 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_title {
     background-color: #f6f6f6;
     padding: 15px;
@@ -768,7 +772,7 @@ html {
     font-size: 14px;
   }
 
-/* line 175 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 176 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_title .fa.fa-star {
     color: #fcd229;
     font-size: 16px;
@@ -776,12 +780,12 @@ html {
     left: 5.15%;
   }
 
-/* line 179 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 180 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_title .fa.fa-star:hover {
     color: #222;
   }
 
-/* line 181 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 182 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body {
     font-size: 14px;
     padding: 15px;
@@ -794,43 +798,43 @@ html {
     width: 300px;
   }
 
-/* line 191 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 192 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body a:hover {
     opacity: 0.7;
   }
 
-/* line 193 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 194 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 197 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 198 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .lead_subtitle_image {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-/* line 200 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 201 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .like_heart {
     margin-left: 260px;
     font-size: 12px;
   }
 
-/* line 203 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
-
 /* line 204 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+
+/* line 205 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .like_heart a:hover {
     color: #2a9c6d;
   }
 
-/* line 206 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 207 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body a img {
     border-radius: 50%;
   }
 
-/* line 208 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 209 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like,
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like input,
@@ -846,7 +850,7 @@ html {
     background-color: #fff;
   }
 
-/* line 221 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 222 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart,
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart,
@@ -859,7 +863,7 @@ html {
     font-size: 12px;
   }
 
-/* line 224 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 225 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart:hover,
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart:hover,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart:hover,
@@ -871,7 +875,7 @@ html {
     color: #222;
   }
 
-/* line 226 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 227 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o,
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o,
@@ -884,7 +888,7 @@ html {
     font-size: 12px;
   }
 
-/* line 229 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 230 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o:hover,
   .body_users_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o:hover,
   .body_users_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o:hover,
@@ -896,7 +900,7 @@ html {
     color: #2a9c6d;
   }
 
-/* line 231 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 232 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_users_index .leads_index_no_leads_available {
     position: absolute;
     margin-top: 30px;
@@ -920,7 +924,7 @@ html {
     line-height: 150%;
   }
 
-/* line 250 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 251 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -955,39 +959,39 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 261 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 262 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #mc_embed_signup {
     width: 50%;
     margin-left: 28%;
     padding-bottom: 20px;
   }
 
-/* line 265 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 266 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #mc_embed_signup #mce-EMAIL,
   .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
     display: inline-block;
     width: auto;
   }
 
-/* line 269 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 270 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
     margin-left: 5px !important;
   }
 
-/* line 271 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 272 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #mc_embed_signup #mce-EMAIL {
     margin-right: 0px !important;
     width: 50%;
   }
 
-/* line 274 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 275 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #mc_embed_signup #mc-embedded-subscribe {
     background-color: #aaa;
     font-size: 12px;
     margin-left: 12%;
   }
 
-/* line 278 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 279 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #filters {
     list-style-type: none;
     text-align: center;
@@ -996,7 +1000,7 @@ html {
     z-index: 3;
   }
 
-/* line 284 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 285 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #filters li {
     cursor: pointer;
     margin: 0 0.5% 6px 0.5%;
@@ -1037,7 +1041,7 @@ html {
     background-color: #ddd;
   }
 
-/* line 298 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 299 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index #filters li.active {
     font-size: 13px;
     padding: 10px 22px;
@@ -1069,7 +1073,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 303 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 304 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns {
     position: relative;
     margin-top: 35px;
@@ -1078,31 +1082,31 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 305 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 306 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 307 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 308 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark #tiles {
     margin: 0;
   }
 
-/* line 309 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 310 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark #tiles #tiles li.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 312 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 313 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 315 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 316 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -1114,7 +1118,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 317 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 318 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_title {
     background-color: #2a9c6d;
     padding: 15px;
@@ -1123,7 +1127,7 @@ html {
     font-size: 14px;
   }
 
-/* line 323 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 324 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_title .fa.fa-star {
     color: #fcd229;
     font-size: 16px;
@@ -1131,12 +1135,12 @@ html {
     left: 5.15%;
   }
 
-/* line 327 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 328 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_title .fa.fa-star:hover {
     color: #222;
   }
 
-/* line 329 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 330 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body {
     font-size: 14px;
     padding: 15px;
@@ -1149,33 +1153,33 @@ html {
     width: 300px;
   }
 
-/* line 339 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 340 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 343 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 344 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .lead_subtitle_image {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-/* line 346 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 347 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .like_heart {
     margin-left: 260px;
     font-size: 12px;
   }
 
-/* line 349 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
-
 /* line 350 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+
+/* line 351 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .like_heart a:hover {
     color: #2a9c6d;
   }
 
-/* line 352 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 353 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like,
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like input,
@@ -1191,7 +1195,7 @@ html {
     background-color: #fff;
   }
 
-/* line 365 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 366 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart,
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart,
@@ -1204,7 +1208,7 @@ html {
     font-size: 12px;
   }
 
-/* line 368 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 369 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart:hover,
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart:hover,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart:hover,
@@ -1216,7 +1220,7 @@ html {
     color: #222;
   }
 
-/* line 370 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 371 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o,
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o,
@@ -1229,7 +1233,7 @@ html {
     font-size: 12px;
   }
 
-/* line 373 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 374 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o:hover,
   .body_leads_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o:hover,
   .body_leads_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o:hover,
@@ -1241,7 +1245,7 @@ html {
     color: #2a9c6d;
   }
 
-/* line 375 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 376 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_index .leads_index_no_leads_available {
     position: absolute;
     margin-top: 30px;
@@ -1265,7 +1269,7 @@ html {
     line-height: 150%;
   }
 
-/* line 394 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 395 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -1291,12 +1295,12 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 398 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 399 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show a {
     color: #222;
   }
 
-/* line 400 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 401 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .back_to_main_page_button {
     width: 100%;
     height: 100%;
@@ -1305,7 +1309,7 @@ html {
     left: 0;
   }
 
-/* line 406 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 407 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show {
     background: #fefefe;
     border: 2px solid #fafafa;
@@ -1324,7 +1328,7 @@ html {
     top: 100px;
   }
 
-/* line 422 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 423 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_title {
     background-color: #f6f6f6;
     padding: 30px;
@@ -1334,7 +1338,7 @@ html {
     font-size: 40px;
   }
 
-/* line 429 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 430 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body {
     font-size: 22px;
     padding-top: 40px;
@@ -1344,26 +1348,26 @@ html {
     line-height: 150%;
   }
 
-/* line 436 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 437 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long {
     width: 60%;
     padding-left: 140px;
   }
 
-/* line 439 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 440 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_short,
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long {
     display: inline-block;
     vertical-align: top;
   }
 
-/* line 443 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 444 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item img,
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item img {
     width: 100%;
   }
 
-/* line 445 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 446 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item,
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item {
     -webkit-font-smoothing: antialiased;
@@ -1372,20 +1376,20 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 450 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 451 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item a:hover,
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item a:hover {
     opacity: 0.7;
   }
 
-/* line 452 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 453 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_body .lead_show_items_short .lead_show_item .lead_show_subtitle,
   .body_leads_show .lead_show .lead_show_body .lead_show_items_long .lead_show_item .lead_show_subtitle {
     font-weight: bold;
     display: inline-block;
   }
 
-/* line 455 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 456 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_show .lead_show .lead_show_buy input,
   .body_leads_show .lead_show .lead_show_buy a {
     position: relative;
@@ -1423,7 +1427,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 463 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 464 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -1448,7 +1452,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 466 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 467 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .back_to_main_page_button {
     width: 100%;
     height: 100%;
@@ -1457,7 +1461,7 @@ html {
     left: 0;
   }
 
-/* line 472 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 473 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show {
     position: relative;
     left: 15.45%;
@@ -1474,7 +1478,7 @@ html {
     line-break: 1px;
   }
 
-/* line 485 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 486 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_title {
     background-color: #2a9c6d;
     padding: 30px;
@@ -1484,7 +1488,7 @@ html {
     font-size: 40px;
   }
 
-/* line 492 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 493 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .lead_show_body {
     font-size: 22px;
     padding-top: 40px;
@@ -1494,7 +1498,7 @@ html {
     line-height: 150%;
   }
 
-/* line 499 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 500 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional {
     padding: 5px;
     width: 100%;
@@ -1505,7 +1509,7 @@ html {
     filter: blur(0.7px);
   }
 
-/* line 504 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 505 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .lead_show_body .lead_show_items_short,
   .body_orders_show .order_show .lead_show_body .lead_show_items_long,
   .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional {
@@ -1513,7 +1517,7 @@ html {
     vertical-align: top;
   }
 
-/* line 509 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 510 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .lead_show_body .lead_show_items_short .lead_show_item,
   .body_orders_show .order_show .lead_show_body .lead_show_items_long .lead_show_item,
   .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional .lead_show_item {
@@ -1523,7 +1527,7 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 514 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 515 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .lead_show_body .lead_show_items_short .lead_show_item .lead_show_subtitle,
   .body_orders_show .order_show .lead_show_body .lead_show_items_long .lead_show_item .lead_show_subtitle,
   .body_orders_show .order_show .lead_show_body .lead_show_items_short_additional .lead_show_item .lead_show_subtitle {
@@ -1531,7 +1535,7 @@ html {
     display: inline-block;
   }
 
-/* line 517 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 518 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_buy_popup {
     position: relative;
     left: 28.840000000000003%;
@@ -1545,7 +1549,7 @@ html {
     text-align: center;
   }
 
-/* line 527 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 528 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_buy_popup .order_show_buy_popup_item {
     padding: 5px;
     padding-top: 15px;
@@ -1583,13 +1587,13 @@ html {
     background-color: #6bb5bd;
   }
 
-/* line 538 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 539 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .payment_buttons_choose_payment_text {
     text-align: center;
     padding: 50px 10px 30px 0px;
   }
 
-/* line 541 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 542 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_buy_buttons {
     padding: 7px;
     padding-bottom: 40px;
@@ -1597,12 +1601,12 @@ html {
     left: 21.63%;
   }
 
-/* line 545 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 546 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_buy_buttons .order_show_buy {
     display: inline-block;
   }
 
-/* line 547 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 548 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show .order_show_buy_buttons .order_show_buy input,
   .body_orders_show .order_show .order_show_buy_buttons .order_show_buy a {
     font-size: 13px;
@@ -1636,14 +1640,14 @@ html {
     background-color: #268c62;
   }
 
-/* line 551 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 552 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show_notes {
     margin-top: 5px;
     margin-bottom: 50px;
     font-size: 20px;
   }
 
-/* line 555 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 556 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show_notes .order_show_notes_title {
     padding: 7px;
     margin-top: 40px;
@@ -1653,7 +1657,7 @@ html {
     width: 150px;
   }
 
-/* line 562 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 563 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show_notes #order_notes {
     position: relative;
     -webkit-filter: blur(0.7px);
@@ -1681,12 +1685,12 @@ html {
     border: 2px solid #f6f6f6;
   }
 
-/* line 584 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 585 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show_notes #order_notes:hover {
     background-color: #f0f0f0;
   }
 
-/* line 586 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 587 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_show .order_show_notes .order_show_notes_submit input,
   .body_orders_show .order_show_notes .order_show_notes_submit a {
     position: relative;
@@ -1724,7 +1728,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 594 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 595 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -1749,7 +1753,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 597 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 598 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer {
     *zoom: 1;
     width: auto;
@@ -1782,7 +1786,7 @@ html {
     clear: both;
   }
 
-/* line 607 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 608 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_title {
     color: #222;
     font-weight: bold;
@@ -1790,7 +1794,7 @@ html {
     padding-bottom: 60px;
   }
 
-/* line 612 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 613 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_company_info {
     color: #222;
     border: 1px solid #e7e7e7;
@@ -1800,18 +1804,18 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 619 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 620 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_company_info td:last-child {
     text-align: left;
   }
 
-/* line 621 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 622 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_company_info td:first-child {
     text-align: left;
     width: 109px;
   }
 
-/* line 624 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 625 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_date {
     color: #222;
     font-size: 13px;
@@ -1819,7 +1823,7 @@ html {
     text-align: left;
   }
 
-/* line 629 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 630 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_sosed_info {
     margin-top: 20px;
     color: #222;
@@ -1829,7 +1833,7 @@ html {
     border-radius: 4px;
   }
 
-/* line 636 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 637 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_sosed_info .offer_sosed_info_price td,
   .body_bank_transaction .offer .offer_sosed_info font-weight bold {
     padding: 30px 30px 15px 15px;
@@ -1837,14 +1841,14 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 641 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 642 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_sosed_info .offer_sosed_info_item td {
     background-color: #f0f0f0;
     padding: 15px 30px 10px 15px;
     font-size: 12px;
   }
 
-/* line 645 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 646 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_show_lead {
     margin-top: 37px;
     padding-bottom: 20px;
@@ -1863,7 +1867,7 @@ html {
     line-break: 1px;
   }
 
-/* line 659 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 660 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_show_lead .offer_show_lead_title {
     background-color: #2a9c6d;
     border-top-left-radius: 4px;
@@ -1875,7 +1879,7 @@ html {
     border-bottom: 1px solid #e7e7e7;
   }
 
-/* line 668 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 669 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body {
     font-size: 16px;
     padding-top: 3px;
@@ -1887,7 +1891,7 @@ html {
     width: 280px;
   }
 
-/* line 677 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 678 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body .offer_show_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
@@ -1895,19 +1899,19 @@ html {
     margin-right: 15px;
   }
 
-/* line 682 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 683 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_show_lead .offer_show_lead_body .ordersindex-notifications.customer-info {
     color: #d13f19;
   }
 
-/* line 684 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 685 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_bank_transaction .offer .offer_instructions {
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
 
-/* line 689 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 690 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -1931,7 +1935,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 691 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 692 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .address_book_reserved_leads {
     opacity: 0.9;
     position: relative;
@@ -1941,7 +1945,7 @@ html {
     font-weight: bold;
   }
 
-/* line 697 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 698 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns {
     position: relative;
     margin-top: 35px;
@@ -1950,14 +1954,14 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 699 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 700 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 701 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 702 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -1969,7 +1973,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 703 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 704 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_title {
     opacity: 0.85;
     background-color: #2a9c6d;
@@ -1979,7 +1983,7 @@ html {
     font-size: 14px;
   }
 
-/* line 710 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 711 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_body {
     font-size: 14px;
     padding: 15px;
@@ -1990,14 +1994,14 @@ html {
     width: 280px;
   }
 
-/* line 718 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 719 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_body .address_book_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 722 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 723 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_notification {
     font-size: 14px;
     padding: 10px;
@@ -2009,17 +2013,17 @@ html {
     padding-top: 7px;
   }
 
-/* line 731 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 732 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_lead_notification .address_book_lead_notification_explanation {
     font-weight: normal;
   }
 
-/* line 733 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 734 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons {
     margin-top: 20px;
   }
 
-/* line 735 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 736 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_buy_button {
     margin-left: 80px;
     font-size: 13px;
@@ -2049,7 +2053,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 738 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 739 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_remove_button input,
   .body_orders_reserved .columns .wookmark .lead_box .address_book_buttons .address_book_remove_button a {
     margin: 10px 0px 5px 50px;
@@ -2084,7 +2088,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 743 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 744 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_dummy_orders_reserved {
     position: relative;
     -webkit-filter: blur(1.1px);
@@ -2093,7 +2097,7 @@ html {
     filter: blur(1.1px);
   }
 
-/* line 746 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 747 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .reserved_link_to_signup {
     margin-left: 10%;
     background: #000; /* fallback color */
@@ -2113,13 +2117,13 @@ html {
     line-height: 150%;
   }
 
-/* line 763 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 764 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .reserved_link_to_signup .address_book_signup,
   .reserved_link_to_signup .address_book_signin {
     color: #2a9c6d;
   }
 
-/* line 767 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 768 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2143,7 +2147,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 769 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 770 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns {
     position: relative;
     margin-top: 35px;
@@ -2152,14 +2156,14 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 771 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 772 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 773 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 774 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -2171,7 +2175,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 775 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 776 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_title {
     opacity: 0.85;
     background-color: #82c0c7;
@@ -2181,7 +2185,7 @@ html {
     font-size: 14px;
   }
 
-/* line 782 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 783 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_body {
     font-size: 14px;
     padding: 15px;
@@ -2192,19 +2196,19 @@ html {
     width: 280px;
   }
 
-/* line 790 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 791 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_body .address_book_lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     padding-top: 7px;
   }
 
-/* line 794 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 795 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes {
     padding: 5px;
   }
 
-/* line 796 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 797 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes #order_notes {
     background-color: #fff;
     position: relative;
@@ -2223,7 +2227,7 @@ html {
     border: 2px solid #82c0c7;
   }
 
-/* line 812 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 813 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes .address_book_lead_notes_button input,
   .body_orders_address_book .columns .wookmark .lead_box .address_book_lead_notes .address_book_lead_notes_button a {
     font-size: 13px;
@@ -2260,12 +2264,12 @@ html {
     background-color: #268c62;
   }
 
-/* line 818 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 819 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .columns .wookmark .lead_box .address_book_link_to-signup {
     font-size: 12px;
   }
 
-/* line 820 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 821 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_orders_address_book .address_book_bought_leads {
     font-size: 20px;
     font-weight: bold;
@@ -2276,7 +2280,7 @@ html {
     margin-left: 450px;
   }
 
-/* line 828 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 829 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_dummy_orders_address_book {
     -webkit-filter: blur(1.1px);
     -moz-filter: blur(1.1px);
@@ -2284,7 +2288,7 @@ html {
     filter: blur(1.1px);
   }
 
-/* line 830 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 831 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .address_book_link_to_signup {
     position: absolute;
     margin-top: 30px;
@@ -2304,13 +2308,13 @@ html {
     line-height: 150%;
   }
 
-/* line 847 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 848 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .address_book_link_to_signup .address_book_signup,
   .address_book_link_to_signup .address_book_signin {
     color: #2a9c6d;
   }
 
-/* line 851 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 852 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2334,7 +2338,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 853 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 854 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns {
     position: relative;
     margin-top: 35px;
@@ -2343,14 +2347,14 @@ html {
     padding-bottom: 20px;
   }
 
-/* line 855 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 856 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
     padding: 0px;
   }
 
-/* line 857 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 858 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -2362,7 +2366,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 859 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 860 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_title {
     text-align: center;
     opacity: 0.85;
@@ -2373,7 +2377,7 @@ html {
     font-size: 14px;
   }
 
-/* line 867 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 868 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body {
     padding: 30px 0px 20px 0px;
     -webkit-font-smoothing: antialiased;
@@ -2383,7 +2387,7 @@ html {
     width: 280px;
   }
 
-/* line 874 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 875 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_stats_title {
     font-size: 13px;
     padding: 10px 22px;
@@ -2415,12 +2419,12 @@ html {
     background-color: #268c62;
   }
 
-/* line 879 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 880 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_stats_title:hover {
     color: #fff;
   }
 
-/* line 881 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 882 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_stats_data {
     margin-left: 32%;
     border: 10px dotted #222;
@@ -2434,7 +2438,7 @@ html {
     text-align: center;
   }
 
-/* line 892 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 893 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_username {
     font-size: 14px;
     padding-bottom: 20px;
@@ -2442,17 +2446,17 @@ html {
     color: #222;
   }
 
-/* line 897 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 898 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_username a {
     color: #222;
   }
 
-/* line 899 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 900 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_image {
     padding-left: 0px;
   }
 
-/* line 901 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 902 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_logout,
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_edit {
     color: #fff;
@@ -2488,20 +2492,20 @@ html {
     background-color: #268c62;
   }
 
-/* line 907 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 908 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_amount {
     font-size: 57px;
     padding: 24px;
   }
 
-/* line 910 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 911 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_buttons {
     display: inline-block;
     padding-top: 30px;
     color: #fff;
   }
 
-/* line 914 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 915 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_wallet_buttons .profile_dashboard_body_wallet_button {
     font-size: 13px;
     padding: 10px 22px;
@@ -2531,41 +2535,41 @@ html {
     background-color: #268c62;
   }
 
-/* line 917 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 918 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_bought_leads_amount {
     font-size: 100px;
     padding: 24px;
   }
 
-/* line 920 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 921 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup {
     font-size: 14px;
     font-weight: bold;
   }
 
-/* line 923 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 924 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_signup {
     color: #fff;
     padding-bottom: 7px;
     font-size: 14px;
   }
 
-/* line 927 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 928 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_signup:hover {
     text-decoration: underline;
   }
 
-/* line 929 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 930 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_login {
     font-size: 14px;
   }
 
-/* line 931 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 932 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_title_login_or_signup .profile_dashboard_body_login:hover {
     text-decoration: underline;
   }
 
-/* line 933 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 934 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_bought_leads_last {
     font-size: 24px;
     font-weight: bold;
@@ -2573,7 +2577,7 @@ html {
     line-height: 100%;
   }
 
-/* line 938 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 939 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_no_bought_leads,
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_not_signed_in {
     font-size: 14px;
@@ -2582,17 +2586,17 @@ html {
     opacity: 0.3;
   }
 
-/* line 944 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 945 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_not_signed_in a {
     color: #222;
   }
 
-/* line 946 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 947 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_profile .columns .wookmark .lead_box .profile_dashboard_body .profile_dashboard_body_not_signed_in a:hover {
     text-decoration: underline;
   }
 
-/* line 949 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 950 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2619,20 +2623,20 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 954 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 955 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login {
     padding-top: 30px;
     margin-left: 70px;
   }
 
-/* line 957 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 958 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 961 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 962 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_form_email,
   .body_devise_login .login .login_form_password {
     font-size: 14px;
@@ -2640,7 +2644,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 966 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 967 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_form_email #user_email,
   .body_devise_login .login .login_form_password #user_email,
   .body_devise_login .login .login_form_email #user_password,
@@ -2653,14 +2657,14 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 974 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 975 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_form_remember_me {
     font-size: 14px;
     font-weight: bold;
     padding-left: 10%;
   }
 
-/* line 978 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 979 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_form_submit input,
   .body_devise_login .login .login_form_submit a {
     position: relative;
@@ -2699,17 +2703,17 @@ html {
     background-color: #268c62;
   }
 
-/* line 987 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 988 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_shared_links {
     font-size: 14px;
   }
 
-/* line 989 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 990 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_login .login .login_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 992 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 993 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2745,7 +2749,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1004 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1005 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup {
     width: 40%;
     padding: 20px;
@@ -2757,7 +2761,7 @@ html {
     margin-left: 70px;
   }
 
-/* line 1013 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1014 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_title {
     padding-left: 10%;
     font-size: 24px;
@@ -2766,7 +2770,7 @@ html {
     margin-bottom: 20px;
   }
 
-/* line 1019 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1020 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_form_email,
   .body_devise_signup .signup .signup_form_first_name,
   .body_devise_signup .signup .signup_form_surname,
@@ -2778,7 +2782,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 1028 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1029 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_form_email #user_email,
   .body_devise_signup .signup .signup_form_first_name #user_email,
   .body_devise_signup .signup .signup_form_surname #user_email,
@@ -2841,7 +2845,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 1043 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1044 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_form_submit input,
   .body_devise_signup .signup .signup_form_submit a {
     margin-left: 20%;
@@ -2878,23 +2882,23 @@ html {
     background-color: #268c62;
   }
 
-/* line 1050 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1051 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_shared_links {
     padding-left: 10%;
     font-size: 14px;
   }
 
-/* line 1053 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1054 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_shared_links a {
     color: #fff;
   }
 
-/* line 1055 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1056 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_signup .signup .signup_shared_links a:hover {
     text-decoration: underline;
   }
 
-/* line 1058 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1059 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -2921,27 +2925,27 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1063 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1064 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new {
     padding-top: 30px;
     margin-left: 70px;
   }
 
-/* line 1066 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1067 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 1070 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1071 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_form_email {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 14px;
   }
 
-/* line 1074 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1075 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_form_email #user_email {
     padding: 4px;
     border-radius: 4px;
@@ -2951,7 +2955,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 1081 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1082 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_form_submit input,
   .body_devise_password_new .password_new .password_new_form_submit a {
     margin-top: 10px;
@@ -2987,17 +2991,17 @@ html {
     background-color: #268c62;
   }
 
-/* line 1087 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1088 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_shared_links {
     font-size: 14px;
   }
 
-/* line 1089 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1090 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_password_new .password_new .password_new_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 1092 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1093 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -3024,21 +3028,21 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1097 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1098 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit {
     padding-top: 30px;
     position: relative;
     left: 12.36%;
   }
 
-/* line 1100 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1101 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
   }
 
-/* line 1104 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1105 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_form_email,
   .body_devise_users_edit .user_edit .user_edit_form_password,
   .body_devise_users_edit .user_edit .user_edit_form_password_confirmation,
@@ -3048,7 +3052,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 1111 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1112 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_form_email #user_email,
   .body_devise_users_edit .user_edit .user_edit_form_password #user_email,
   .body_devise_users_edit .user_edit .user_edit_form_password_confirmation #user_email,
@@ -3129,7 +3133,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 1135 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1136 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_form_email #user_bio,
   .body_devise_users_edit .user_edit .user_edit_form_password #user_bio,
   .body_devise_users_edit .user_edit .user_edit_form_password_confirmation #user_bio,
@@ -3146,7 +3150,7 @@ html {
     height: 120px;
   }
 
-/* line 1140 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1141 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_form_submit input,
   .body_devise_users_edit .user_edit .user_edit_form_submit a {
     margin-top: 10px;
@@ -3181,21 +3185,21 @@ html {
     background-color: #268c62;
   }
 
-/* line 1145 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1146 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_cancel_acount,
   .body_devise_users_edit .user_edit .user_edit_unhappy,
   .body_devise_users_edit .user_edit .user_edit_back {
     font-size: 14px;
   }
 
-/* line 1149 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1150 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_cancel_acount:hover,
   .body_devise_users_edit .user_edit .user_edit_unhappy:hover,
   .body_devise_users_edit .user_edit .user_edit_back:hover {
     text-decoration: underline;
   }
 
-/* line 1151 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1152 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_devise_users_edit .user_edit .user_edit_button_cancel_account input,
   .body_devise_users_edit .user_edit .user_edit_button_cancel_account a {
     margin-top: 10px;
@@ -3230,13 +3234,13 @@ html {
     background-color: #268c62;
   }
 
-/* line 1157 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1158 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new {
     margin-top: 35px;
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1160 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1161 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -3271,7 +3275,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1171 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1172 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new {
     *zoom: 1;
     float: left;
@@ -3302,7 +3306,7 @@ html {
     clear: both;
   }
 
-/* line 1180 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1181 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_title {
     -webkit-font-smoothing: antialiased;
     text-align: center;
@@ -3316,7 +3320,7 @@ html {
     line-height: 120%;
   }
 
-/* line 1191 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1192 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_instructions {
     -webkit-font-smoothing: antialiased;
     color: #fff;
@@ -3329,7 +3333,7 @@ html {
     line-height: 1.5em;
   }
 
-/* line 1201 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1202 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip,
@@ -3347,7 +3351,7 @@ html {
     margin-bottom: 14px;
   }
 
-/* line 1216 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1217 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_business_type,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_business_type,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_business_type,
@@ -3419,7 +3423,7 @@ html {
     border: 1px solid #e8e8e8;
   }
 
-/* line 1231 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1232 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_name,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_name,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_name,
@@ -3688,7 +3692,7 @@ html {
     clear: both;
   }
 
-/* line 1246 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1247 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_zip,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_zip,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_zip,
@@ -3839,7 +3843,7 @@ html {
     clear: both;
   }
 
-/* line 1260 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1261 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_description,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_description,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_description,
@@ -3990,7 +3994,7 @@ html {
     clear: both;
   }
 
-/* line 1274 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1275 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_business_type #lead_description input,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_time #lead_description input,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_zip #lead_description input,
@@ -4014,12 +4018,12 @@ html {
     display: inline-block;
   }
 
-/* line 1277 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1278 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_remember_me {
     font-size: 10px;
   }
 
-/* line 1279 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1280 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit input,
   .body_leads_new .lead_new_photo .lead_new .lead_new_form_submit a {
     position: relative;
@@ -4056,17 +4060,17 @@ html {
     background-color: #268c62;
   }
 
-/* line 1285 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1286 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_shared_links {
     font-size: 12px;
   }
 
-/* line 1287 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1288 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new .lead_new_shared_links:hover {
     text-decoration: underline;
   }
 
-/* line 1289 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1290 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation {
     *zoom: 1;
     float: left;
@@ -4098,7 +4102,7 @@ html {
     clear: both;
   }
 
-/* line 1299 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1300 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_title {
     -webkit-font-smoothing: antialiased;
     color: #fff;
@@ -4112,7 +4116,7 @@ html {
     line-height: 120%;
   }
 
-/* line 1310 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1311 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_browse_providers {
     margin-top: 10px;
     position: relative;
@@ -4144,12 +4148,12 @@ html {
     background-color: #268c62;
   }
 
-/* line 1314 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1315 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_browse_providers a {
     color: #606060;
   }
 
-/* line 1316 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1317 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third {
@@ -4157,21 +4161,21 @@ html {
     width: 100%;
   }
 
-/* line 1321 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1322 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first a,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second a,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third a {
     color: #2a9c6d;
   }
 
-/* line 1323 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1324 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first a:hover,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second a:hover,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third a:hover {
     opacity: 0.8;
   }
 
-/* line 1325 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1326 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_first .fa.fa-pencil,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_second .fa.fa-pencil,
   .body_leads_new .lead_new_photo .lead_new_explanation .lead_new_explanation_third .fa.fa-pencil,
@@ -4184,14 +4188,14 @@ html {
     font-size: 42px;
   }
 
-/* line 1329 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1330 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_we_help {
     padding: 80px 220px 80px 220px;
     background-color: #fff;
     color: #606060;
   }
 
-/* line 1333 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1334 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_we_help .lead_new_we_help_title {
     font-size: 32px;
     text-transform: uppercase;
@@ -4200,7 +4204,7 @@ html {
     margin-bottom: 50px;
   }
 
-/* line 1339 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1340 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_we_help .lead_new_we_help_categories_title {
     font-size: 20px;
     font-weight: bold;
@@ -4208,7 +4212,7 @@ html {
     margin-bottom: 60px;
   }
 
-/* line 1344 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1345 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_we_help .lead_new_we_help_categories_list {
     text-align: center;
     font-size: 16px;
@@ -4216,7 +4220,7 @@ html {
     left: 3.09%;
   }
 
-/* line 1348 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1349 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_we_help .lead_new_we_help_categories_list .fa.fa-check-square-o {
     padding: 10px 10px 0px 0px;
     font-size: 16px;
@@ -4224,7 +4228,7 @@ html {
     opacity: 0.8;
   }
 
-/* line 1353 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1354 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_testimonials {
     padding: 50px 220px 50px 220px;
     background-color: #82c0c7;
@@ -4232,14 +4236,14 @@ html {
     font-size: 16px;
   }
 
-/* line 1358 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1359 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_testimonials .lead_new_testimonials_text {
     color: #f6f6f6;
     text-align: center;
     padding-bottom: 50px;
   }
 
-/* line 1362 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1363 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_testimonials .lead_new_testimonials_text .fa.fa-quote-left,
   .body_leads_new .lead_new_testimonials .lead_new_testimonials_text .fa.fa-quote-right {
     font-size: 25px;
@@ -4247,7 +4251,7 @@ html {
     padding: 0px 5px 0px 5px;
   }
 
-/* line 1367 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1368 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_company_info {
     padding: 20px 0px 20px 0px;
     background-color: #222;
@@ -4260,7 +4264,7 @@ html {
     text-rendering: optimizelegibility;
   }
 
-/* line 1377 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1378 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_company_info .lead_new_company_info_contact input,
   .body_leads_new .lead_new_company_info .lead_new_company_info_contact a {
     padding: 7px 0px 0px 0px;
@@ -4269,27 +4273,27 @@ html {
     text-decoration: none;
   }
 
-/* line 1383 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1384 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_company_info .lead_new_company_info_contact input:hover,
   .body_leads_new .lead_new_company_info .lead_new_company_info_contact a:hover {
     color: #2a9c6d;
   }
 
-/* line 1385 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1386 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_company_info .lead_new_company_info_address {
     padding: 7px 0px 0px 0px;
     color: #fff;
     font-size: 14px;
   }
 
-/* line 1389 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1390 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_leads_new .lead_new_company_info .lead_new_company_info_name,
   .body_leads_new .lead_new_company_info .lead_new_company_info_phone {
     font-size: 24px;
     color: #2a9c6d;
   }
 
-/* line 1395 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1396 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -4314,7 +4318,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1398 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1399 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer {
     *zoom: 1;
     width: auto;
@@ -4347,7 +4351,7 @@ html {
     clear: both;
   }
 
-/* line 1408 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1409 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_title {
     *zoom: 1;
     width: auto;
@@ -4376,7 +4380,7 @@ html {
     clear: both;
   }
 
-/* line 1414 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1415 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_promotion {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -4386,7 +4390,7 @@ html {
     padding: 4px;
   }
 
-/* line 1421 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1422 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info {
     color: #222;
     border: 1px solid #e7e7e7;
@@ -4396,18 +4400,18 @@ html {
     background-color: #f0f0f0;
   }
 
-/* line 1428 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1429 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info td:last-child {
     text-align: left;
   }
 
-/* line 1430 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1431 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_company_info td:first-child {
     text-align: left;
     width: 109px;
   }
 
-/* line 1433 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1434 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_date {
     color: #222;
     font-size: 13px;
@@ -4415,7 +4419,7 @@ html {
     text-align: left;
   }
 
-/* line 1438 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1439 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info {
     margin-top: 20px;
     color: #222;
@@ -4425,7 +4429,7 @@ html {
     border-radius: 4px;
   }
 
-/* line 1445 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1446 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_price td {
     font-weight: bold;
     padding: 15px 30px 15px 30px;
@@ -4434,7 +4438,7 @@ html {
     color: #fff;
   }
 
-/* line 1451 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1452 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_item td {
     font-weight: bold;
     background-color: #f6f6f6;
@@ -4442,19 +4446,19 @@ html {
     font-size: 12px;
   }
 
-/* line 1456 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1457 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_sosed_info .wallet_payment_offer_sosed_info_item td:last-child {
     padding: 15px 30px 15px 30px;
   }
 
-/* line 1458 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1459 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_wallet_payment .wallet_payment_offer .wallet_payment_offer_instructions {
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
 
-/* line 1463 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1464 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .alert.alert-notice {
     position: relative;
     top: 60px;
@@ -4463,7 +4467,7 @@ html {
     font-size: 14px;
   }
 
-/* line 1470 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1471 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_payment_confirmation {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -4489,7 +4493,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1474 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1475 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_payment_confirmation .to_address_book {
     width: 100%;
     height: 100%;
@@ -4498,7 +4502,7 @@ html {
     left: 0;
   }
 
-/* line 1480 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1481 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_payment_confirmation .payment_confirmation_wrapper {
     *zoom: 1;
     width: auto;
@@ -4531,7 +4535,7 @@ html {
     clear: both;
   }
 
-/* line 1490 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1491 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_payment_confirmation .payment_confirmation_wrapper .payment_confirmation_title {
     *zoom: 1;
     width: auto;
@@ -4560,7 +4564,7 @@ html {
     clear: both;
   }
 
-/* line 1496 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1497 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_payment_confirmation .payment_confirmation_wrapper .payment_confirmation_text {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -4570,7 +4574,7 @@ html {
     padding: 4px;
   }
 
-/* line 1504 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1505 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_no_message {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -4598,7 +4602,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1510 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1511 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_no_message .no_message_wrapper {
     *zoom: 1;
     width: auto;
@@ -4631,7 +4635,7 @@ html {
     clear: both;
   }
 
-/* line 1520 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1521 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_no_message .no_message_wrapper .no_message_title {
     color: #fff;
     font-weight: bold;
@@ -4639,7 +4643,7 @@ html {
     padding-bottom: 30px;
   }
 
-/* line 1525 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1526 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_no_message .no_message_wrapper .no_message_text {
     text-align: justify;
     margin-top: 20px;
@@ -4651,12 +4655,12 @@ html {
     padding: 4px;
   }
 
-/* line 1535 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1536 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1537 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1538 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome {
     margin-top: 36px;
     padding: 5% 10% 5% 10%;
@@ -4666,7 +4670,7 @@ html {
     letter-spacing: 1px;
   }
 
-/* line 1544 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1545 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome .section_welcome_title {
     font-size: 18px;
     font-size: 13px;
@@ -4699,7 +4703,7 @@ html {
     background-color: #1f1f1f;
   }
 
-/* line 1550 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1551 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome .section_welcome_subtitle {
     font-size: 22px;
     letter-spacing: 2px;
@@ -4708,31 +4712,31 @@ html {
     font-weight: 500;
   }
 
-/* line 1556 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1557 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome .section_welcome_subtitle a {
     text-decoration: none;
     color: #606060;
   }
 
-/* line 1559 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1560 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome .section_welcome_subtitle a:hover {
     color: #2a9c6d;
   }
 
-/* line 1561 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1562 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_welcome .section_welcome_text {
     font-size: 18px;
     line-height: 1.5em;
     text-align: justify;
   }
 
-/* line 1565 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1566 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided {
     font-size: 18px;
     text-align: center;
   }
 
-/* line 1568 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1569 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided .section_divided_part a {
     text-decoration: none;
     font-size: 13px;
@@ -4763,12 +4767,12 @@ html {
     background-color: #1f1f1f;
   }
 
-/* line 1572 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1573 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided .section_divided_part a:hover {
     color: #fff;
   }
 
-/* line 1574 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1575 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided .section_divided_part {
     width: 33.3%;
     float: left;
@@ -4777,7 +4781,7 @@ html {
     border: 10px solid #fff;
   }
 
-/* line 1580 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1581 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided .section_divided_part .section_divided_part_title {
     font-size: 13px;
     padding: 10px 22px;
@@ -4807,12 +4811,12 @@ html {
     background-color: #1f1f1f;
   }
 
-/* line 1583 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1584 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_divided .section_divided_part .section_divided_part_subtitle {
     color: #222;
   }
 
-/* line 1585 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1586 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_how_it_works {
     padding: 0px 0px 60px 0px;
     background-color: #fff;
@@ -4821,7 +4825,7 @@ html {
     color: #222;
   }
 
-/* line 1591 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1592 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_how_it_works .section_how_it_works_image {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -4847,7 +4851,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1595 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1596 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_how_it_works .section_how_it_works_title {
     margin: 5% 5% 5% 35%;
     font-size: 32px;
@@ -4856,14 +4860,14 @@ html {
     font-weight: 700;
   }
 
-/* line 1601 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1602 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_how_it_works .section_how_it_works_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1605 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1606 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team {
     padding: 0px 0px 60px 0px;
     background-color: #222;
@@ -4873,21 +4877,21 @@ html {
     text-align: center;
   }
 
-/* line 1612 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1613 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team .fa.fa-heart {
     color: #2a9c6d;
     margin: 60px 60px 20px 30px;
     font-size: 80px;
   }
 
-/* line 1616 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1617 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team .section_our_team_title {
     margin: 20px 60px 60px 30px;
     font-size: 32px;
     font-weight: 700;
   }
 
-/* line 1620 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1621 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team .section_our_team_title a {
     margin: 20px 60px 60px 30px;
     font-size: 32px;
@@ -4895,19 +4899,19 @@ html {
     text-decoration: none;
   }
 
-/* line 1625 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1626 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team .section_our_team_title a:hover {
     color: #2a9c6d;
   }
 
-/* line 1627 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1628 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_our_team .section_our_team_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1631 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1632 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_budget {
     padding: 0px 0px 60px 0px;
     background-color: #606060;
@@ -4917,28 +4921,28 @@ html {
     text-align: center;
   }
 
-/* line 1638 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1639 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_budget .fa.fa-calculator {
     margin: 60px 60px 20px 30px;
     font-size: 80px;
     color: #2a9c6d;
   }
 
-/* line 1642 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1643 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_budget .section_budget_title {
     margin: 20px 60px 60px 30px;
     font-size: 32px;
     color: #2a9c6d;
   }
 
-/* line 1646 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1647 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_budget .section_budget_text {
     margin: 60px 60px 60px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1650 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1651 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_what_customers_want {
     padding: 60px 60px 60px 60px;
     background-color: #222;
@@ -4947,25 +4951,25 @@ html {
     text-align: center;
   }
 
-/* line 1656 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1657 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_what_customers_want .section_what_customers_want_title {
     margin-bottom: 50px;
     font-size: 48px;
   }
 
-/* line 1659 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1660 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_what_customers_want .fa.fa-check-square-o {
     font-size: 30px;
     margin-right: 10px;
   }
 
-/* line 1662 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1663 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_what_customers_want .section_what_customers_want_item {
     margin-bottom: 20px;
     font-size: 18px;
   }
 
-/* line 1665 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1666 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_join_sosed {
     background-color: #2a9c6d;
     color: #222;
@@ -4976,7 +4980,7 @@ html {
     line-height: 200%;
   }
 
-/* line 1673 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1674 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_join_sosed .section_why_sosed_image {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -5001,7 +5005,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1676 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1677 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_join_sosed .fa.fa-line-chart,
   .body_info_singlepage .section_join_sosed .fa.fa-paper-plane-o,
   .body_info_singlepage .section_join_sosed .fa.fa-thumbs-up {
@@ -5013,7 +5017,7 @@ html {
     color: #222;
   }
 
-/* line 1684 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1685 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_join_sosed .section_join_sosed_introduce,
   .body_info_singlepage .section_join_sosed .section_join_sosed_cooperation,
   .body_info_singlepage .section_join_sosed .section_join_sosed_success {
@@ -5023,7 +5027,7 @@ html {
     background-color: #2a9c6d;
   }
 
-/* line 1691 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1692 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_why_sosed {
     padding: 0px 0px 60px 0px;
     letter-spacing: 1.4px;
@@ -5031,7 +5035,7 @@ html {
     color: #222;
   }
 
-/* line 1696 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1697 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_why_sosed .section_why_sosed_title {
     margin: 60px 60px 60px 30px;
     font-size: 32px;
@@ -5039,41 +5043,41 @@ html {
     font-weight: bold;
   }
 
-/* line 1701 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1702 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_why_sosed .section_why_sosed_text {
     margin: 60px 60px 30px 30px;
     font-size: 18px;
     line-height: 150%;
   }
 
-/* line 1705 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1706 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_form {
     letter-spacing: 1.4px;
     font-weight: 300;
     color: #222;
   }
 
-/* line 1709 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1710 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_form #mc_embed_signup {
     background-color: #fff;
     padding: 50px 0px 30px 0px;
   }
 
-/* line 1712 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1713 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_form #mc_embed_signup label {
     font-size: 32px;
     color: #222;
     text-align: center;
   }
 
-/* line 1716 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1717 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_form #mce-EMAIL {
     position: relative;
     left: 33.989999999999995%;
     width: 400px;
   }
 
-/* line 1719 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1720 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_form #mc-embedded-subscribe {
     position: relative;
     left: 41.2%;
@@ -5081,7 +5085,7 @@ html {
     width: 200px;
   }
 
-/* line 1723 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1724 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_company_info {
     text-align: center;
     background-color: #fff;
@@ -5089,7 +5093,7 @@ html {
     font-size: 14px;
   }
 
-/* line 1728 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1729 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_company_info .section_company_info_name,
   .body_info_singlepage .section_company_info .section_company_info_street,
   .body_info_singlepage .section_company_info .section_company_info_city,
@@ -5099,12 +5103,12 @@ html {
     padding: 7px 0px 0px 0px;
   }
 
-/* line 1735 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1736 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_info_singlepage .section_company_info:last-child {
     padding-bottom: 80px;
   }
 
-/* line 1738 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1739 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .project_show_send_message {
     font-size: 13px;
     padding: 10px 22px;
@@ -5133,7 +5137,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 1740 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1741 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .project_show_send_message #conversation_body {
     width: 100%;
     color: #606060;
@@ -5147,7 +5151,7 @@ html {
     max-height: 284px;
   }
 
-/* line 1751 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1752 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .project_show_send_message .project_show_send_message_button,
   .project_show_send_message .project_show_send_message_button button,
   .project_show_send_message .project_show_send_message_button a {
@@ -5185,7 +5189,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 1757 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1758 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -5210,7 +5214,7 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1760 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1761 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index #filters {
     list-style-type: none;
     text-align: center;
@@ -5221,7 +5225,7 @@ html {
     top: 50px;
   }
 
-/* line 1768 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1769 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index #filters li {
     cursor: pointer;
     margin: 0 0.5% 6px 0.5%;
@@ -5262,7 +5266,7 @@ html {
     background-color: #ddd;
   }
 
-/* line 1782 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1783 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index #filters li.active {
     font-size: 13px;
     padding: 10px 22px;
@@ -5294,7 +5298,7 @@ html {
     background-color: #268c62;
   }
 
-/* line 1787 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1788 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns {
     position: relative;
     margin-top: 35px;
@@ -5304,7 +5308,7 @@ html {
     padding-top: 0px;
   }
 
-/* line 1790 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1791 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_welcome_message {
     position: relative;
     padding-top: 195px;
@@ -5314,7 +5318,7 @@ html {
     overflow: hidden;
   }
 
-/* line 1797 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1798 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_welcome_message .video {
     z-index: 1;
     opacity: 0.8;
@@ -5327,7 +5331,7 @@ html {
     height: auto;
   }
 
-/* line 1807 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1808 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_welcome_message .index_welcome_message_title {
     z-index: 2;
     position: relative;
@@ -5343,7 +5347,7 @@ html {
     text-rendering: optimizelegibility;
   }
 
-/* line 1820 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1821 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_welcome_message .index_welcome_message_subtitle {
     z-index: 2;
     position: relative;
@@ -5362,7 +5366,7 @@ html {
     font-size: 18px;
   }
 
-/* line 1836 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1837 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_container {
     z-index: 2;
     position: relative;
@@ -5371,7 +5375,7 @@ html {
     background-color: #f6f6f6;
   }
 
-/* line 1842 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1843 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_container .index_container_title {
     text-align: center;
     margin-top: 15px;
@@ -5385,7 +5389,7 @@ html {
     text-rendering: optimizelegibility;
   }
 
-/* line 1853 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1854 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .index_container .index_container_subtitle {
     font-size: 18px;
     margin-top: 20px;
@@ -5395,7 +5399,7 @@ html {
     color: #606060;
   }
 
-/* line 1860 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1861 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark {
     list-style-type: none;
     position: relative; /** Needed to ensure items are laid out relative to this container **/
@@ -5403,24 +5407,24 @@ html {
     top: 100px;
   }
 
-/* line 1863 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1864 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark #tiles {
     margin: 0;
   }
 
-/* line 1865 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1866 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark #tiles #tiles li.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 1868 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1869 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box.inactive {
     visibility: hidden;
     opacity: 0;
   }
 
-/* line 1871 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1872 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box {
     margin-left: 0px;
     width: 303px;
@@ -5432,7 +5436,7 @@ html {
     opacity: 0.9;
   }
 
-/* line 1873 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1874 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_title {
     background-color: #f6f6f6;
     padding: 15px;
@@ -5441,7 +5445,7 @@ html {
     font-size: 14px;
   }
 
-/* line 1879 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1880 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_title .fa.fa-star {
     color: #fcd229;
     font-size: 16px;
@@ -5449,12 +5453,12 @@ html {
     left: 5.15%;
   }
 
-/* line 1883 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1884 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_title .fa.fa-star:hover {
     color: #222;
   }
 
-/* line 1885 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1886 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body {
     font-size: 14px;
     padding: 15px;
@@ -5468,44 +5472,44 @@ html {
     width: 300px;
   }
 
-/* line 1896 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1897 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body a:hover {
     opacity: 0.7;
   }
 
-/* line 1898 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1899 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .lead_subtitle {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
   }
 
-/* line 1901 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1902 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body a {
     text-decoration: none;
     color: #606060;
     text-transform: uppercase;
   }
 
-/* line 1905 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1906 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .lead_subtitle_image {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-/* line 1908 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1909 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .like_heart {
     margin-left: 260px;
     font-size: 12px;
   }
 
-/* line 1911 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
-
 /* line 1912 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+
+/* line 1913 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .like_heart a:hover {
     color: #2a9c6d;
   }
 
-/* line 1914 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1915 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like,
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like input,
@@ -5521,7 +5525,7 @@ html {
     background-color: #fff;
   }
 
-/* line 1927 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1928 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart,
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart,
@@ -5534,7 +5538,7 @@ html {
     font-size: 12px;
   }
 
-/* line 1930 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1931 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart:hover,
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart:hover,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart:hover,
@@ -5546,7 +5550,7 @@ html {
     color: #222;
   }
 
-/* line 1932 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1933 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o,
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o,
@@ -5559,7 +5563,7 @@ html {
     font-size: 12px;
   }
 
-/* line 1935 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1936 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like .fa.fa-heart-o:hover,
   .body_project_index .columns .wookmark .lead_box .lead_body .edit_like .fa.fa-heart-o:hover,
   .body_project_index .columns .wookmark .lead_box .lead_body .new_like input .fa.fa-heart-o:hover,
@@ -5571,7 +5575,7 @@ html {
     color: #2a9c6d;
   }
 
-/* line 1937 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1938 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_project_index .leads_index_no_leads_available {
     position: absolute;
     margin-top: 30px;
@@ -5595,7 +5599,7 @@ html {
     line-height: 150%;
   }
 
-/* line 1956 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1957 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat {
     background-image: backgroundImage;
     background-repeat: no-repeat;
@@ -5621,12 +5625,12 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1960 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1961 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat a {
     color: #222;
   }
 
-/* line 1962 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1963 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat .wrapper {
     position: relative;
     margin-top: 35px;
@@ -5637,14 +5641,14 @@ html {
     padding-top: 35px;
   }
 
-/* line 1966 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1967 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat .wrapper .title {
     text-align: center;
     margin-top: 5%;
     font-size: 28px;
   }
 
-/* line 1970 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1971 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat .wrapper .chatframe {
     padding: 3%;
     margin-left: 10%;
