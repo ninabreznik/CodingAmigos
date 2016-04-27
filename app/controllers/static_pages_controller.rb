@@ -15,7 +15,7 @@ class StaticPagesController < ApplicationController
   def terms
   end
 
-  def privacy
+  def chat
   end
 
   def pricing

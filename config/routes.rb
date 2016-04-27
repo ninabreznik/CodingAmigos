@@ -59,7 +59,7 @@ Rails.application.routes.draw do
   get '/privacy' => 'static_pages#privacy'
   get '/contact' => 'static_pages#contact'
   get '/dashboard' => 'static_pages#dashboard'
-  get '/no_message' => 'static_pages#no_message'
+  get '/chat' => 'static_pages#chat'
   # get '/payment_type' => 'static_pages#payment'
   # get '/payment_confirmation' => 'static_pages#payment_confirmation'
 
