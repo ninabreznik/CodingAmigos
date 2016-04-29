@@ -5615,7 +5615,6 @@ html {
     color: #222;
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #f6f6f6;
-    padding-bottom: 1500px;
   }
 
 /* line 62 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app.styl */
@@ -5625,12 +5624,12 @@ html {
     font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-/* line 1961 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1960 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat a {
     color: #222;
   }
 
-/* line 1963 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
+/* line 1962 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
   .body_chat .wrapper {
     position: relative;
     margin-top: 35px;
@@ -5639,6 +5638,7 @@ html {
     padding-bottom: 20px;
     margin-top: 0px;
     padding-top: 35px;
+    margin-bottom: 0px;
   }
 
 /* line 1967 : /Users/ninabreznik/Code/Ruby/codingamigos/CodingAmigos/public/app_below_5000px.styl */
