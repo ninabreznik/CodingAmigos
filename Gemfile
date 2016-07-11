@@ -2,14 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails_12factor', group: :production
-ruby '2.1.2'
+
+ruby '2.2.0'
 # Use sqlite3 as the database for Active Record
 
 # Loads .env into ENV in local environment
 gem 'dotenv-rails', :groups => [:development, :test]
 
 group :production do
+  gem 'rails_12factor'
   gem 'pg'
 end
 
