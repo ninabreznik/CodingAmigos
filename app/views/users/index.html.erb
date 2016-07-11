@@ -50,14 +50,6 @@
          <%= user.service %>
            <br><br>
       <% end %>
-      <% if user.projects.any? %>
-        <div class="lead_subtitle">
-          What I do:
-        </div><br>
-        <% user.projects.each do |project| %>
-          <li><%=link_to "#{image_tag project.picture.url(:thumb), :width => "25"} #{project.title}".html_safe, project_path(project) %></li><br><br>
-        <% end %>
-      <% end %>
       <div class="lead_subtitle"><%=link_to "More about this member >>", user_path(user) %></div>
     </div>
   </div>
