@@ -9,9 +9,9 @@
         <div class="lead_title"><%= @user.first_name %> </div>
       <% end %>
       <div class="lead_body">
-        <div class="lead_subtitle" ></div>
+        <div class="lead_subtitle_image" >
           <%= link_to "#{image_tag @user.picture.url(:medium), :width => '287'}".html_safe, user_path(@user) %><br>
-
+        </div>
           <% if @user.city.present? %>
             <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= @user.city %></div>
             <br>
@@ -67,8 +67,9 @@
     <div class="lead_box">
       <div class="lead_title"><%= link_to "#{project.title}", project_path(project) %></div>
       <div class="lead_body">
-        <div class="lead_subtitle"></div>
+        <div class="lead_subtitle_image">
           <%= link_to "#{image_tag project.picture.url(:medium), :width => '287'}".html_safe, project_path(project) %> <br>
+        </div>
         <div class="lead_subtitle"></div>
         <% if project.description.present? %>
           <div class="lead_show_subtitle"></div>

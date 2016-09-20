@@ -94,8 +94,7 @@
       margin-top 0px
       padding-top 35px
       .chat_button
-        margin-top 3%
-        margin-left 45%
+        margin 3% 45% 0% 45%
         button(color=#2A9C6E)
         font-size 20px
         padding 10px
@@ -155,6 +154,10 @@
           line-height: 1.6em
           letter-spacing 1px
           font-size 26px
+        .index_welcome_message_subtitle a
+          color white
+        .index_welcome_message_subtitle a:hover
+          color #2a9c6e
       .wookmark
         wookmarkMixin()
         #tiles
@@ -189,8 +192,15 @@
             color Offer-Font-Color
             line-height 150%
             width 300px
+            .lead_subtitle_image a
+              display: flex;
+              justify-content: center;
             a:hover
               opacity 0.7
+          .lead_body a img
+              border-radius 50%
+              width 70%
+              height 70%
             .lead_subtitle
               font-weight bold
               -webkit-font-smoothing: antialiased
@@ -204,8 +214,6 @@
             .like_heart a
               &:hover
                 color Lead-Orange
-            a img
-              border-radius 50%
             .new_like,
             .edit_like,
             .new_like input,

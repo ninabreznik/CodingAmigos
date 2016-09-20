@@ -3,13 +3,12 @@
 <div class="columns" id="main" role="main">
 <div class="index_welcome_message">
  <div class="index_welcome_message_title">
-    CodingAmigos digital collective
+    CodingAmigos
   </div>
   <div class="index_welcome_message_subtitle">
-    Welcome to our collective of developers and other professionals with activist streak. 
+    <a href='https://titanpad.com/CodingAmigos' target="_blank">Join the Community of Entrepreneurial Developerinas and Developers with activist streak.</a>
   </div>
 </div>
-<div class="chat_button"><%=link_to "Join the chat", chat_path%></div>
 <ol id="filters">
   <li data-filter="Available for hire">
     Available for hire
@@ -40,8 +39,9 @@
       <div class="lead_box" data-filter-class='["<%= user.status %>"]'>
         <div class="lead_title"><%= link_to "#{user.first_name}", user_path(user) %></div>
         <div class="lead_body">
-          <div class="lead_subtitle_image" ></div>
+          <div class="lead_subtitle_image" >
             <%= link_to "#{image_tag user.picture.url(:large), :width => '287', :height => '287'}".html_safe, user_path(user) %> <br><br>
+          </div>
           <% if user.city.present? %>
             <div class="lead_subtitle"><i class="fa fa-map-marker"></i> <%= user.city %></div>
             <br>
