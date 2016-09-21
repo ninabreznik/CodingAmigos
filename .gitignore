@@ -1,5 +1,5 @@
 # Ignore ENV FILE
-.env
+/.env
 
 tmp/*
 .ssh/*
