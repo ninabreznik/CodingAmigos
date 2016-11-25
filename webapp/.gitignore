@@ -1,0 +1,6 @@
+#Ignore ENV FILE
+/config/local_env.yml
+
+tmp/*
+.ssh/*
+log/*
